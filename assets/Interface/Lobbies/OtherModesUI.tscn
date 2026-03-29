@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://Interface/LobbyUI.png" type="Texture" id=1]
 [ext_resource path="res://Interface/Lobbies/JoinLobbyUI.tscn" type="PackedScene" id=2]
@@ -48,6 +48,9 @@
 [ext_resource path="res://Interface/LeagueProgressUI.tscn" type="PackedScene" id=46]
 [ext_resource path="res://Interface/Lobbies/SwitchModeUnrankedUI.gd" type="Script" id=47]
 [ext_resource path="res://Interface/SwitchModeIcon.png" type="Texture" id=48]
+[ext_resource path="res://Interface/FocusGrabbingControl.gd" type="Script" id=49]
+[ext_resource path="res://Interface/SwitchModeIcon_hovered.png" type="Texture" id=50]
+[ext_resource path="res://Interface/SwitchModeIcon_disabled.png" type="Texture" id=51]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Close"
@@ -173,6 +176,13 @@ font_data = ExtResource( 20 )
 
 [sub_resource type="ButtonGroup" id=18]
 
+[sub_resource type="DynamicFont" id=348]
+size = 22
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+extra_spacing_bottom = 2
+font_data = ExtResource( 8 )
+
 [sub_resource type="DynamicFont" id=4]
 size = 36
 outline_size = 4
@@ -230,9 +240,10 @@ script = ExtResource( 21 )
 
 [node name="Header" type="RichTextLabel" parent="CustomUnrankedUI"]
 margin_left = 964.0
-margin_top = 60.0
-margin_right = 1297.0
+margin_top = 62.0
+margin_right = 1302.0
 margin_bottom = 112.0
+grow_vertical = 0
 rect_min_size = Vector2( 333, 0 )
 rect_clip_content = false
 custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -249,6 +260,7 @@ script = ExtResource( 9 )
 translationKey = "BUTTON_CustomUnranked"
 prefix = "[center]"
 maxSize = 333.0
+maxSizeY = 71.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CustomUnrankedUI"]
 modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
@@ -256,7 +268,7 @@ material = ExtResource( 13 )
 margin_left = 679.0
 margin_top = 141.0
 margin_right = 969.0
-margin_bottom = 598.0
+margin_bottom = 601.0
 texture = ExtResource( 14 )
 patch_margin_left = 8
 patch_margin_top = 8
@@ -339,6 +351,7 @@ custom_styles/normal = ExtResource( 5 )
 text = "Start Game"
 flat = true
 script = ExtResource( 9 )
+translationKey = "BUTTON_StartGame"
 
 [node name="CancelButton" type="Button" parent="CustomUnrankedUI"]
 margin_left = 1328.0
@@ -378,19 +391,20 @@ position = Vector2( 1361, 667 )
 texture = ExtResource( 41 )
 
 [node name="HoverHint" type="Label" parent="CustomUnrankedUI"]
-margin_left = 1353.0
-margin_top = 538.0
+margin_left = 988.0
+margin_top = 530.0
 margin_right = 1590.0
-margin_bottom = 619.0
+margin_bottom = 597.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_colors/font_color = Color( 0.447059, 0.321569, 0.270588, 1 )
 custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 0
 custom_fonts/font = SubResource( 19 )
 text = "No players are matched against custom runs."
-align = 2
+align = 1
+valign = 2
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "HINT_CustomGames"
@@ -407,9 +421,20 @@ script = ExtResource( 27 )
 margin_right = 562.0
 translationKey = "UI_BonusGold"
 
+[node name="Property" parent="CustomUnrankedUI/Rules/BonusGold" index="0"]
+margin_right = 242.0
+
+[node name="Control" parent="CustomUnrankedUI/Rules/BonusGold" index="1"]
+margin_left = 250.0
+margin_right = 484.0
+
 [node name="Spacer" parent="CustomUnrankedUI/Rules/BonusGold" index="2"]
 margin_left = 232.0
 margin_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/BonusGold" index="3"]
+margin_left = 492.0
+margin_right = 562.0
 
 [node name="SalesChance" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 44.0
@@ -418,11 +443,14 @@ margin_bottom = 78.0
 translationKey = "UI_SalesChance"
 
 [node name="Property" parent="CustomUnrankedUI/Rules/SalesChance" index="0"]
+margin_right = 242.0
 margin_bottom = 34.0
 bbcode_text = "[right]Sale chance"
 text = "Sale chance"
 
 [node name="Control" parent="CustomUnrankedUI/Rules/SalesChance" index="1"]
+margin_left = 250.0
+margin_right = 484.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="CustomUnrankedUI/Rules/SalesChance" index="2"]
@@ -431,7 +459,9 @@ margin_right = 252.0
 margin_bottom = 34.0
 
 [node name="Value" parent="CustomUnrankedUI/Rules/SalesChance" index="3"]
+margin_left = 492.0
 margin_top = 0.0
+margin_right = 562.0
 margin_bottom = 34.0
 
 [node name="TradeChance" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
@@ -441,11 +471,14 @@ margin_bottom = 120.0
 translationKey = "UI_TradeChance"
 
 [node name="Property" parent="CustomUnrankedUI/Rules/TradeChance" index="0"]
+margin_right = 242.0
 margin_bottom = 34.0
 bbcode_text = "[right]Trade chance"
 text = "Trade chance"
 
 [node name="Control" parent="CustomUnrankedUI/Rules/TradeChance" index="1"]
+margin_left = 250.0
+margin_right = 484.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="CustomUnrankedUI/Rules/TradeChance" index="2"]
@@ -454,7 +487,9 @@ margin_right = 252.0
 margin_bottom = 34.0
 
 [node name="Value" parent="CustomUnrankedUI/Rules/TradeChance" index="3"]
+margin_left = 492.0
 margin_top = 0.0
+margin_right = 562.0
 margin_bottom = 34.0
 
 [node name="BonusTreasures" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
@@ -464,12 +499,21 @@ margin_bottom = 164.0
 translationKey = "UI_BonusTreasure"
 
 [node name="Property" parent="CustomUnrankedUI/Rules/BonusTreasures" index="0"]
+margin_right = 242.0
 bbcode_text = "[right]Bonus [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] chance"
 text = "Bonus  chance"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/BonusTreasures" index="1"]
+margin_left = 250.0
+margin_right = 484.0
 
 [node name="Spacer" parent="CustomUnrankedUI/Rules/BonusTreasures" index="2"]
 margin_left = 232.0
 margin_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/BonusTreasures" index="3"]
+margin_left = 492.0
+margin_right = 562.0
 
 [node name="TreasureLimit" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 172.0
@@ -478,12 +522,21 @@ margin_bottom = 208.0
 translationKey = "UI_TreasureLimit"
 
 [node name="Property" parent="CustomUnrankedUI/Rules/TreasureLimit" index="0"]
+margin_right = 242.0
 bbcode_text = "[right] [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] limit"
 text = "  limit"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/TreasureLimit" index="1"]
+margin_left = 250.0
+margin_right = 484.0
 
 [node name="Spacer" parent="CustomUnrankedUI/Rules/TreasureLimit" index="2"]
 margin_left = 232.0
 margin_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/TreasureLimit" index="3"]
+margin_left = 492.0
+margin_right = 562.0
 
 [node name="HealthMultiplier" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 216.0
@@ -492,18 +545,23 @@ margin_bottom = 250.0
 translationKey = "UI_BonusHealth"
 
 [node name="Property" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="0"]
+margin_right = 242.0
 margin_bottom = 34.0
 bbcode_text = "[right]Max. health"
 text = "Max. health"
 
 [node name="Control" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="1"]
+margin_left = 250.0
+margin_right = 484.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="2"]
 margin_bottom = 34.0
 
 [node name="Value" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="3"]
+margin_left = 492.0
 margin_top = 0.0
+margin_right = 562.0
 margin_bottom = 34.0
 
 [node name="CannotPickBags" type="HBoxContainer" parent="CustomUnrankedUI/Rules"]
@@ -535,6 +593,7 @@ margin_left = 484.0
 margin_right = 514.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 30, 0 )
+mouse_default_cursor_shape = 2
 toggle_mode = true
 texture_normal = ExtResource( 30 )
 texture_pressed = ExtResource( 40 )
@@ -563,6 +622,7 @@ text = "Sandbox"
 margin_right = 253.0
 group = SubResource( 17 )
 text = "Unranked"
+translationKey = "UI_Unranked"
 
 [node name="Bronze" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 50.0
@@ -571,6 +631,7 @@ margin_bottom = 98.0
 group = SubResource( 18 )
 text = "Bronze"
 icon = ExtResource( 16 )
+translationKey = "LEAGUE_Bronze"
 
 [node name="Silver" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 100.0
@@ -579,6 +640,7 @@ margin_bottom = 148.0
 group = SubResource( 18 )
 text = "Silver"
 icon = ExtResource( 18 )
+translationKey = "LEAGUE_Silver"
 
 [node name="Gold" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 150.0
@@ -587,6 +649,7 @@ margin_bottom = 198.0
 group = SubResource( 18 )
 text = "Gold"
 icon = ExtResource( 19 )
+translationKey = "LEAGUE_Gold"
 
 [node name="Platinum" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 200.0
@@ -595,6 +658,7 @@ margin_bottom = 248.0
 group = SubResource( 18 )
 text = "Platinum"
 icon = ExtResource( 24 )
+translationKey = "LEAGUE_Platinum"
 
 [node name="Diamond" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 250.0
@@ -603,6 +667,7 @@ margin_bottom = 298.0
 group = SubResource( 18 )
 text = "Diamond"
 icon = ExtResource( 15 )
+translationKey = "LEAGUE_Diamond"
 
 [node name="Master" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
 margin_top = 300.0
@@ -611,10 +676,16 @@ margin_bottom = 348.0
 group = SubResource( 18 )
 text = "Master+"
 icon = ExtResource( 17 )
+translationKey = "LEAGUE_Master"
 
 [node name="Divider1" type="Sprite" parent="CustomUnrankedUI"]
-position = Vector2( 1282, 187 )
+position = Vector2( 1283, 190 )
 scale = Vector2( 1.92218, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Divider2" type="Sprite" parent="CustomUnrankedUI"]
+position = Vector2( 824, 190 )
+scale = Vector2( 1.03502, 0.824999 )
 texture = ExtResource( 31 )
 
 [node name="LobbyIconMember" type="Sprite" parent="CustomUnrankedUI"]
@@ -652,6 +723,67 @@ maxSize = 333.0
 position = Vector2( 1129, 687.5 )
 texture = ExtResource( 23 )
 
+[node name="NinePatchRect3" type="NinePatchRect" parent="SwitchModeRankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+margin_left = 679.0
+margin_top = 173.0
+margin_right = 1591.0
+margin_bottom = 289.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Rules2" type="Label" parent="SwitchModeRankedUI"]
+margin_left = 688.0
+margin_top = 176.0
+margin_right = 789.0
+margin_bottom = 224.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( -2, 2 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 15 )
+text = "Rules:"
+valign = 1
+script = ExtResource( 9 )
+translationKey = "UI_Rules"
+maxSize = 100.0
+
+[node name="Hint" type="RichTextLabel" parent="SwitchModeRankedUI"]
+margin_left = 789.0
+margin_top = 179.0
+margin_right = 1589.0
+margin_bottom = 275.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 800, 100 )
+mouse_filter = 2
+custom_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 0
+custom_fonts/italics_font = ExtResource( 28 )
+custom_fonts/normal_font = SubResource( 348 )
+bbcode_enabled = true
+bbcode_text = "o After each battle, you will take the opponent's backpack.
+o Items won’t fuse when entering the shop. Instead, generate a Cog.
+o $gold does not carry over to the next round."
+text = "o After each battle, you will take the opponent's backpack.
+o Items won’t fuse when entering the shop. Instead, generate a Cog.
+o $gold does not carry over to the next round."
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "HINT_SwitchMode"
+prefix = "[center]"
+maxSize = 800.0
+maxSizeY = 110.0
+
 [node name="StartGameButton" type="Button" parent="SwitchModeRankedUI"]
 margin_left = 1014.0
 margin_top = 649.0
@@ -672,7 +804,8 @@ custom_styles/disabled = ExtResource( 4 )
 custom_styles/normal = ExtResource( 5 )
 text = "Start Game"
 flat = true
-script = ExtResource( 9 )
+script = ExtResource( 49 )
+translationKey = "BUTTON_StartGame"
 
 [node name="CancelButton" type="Button" parent="SwitchModeRankedUI"]
 margin_left = 1328.0
@@ -708,42 +841,29 @@ translationKey = "BUTTON_Cancel"
 maxSize = 210.0
 
 [node name="Ranked" type="Label" parent="SwitchModeRankedUI"]
-margin_left = 1017.0
+margin_left = 970.0
 margin_top = 122.0
-margin_right = 1227.0
+margin_right = 1286.0
 margin_bottom = 156.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 160, 11 )
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
 custom_fonts/font = ExtResource( 25 )
 text = "Ranked"
 align = 1
+valign = 1
 script = ExtResource( 9 )
+translationKey = "UI_Ranked"
 maxSize = 210.0
 
 [node name="CancelIcon" type="Sprite" parent="SwitchModeRankedUI"]
 position = Vector2( 1361, 667 )
 texture = ExtResource( 41 )
 
-[node name="Hint" type="Label" parent="SwitchModeRankedUI"]
-margin_left = 750.0
-margin_top = 184.0
-margin_right = 1527.0
-margin_bottom = 216.0
-grow_horizontal = 0
-grow_vertical = 2
-custom_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
-custom_constants/shadow_offset_x = 0
-custom_constants/shadow_offset_y = 0
-custom_fonts/font = SubResource( 19 )
-text = "After each battle, you will take the opponent's backpack."
-align = 1
-autowrap = true
-script = ExtResource( 9 )
-translationKey = "HINT_SwitchMode"
-
-[node name="LobbyIconMember" type="Sprite" parent="SwitchModeRankedUI"]
-position = Vector2( 938.625, 79.375 )
-scale = Vector2( 0.418333, 0.418333 )
+[node name="Icon" type="Sprite" parent="SwitchModeRankedUI"]
+position = Vector2( 938.625, 75.375 )
+scale = Vector2( 0.418333, 0.466805 )
 texture = ExtResource( 48 )
 
 [node name="Control" parent="SwitchModeRankedUI" instance=ExtResource( 45 )]
@@ -755,25 +875,25 @@ margin_bottom = 197.0
 keyword = "GBP"
 
 [node name="LeagueProgress" parent="SwitchModeRankedUI" instance=ExtResource( 46 )]
-position = Vector2( 1052, 244 )
+position = Vector2( 1059, 303 )
 
 [node name="LeagueEmblem" parent="SwitchModeRankedUI/LeagueProgress" index="0"]
-position = Vector2( 67.0001, 106.25 )
+position = Vector2( 67.0001, 107.25 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Ranking" parent="SwitchModeRankedUI/LeagueProgress" index="1"]
-margin_top = 80.2501
-margin_bottom = 130.25
+margin_top = 81.2501
+margin_bottom = 131.25
 
 [node name="LeagueProgressBar" parent="SwitchModeRankedUI/LeagueProgress" index="2"]
-position = Vector2( 70, 231 )
+position = Vector2( 70, 232 )
 scale = Vector2( 0.685522, 0.883928 )
 
 [node name="League" parent="SwitchModeRankedUI/LeagueProgress" index="3"]
 margin_left = -41.9999
-margin_top = 197.25
+margin_top = 198.25
 margin_right = 182.0
-margin_bottom = 229.25
+margin_bottom = 230.25
 
 [node name="SwitchModeUnrankedUI" type="Node2D" parent="."]
 visible = false
@@ -825,7 +945,8 @@ custom_styles/disabled = ExtResource( 4 )
 custom_styles/normal = ExtResource( 5 )
 text = "Start Game"
 flat = true
-script = ExtResource( 9 )
+script = ExtResource( 49 )
+translationKey = "BUTTON_StartGame"
 
 [node name="Unranked" type="Button" parent="SwitchModeUnrankedUI"]
 visible = false
@@ -910,91 +1031,74 @@ maxSize = 210.0
 position = Vector2( 1361, 667 )
 texture = ExtResource( 41 )
 
-[node name="Hint" type="Label" parent="SwitchModeUnrankedUI"]
-margin_left = 750.0
-margin_top = 127.0
-margin_right = 1527.0
-margin_bottom = 159.0
+[node name="NinePatchRect3" type="NinePatchRect" parent="SwitchModeUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+margin_left = 679.0
+margin_top = 126.0
+margin_right = 1591.0
+margin_bottom = 238.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Rules2" type="Label" parent="SwitchModeUnrankedUI"]
+margin_left = 688.0
+margin_top = 124.0
+margin_right = 803.0
+margin_bottom = 172.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( -2, 2 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 15 )
+text = "Rules:"
+valign = 1
+autowrap = true
+script = ExtResource( 9 )
+translationKey = "UI_Rules"
+
+[node name="Hint" type="RichTextLabel" parent="SwitchModeUnrankedUI"]
+margin_left = 789.0
+margin_top = 131.0
+margin_right = 1589.0
+margin_bottom = 227.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+rect_min_size = Vector2( 800, 100 )
+mouse_filter = 2
+custom_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
 custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 0
-custom_fonts/font = SubResource( 19 )
-text = "After each battle, you will take the opponent's backpack."
-align = 1
-autowrap = true
+custom_fonts/italics_font = ExtResource( 28 )
+custom_fonts/normal_font = SubResource( 348 )
+bbcode_enabled = true
+bbcode_text = "After each battle, you will take the opponent's backpack.
+Items won’t fuse when entering the shop. Instead, generate a Cog.
+$gold does not carry over to the next round."
+text = "After each battle, you will take the opponent's backpack.
+Items won’t fuse when entering the shop. Instead, generate a Cog.
+$gold does not carry over to the next round."
+fit_content_height = true
+scroll_active = false
 script = ExtResource( 9 )
 translationKey = "HINT_SwitchMode"
-
-[node name="Leagues" type="VBoxContainer" parent="SwitchModeUnrankedUI"]
-margin_left = 697.0
-margin_top = 268.0
-margin_right = 950.0
-margin_bottom = 611.0
-custom_constants/separation = 0
-
-[node name="Unranked" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_right = 253.0
-group = SubResource( 17 )
-text = "Unranked"
-
-[node name="Bronze" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 48.0
-margin_right = 253.0
-margin_bottom = 96.0
-group = SubResource( 18 )
-text = "Bronze"
-icon = ExtResource( 16 )
-
-[node name="Silver" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 96.0
-margin_right = 253.0
-margin_bottom = 144.0
-group = SubResource( 18 )
-text = "Silver"
-icon = ExtResource( 18 )
-
-[node name="Gold" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 144.0
-margin_right = 253.0
-margin_bottom = 192.0
-group = SubResource( 18 )
-text = "Gold"
-icon = ExtResource( 19 )
-
-[node name="Platinum" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 192.0
-margin_right = 253.0
-margin_bottom = 240.0
-group = SubResource( 18 )
-text = "Platinum"
-icon = ExtResource( 24 )
-
-[node name="Diamond" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 240.0
-margin_right = 253.0
-margin_bottom = 288.0
-group = SubResource( 18 )
-text = "Diamond"
-icon = ExtResource( 15 )
-
-[node name="Master" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
-margin_top = 288.0
-margin_right = 253.0
-margin_bottom = 336.0
-group = SubResource( 18 )
-text = "Master+"
-icon = ExtResource( 17 )
+prefix = "[center]"
+maxSize = 800.0
+maxSizeY = 110.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="SwitchModeUnrankedUI"]
 modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
 material = ExtResource( 13 )
 margin_left = 679.0
-margin_top = 215.0
+margin_top = 247.0
 margin_right = 969.0
-margin_bottom = 607.0
+margin_bottom = 608.0
 texture = ExtResource( 14 )
 patch_margin_left = 8
 patch_margin_top = 8
@@ -1014,11 +1118,88 @@ patch_margin_top = 8
 patch_margin_right = 7
 patch_margin_bottom = 9
 
+[node name="Divider1" type="Sprite" parent="SwitchModeUnrankedUI"]
+position = Vector2( 1282, 296 )
+scale = Vector2( 1.92218, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Divider2" type="Sprite" parent="SwitchModeUnrankedUI"]
+position = Vector2( 822.5, 296 )
+scale = Vector2( 1.0856, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Leagues" type="VBoxContainer" parent="SwitchModeUnrankedUI"]
+margin_left = 697.0
+margin_top = 299.0
+margin_right = 950.0
+margin_bottom = 611.0
+custom_constants/separation = -4
+
+[node name="Unranked" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_right = 253.0
+group = SubResource( 17 )
+text = "Unranked"
+translationKey = "UI_Unranked"
+
+[node name="Bronze" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 44.0
+margin_right = 253.0
+margin_bottom = 92.0
+group = SubResource( 18 )
+text = "Bronze"
+icon = ExtResource( 16 )
+translationKey = "LEAGUE_Bronze"
+
+[node name="Silver" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 88.0
+margin_right = 253.0
+margin_bottom = 136.0
+group = SubResource( 18 )
+text = "Silver"
+icon = ExtResource( 18 )
+translationKey = "LEAGUE_Silver"
+
+[node name="Gold" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 132.0
+margin_right = 253.0
+margin_bottom = 180.0
+group = SubResource( 18 )
+text = "Gold"
+icon = ExtResource( 19 )
+translationKey = "LEAGUE_Gold"
+
+[node name="Platinum" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 176.0
+margin_right = 253.0
+margin_bottom = 224.0
+group = SubResource( 18 )
+text = "Platinum"
+icon = ExtResource( 24 )
+translationKey = "LEAGUE_Platinum"
+
+[node name="Diamond" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 220.0
+margin_right = 253.0
+margin_bottom = 268.0
+group = SubResource( 18 )
+text = "Diamond"
+icon = ExtResource( 15 )
+translationKey = "LEAGUE_Diamond"
+
+[node name="Master" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+margin_top = 264.0
+margin_right = 253.0
+margin_bottom = 312.0
+group = SubResource( 18 )
+text = "Master+"
+icon = ExtResource( 17 )
+translationKey = "LEAGUE_Master"
+
 [node name="MatchAgainst" type="Label" parent="SwitchModeUnrankedUI"]
 margin_left = 679.0
-margin_top = 217.0
+margin_top = 247.0
 margin_right = 966.0
-margin_bottom = 265.0
+margin_bottom = 295.0
 grow_horizontal = 2
 rect_pivot_offset = Vector2( 142, 21.5085 )
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -1035,9 +1216,9 @@ translationKey = "UI_UnrankedMatch"
 
 [node name="CustomRules" type="Label" parent="SwitchModeUnrankedUI"]
 margin_left = 1040.0
-margin_top = 244.0
+margin_top = 247.0
 margin_right = 1536.0
-margin_bottom = 292.0
+margin_bottom = 295.0
 grow_horizontal = 2
 rect_pivot_offset = Vector2( 142, 21.5085 )
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -1053,33 +1234,47 @@ script = ExtResource( 9 )
 translationKey = "UI_CustomRules"
 
 [node name="Rules" type="VBoxContainer" parent="SwitchModeUnrankedUI"]
-margin_left = 994.0
-margin_top = 301.0
-margin_right = 1556.0
-margin_bottom = 589.0
+margin_left = 987.0
+margin_top = 308.0
+margin_right = 1522.0
+margin_bottom = 596.0
 custom_constants/separation = 8
 script = ExtResource( 27 )
 
 [node name="BonusGold" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
-margin_right = 562.0
+margin_right = 535.0
 translationKey = "UI_BonusGold"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="0"]
+margin_right = 215.0
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="2"]
 margin_left = 232.0
 margin_right = 252.0
 
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="3"]
+margin_left = 465.0
+margin_right = 535.0
+
 [node name="SalesChance" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 44.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 78.0
 translationKey = "UI_SalesChance"
 
 [node name="Property" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="0"]
+margin_right = 215.0
 margin_bottom = 34.0
 bbcode_text = "[right]Sale chance"
 text = "Sale chance"
 
 [node name="Control" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="2"]
@@ -1088,21 +1283,26 @@ margin_right = 252.0
 margin_bottom = 34.0
 
 [node name="Value" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="3"]
+margin_left = 465.0
 margin_top = 0.0
+margin_right = 535.0
 margin_bottom = 34.0
 
 [node name="TradeChance" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 86.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 120.0
 translationKey = "UI_TradeChance"
 
 [node name="Property" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="0"]
+margin_right = 215.0
 margin_bottom = 34.0
 bbcode_text = "[right]Trade chance"
 text = "Trade chance"
 
 [node name="Control" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="2"]
@@ -1111,65 +1311,90 @@ margin_right = 252.0
 margin_bottom = 34.0
 
 [node name="Value" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="3"]
+margin_left = 465.0
 margin_top = 0.0
+margin_right = 535.0
 margin_bottom = 34.0
 
 [node name="BonusTreasures" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 128.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 164.0
 translationKey = "UI_BonusTreasure"
 
 [node name="Property" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="0"]
+margin_right = 215.0
 bbcode_text = "[right]Bonus [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] chance"
 text = "Bonus  chance"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="2"]
 margin_left = 232.0
 margin_right = 252.0
 
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="3"]
+margin_left = 465.0
+margin_right = 535.0
+
 [node name="TreasureLimit" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 172.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 208.0
 translationKey = "UI_TreasureLimit"
 
 [node name="Property" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="0"]
+margin_right = 215.0
 bbcode_text = "[right] [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] limit"
 text = "  limit"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="2"]
 margin_left = 232.0
 margin_right = 252.0
 
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="3"]
+margin_left = 465.0
+margin_right = 535.0
+
 [node name="HealthMultiplier" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
 margin_top = 216.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 250.0
 translationKey = "UI_BonusHealth"
 
 [node name="Property" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="0"]
+margin_right = 215.0
 margin_bottom = 34.0
 bbcode_text = "[right]Max. health"
 text = "Max. health"
 
 [node name="Control" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="1"]
+margin_left = 223.0
+margin_right = 457.0
 margin_bottom = 34.0
 
 [node name="Spacer" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="2"]
 margin_bottom = 34.0
 
 [node name="Value" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="3"]
+margin_left = 465.0
 margin_top = 0.0
+margin_right = 535.0
 margin_bottom = 34.0
 
 [node name="CannotPickBags" type="HBoxContainer" parent="SwitchModeUnrankedUI/Rules"]
 margin_top = 258.0
-margin_right = 562.0
+margin_right = 535.0
 margin_bottom = 288.0
 
 [node name="CannotPickBags" type="RichTextLabel" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
-margin_right = 476.0
+margin_right = 497.0
 margin_bottom = 30.0
 grow_horizontal = 0
 rect_min_size = Vector2( 270, 0 )
@@ -1188,8 +1413,8 @@ translationKey = "UI_CannotPickBags"
 prefix = "[center]"
 
 [node name="Checkbox" type="TextureButton" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
-margin_left = 484.0
-margin_right = 514.0
+margin_left = 505.0
+margin_right = 535.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 30, 0 )
 toggle_mode = true
@@ -1200,19 +1425,15 @@ stretch_mode = 5
 script = ExtResource( 29 )
 
 [node name="Spacer" type="Control" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
-margin_left = 522.0
-margin_right = 562.0
+visible = false
+margin_left = 516.0
+margin_right = 556.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 40, 0 )
 
-[node name="Divider1" type="Sprite" parent="SwitchModeUnrankedUI"]
-position = Vector2( 1282, 293 )
-scale = Vector2( 1.92218, 0.824999 )
-texture = ExtResource( 31 )
-
-[node name="LobbyIconMember" type="Sprite" parent="SwitchModeUnrankedUI"]
-position = Vector2( 938.625, 79.375 )
-scale = Vector2( 0.418333, 0.418333 )
+[node name="Icon" type="Sprite" parent="SwitchModeUnrankedUI"]
+position = Vector2( 938.625, 75.375 )
+scale = Vector2( 0.418333, 0.466805 )
 texture = ExtResource( 48 )
 
 [node name="Buttons" type="Node2D" parent="."]
@@ -1255,9 +1476,9 @@ position = Vector2( 1361, 667 )
 texture = ExtResource( 41 )
 
 [node name="Header" type="RichTextLabel" parent="Buttons"]
-margin_left = 910.0
+margin_left = 919.0
 margin_top = 60.0
-margin_right = 1325.0
+margin_right = 1344.0
 margin_bottom = 112.0
 rect_clip_content = false
 custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -1273,78 +1494,14 @@ script = ExtResource( 9 )
 translationKey = "UI_OtherModes"
 prefix = "[center]"
 
-[node name="JoinLobbyButton" type="Button" parent="Buttons"]
-visible = false
-margin_left = 994.0
-margin_top = 410.0
-margin_right = 1294.0
-margin_bottom = 462.0
-mouse_default_cursor_shape = 2
-custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
-custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-custom_colors/font_color_hover = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color_pressed = Color( 1, 0.92549, 0.831373, 1 )
-custom_fonts/font = SubResource( 3 )
-custom_styles/hover = ExtResource( 7 )
-custom_styles/pressed = ExtResource( 6 )
-custom_styles/focus = ExtResource( 10 )
-custom_styles/disabled = ExtResource( 4 )
-custom_styles/normal = ExtResource( 5 )
-text = "Join a Lobby"
-script = ExtResource( 9 )
-
-[node name="HostLobbyButton" type="Button" parent="Buttons"]
-visible = false
-margin_left = 995.0
-margin_top = 484.0
-margin_right = 1295.0
-margin_bottom = 536.0
-mouse_default_cursor_shape = 2
-custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
-custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-custom_colors/font_color_hover = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color_pressed = Color( 1, 0.92549, 0.831373, 1 )
-custom_fonts/font = SubResource( 3 )
-custom_styles/hover = ExtResource( 7 )
-custom_styles/pressed = ExtResource( 6 )
-custom_styles/focus = ExtResource( 10 )
-custom_styles/disabled = ExtResource( 4 )
-custom_styles/normal = ExtResource( 5 )
-text = "Host a Lobby"
-script = ExtResource( 9 )
-
-[node name="CustomUnrankedButton" type="Button" parent="Buttons"]
-visible = false
-margin_left = 995.0
-margin_top = 556.0
-margin_right = 1295.0
-margin_bottom = 608.0
-mouse_default_cursor_shape = 2
-custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
-custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-custom_colors/font_color_hover = Color( 1, 0.890196, 0.215686, 1 )
-custom_colors/font_color_pressed = Color( 1, 0.92549, 0.831373, 1 )
-custom_fonts/font = SubResource( 3 )
-custom_styles/hover = ExtResource( 7 )
-custom_styles/pressed = ExtResource( 6 )
-custom_styles/focus = ExtResource( 10 )
-custom_styles/disabled = ExtResource( 4 )
-custom_styles/normal = ExtResource( 5 )
-disabled = true
-text = "Custom Unranked"
-script = ExtResource( 9 )
-
 [node name="JoinLobby" type="Node2D" parent="Buttons"]
-position = Vector2( 876, 323 )
+position = Vector2( 837, 237 )
 
 [node name="JoinLobbyButton2" type="Button" parent="Buttons/JoinLobby"]
 margin_left = -118.0
 margin_top = -78.0
 margin_right = 108.0
-margin_bottom = 136.0
+margin_bottom = 119.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
 custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
@@ -1375,9 +1532,9 @@ __meta__ = {
 
 [node name="JoinLobbyLabel" type="Label" parent="Buttons/JoinLobby"]
 margin_left = -115.0
-margin_top = 63.0
+margin_top = 52.0
 margin_right = 112.0
-margin_bottom = 133.0
+margin_bottom = 122.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -1388,6 +1545,7 @@ valign = 1
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "BUTTON_JoinLobby"
+autoMaxSize = true
 
 [node name="LobbyIconMember" type="Sprite" parent="Buttons/JoinLobby"]
 position = Vector2( -4.5, -4.5 )
@@ -1395,13 +1553,13 @@ scale = Vector2( 0.953333, 0.953333 )
 texture = ExtResource( 34 )
 
 [node name="HostLobby" type="Node2D" parent="Buttons"]
-position = Vector2( 1120, 323 )
+position = Vector2( 831, 452 )
 
 [node name="HostLobbyButton2" type="Button" parent="Buttons/HostLobby"]
 margin_left = -111.0
 margin_top = -79.0
 margin_right = 115.0
-margin_bottom = 135.0
+margin_bottom = 118.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
 custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
@@ -1436,9 +1594,9 @@ __meta__ = {
 
 [node name="HostLobbyLabel" type="Label" parent="Buttons/HostLobby"]
 margin_left = -107.0
-margin_top = 62.0
+margin_top = 50.0
 margin_right = 113.0
-margin_bottom = 132.0
+margin_bottom = 120.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
@@ -1449,6 +1607,7 @@ valign = 1
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "BUTTON_HostLobby"
+autoMaxSize = true
 
 [node name="LobbyIconHost" type="Sprite" parent="Buttons/HostLobby"]
 position = Vector2( 1, -4 )
@@ -1456,12 +1615,12 @@ scale = Vector2( 0.946667, 0.946667 )
 texture = ExtResource( 33 )
 
 [node name="CustomUnranked" type="Node2D" parent="Buttons"]
-position = Vector2( 1367, 317 )
+position = Vector2( 1120, 313 )
 
 [node name="CustomUnrankedButton" type="Button" parent="Buttons/CustomUnranked"]
-margin_left = -107.0
+margin_left = -108.0
 margin_top = -74.0
-margin_right = 119.0
+margin_right = 118.0
 margin_bottom = 140.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
@@ -1504,9 +1663,10 @@ texture = ExtResource( 32 )
 [node name="CustomUnrankedLabel" type="Label" parent="Buttons/CustomUnranked"]
 margin_left = -105.0
 margin_top = 62.0
-margin_right = 107.0
-margin_bottom = 132.0
+margin_right = 115.0
+margin_bottom = 133.0
 grow_horizontal = 2
+rect_min_size = Vector2( 218, 70 )
 mouse_default_cursor_shape = 2
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
 custom_fonts/font = SubResource( 344 )
@@ -1515,15 +1675,16 @@ align = 1
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "BUTTON_CustomUnranked"
+autoMaxSize = true
 
 [node name="SwitchModeRanked" type="Node2D" parent="Buttons"]
-position = Vector2( 951, 540 )
+position = Vector2( 1411, 237 )
 
 [node name="Button" type="Button" parent="Buttons/SwitchModeRanked"]
 margin_left = -107.0
 margin_top = -74.0
-margin_right = 175.0
-margin_bottom = 38.0
+margin_right = 119.0
+margin_bottom = 123.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
 custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
@@ -1564,36 +1725,44 @@ scale = Vector2( 0.753105, 0.753105 )
 texture = ExtResource( 43 )
 
 [node name="Label" type="Label" parent="Buttons/SwitchModeRanked"]
-margin_left = -16.0
-margin_top = -64.0
-margin_right = 189.0
-margin_bottom = 32.0
+margin_left = -105.0
+margin_top = 52.0
+margin_right = 117.0
+margin_bottom = 117.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
 custom_fonts/font = SubResource( 344 )
-text = "Switch 
-Mode
+text = "Switch Mode
 Ranked"
 align = 1
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "BUTTON_SwitchModeRanked"
+autoMaxSize = true
 
 [node name="LeagueProgress" parent="Buttons/SwitchModeRanked" instance=ExtResource( 46 )]
-position = Vector2( -148, -167 )
+position = Vector2( -60, -162 )
+
+[node name="Ranking" parent="Buttons/SwitchModeRanked/LeagueProgress" index="1"]
+margin_top = 117.25
+margin_bottom = 167.25
 
 [node name="LeagueProgressBar" parent="Buttons/SwitchModeRanked/LeagueProgress" index="2"]
 visible = false
 
+[node name="League" parent="Buttons/SwitchModeRanked/LeagueProgress" index="3"]
+margin_top = 173.25
+margin_bottom = 205.25
+
 [node name="SwitchModeUnranked" type="Node2D" parent="Buttons"]
-position = Vector2( 1266, 540 )
+position = Vector2( 1411, 448 )
 
 [node name="Button" type="Button" parent="Buttons/SwitchModeUnranked"]
 margin_left = -107.0
 margin_top = -74.0
-margin_right = 184.0
-margin_bottom = 38.0
+margin_right = 119.0
+margin_bottom = 123.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 0.768627, 0.72549, 0.670588, 1 )
 custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
@@ -1610,8 +1779,8 @@ flat = true
 script = ExtResource( 35 )
 labelPath = NodePath("../Label")
 iconPath = NodePath("../Icon")
-iconHovered = ExtResource( 38 )
-iconDisabled = ExtResource( 39 )
+iconHovered = ExtResource( 50 )
+iconDisabled = ExtResource( 51 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Buttons/SwitchModeUnranked/Button"]
 modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
@@ -1628,26 +1797,26 @@ __meta__ = {
 }
 
 [node name="Icon" type="Sprite" parent="Buttons/SwitchModeUnranked"]
-position = Vector2( -42, -14 )
+position = Vector2( 3, -15 )
 scale = Vector2( 0.753105, 0.753105 )
 texture = ExtResource( 48 )
 
 [node name="Label" type="Label" parent="Buttons/SwitchModeUnranked"]
-margin_left = -16.0
-margin_top = -64.0
-margin_right = 189.0
-margin_bottom = 32.0
+margin_left = -104.0
+margin_top = 48.0
+margin_right = 117.0
+margin_bottom = 118.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
 custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
 custom_fonts/font = SubResource( 344 )
-text = "Switch 
-Mode
+text = "Switch Mode
 Unranked"
 align = 1
 autowrap = true
 script = ExtResource( 9 )
 translationKey = "BUTTON_SwitchModeUnranked"
+autoMaxSize = true
 
 [node name="AchievementHint" type="Label" parent="Buttons"]
 margin_left = 706.0
@@ -1667,6 +1836,11 @@ autowrap = true
 script = ExtResource( 9 )
 translationKey = "HINT_Achievements"
 
+[node name="Divider1" type="Sprite" parent="Buttons"]
+position = Vector2( 1135.5, 114.063 )
+scale = Vector2( 1.27237, 0.612503 )
+texture = ExtResource( 31 )
+
 [connection signal="pressed" from="CustomUnrankedUI/StartGameButton" to="CustomUnrankedUI" method="startGame"]
 [connection signal="pressed" from="CustomUnrankedUI/CancelButton" to="CustomUnrankedUI" method="onCancelPressed"]
 [connection signal="pressed" from="SwitchModeRankedUI/StartGameButton" to="SwitchModeRankedUI" method="startGame"]
@@ -1674,9 +1848,6 @@ translationKey = "HINT_Achievements"
 [connection signal="pressed" from="SwitchModeUnrankedUI/StartGameButton" to="SwitchModeUnrankedUI" method="startGame"]
 [connection signal="pressed" from="SwitchModeUnrankedUI/CancelButton" to="SwitchModeUnrankedUI" method="onCancelPressed"]
 [connection signal="pressed" from="Buttons/CancelButton" to="." method="onCancelPressed"]
-[connection signal="pressed" from="Buttons/JoinLobbyButton" to="." method="onJoinLobbyPressed"]
-[connection signal="pressed" from="Buttons/HostLobbyButton" to="." method="onHostLobbyPressed"]
-[connection signal="pressed" from="Buttons/CustomUnrankedButton" to="." method="onCustomUnrankedPressed"]
 [connection signal="pressed" from="Buttons/JoinLobby/JoinLobbyButton2" to="." method="onJoinLobbyPressed"]
 [connection signal="pressed" from="Buttons/HostLobby/HostLobbyButton2" to="." method="onHostLobbyPressed"]
 [connection signal="pressed" from="Buttons/CustomUnranked/CustomUnrankedButton" to="." method="onCustomUnrankedPressed"]

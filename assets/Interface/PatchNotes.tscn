@@ -214,109 +214,237 @@ font_data = ExtResource( 7 )
 [node name="PatchNotes" type="Node2D"]
 pause_mode = 2
 visible = false
+position = Vector2( 0, 2500 )
 z_index = 20
 script = ExtResource( 6 )
-demoPatchnotes = "Backpack Battles is now available in Early Access!
+chinese = "[center][b]大家好！
+重大更新现已上线——包括新职业工程师、
+新的通用道具和职业专属道具，
+以及多项提升游戏体验的功能！
 
-[b]0.9.0[/b]
-o Improved Steam Deck support
-o Added Traditional Chinese localization"
-chinese = "[center]各位玩家好！移动版将在 2 月 4 日正式推出！话说回来……今天我们也对当前版本进行了一些平衡性调整。
+非常开心终于能把这次更新带给大家，
+希望你们会喜欢 [img=0x40]res://Assets/Character/StaminaUsage_1.png[/img]
 
-希望各位玩儿的开心！更多消息，敬请期待 ;)
+接下来我们也会推出常规问题的修复和平衡性调整，以确保新版本不会出现问题
 
-[/center]
-o 现在吸血和尖刺在治疗/造成伤害时会播放动画效果
+Doro 和 Mario [img=0x28]res://Assets/Heart.png[/img]
+[/b][/center]
 
-[center][b]平衡改动[/b][/center]
+[b]新增内容[/b]
+
+o 全新职业：工程师 正式登场！
+
+o 其他职业新增 35 件道具
+
+o 全新模式：背包交换模式（支持排名与休闲）
+
+o 屏幕底部新增可切换工具栏，支持撤销/重做操作；将物品推入仓库的功能已移至工具栏内
+
+o 新增背包编辑模式，可选择只编辑背包或只编辑物品，两者可独立自由移动（可通过工具栏访问）
+
+o 新增网格储物模式（可通过工具栏访问），支持 Ctrl+ 鼠标滚轮缩放
+
+o 新赛季排名已开启——新赛季段位将根据上赛季段位结果决定
+
+o 物品名称新增文本动画（可在设置中关闭）
+
+o 新增快捷键：撤销/重做、切换背包编辑模式、开关网格储物（默认 G 键）、显示合成配方提示（默认 Alt 键）、打开物品图鉴（默认 Tab 键）
+
+o 战斗界面：状态栏的剑图标现在会根据玩家/对手的生命值与格挡总量动态变化
+
+o 历史记录：现在显示段位升降；新增职业与模式筛选；若局内版本与当前版本不同，将显示对应版本号；显示物品总数与类型；可右键将对局标记为对手视角
+
+o 物品图鉴：信息面板中的合成材料等可点击高亮查看（按 Alt 键显示配方时同样适用）；图鉴界面支持 Ctrl+ 鼠标滚轮缩放
+
+o 商店：BGM 现在有概率在排名/休闲模式中播放大厅模式或背包交换模式音乐，增加多样性；当商店出现可与其他物品合成的道具时，会出现提示动画
+
+o 手柄支持：新增右摇杆在交互点之间快速跳转；方向键现可用于拖动滚动条
+
+[b]平衡性调整[/b]
 [center][b]通用[/b][/center]
-o 宝藏掉落几率恢复正常（圣诞奖励已结束）
-o 红宝石幼龙：狂热 4 -> 5
-o 光剑：花费 10g -> 9g
-o 猎鹰战刃：增加 2 个槽位
-o 十字剑：速度加成 60% -> 65%
-o 霜冻之剑：吸血 5 -> 7
-o 火辣香蕉：灼烧触发概率 75% -> 85%
-o 全身防护：冷却时间 5s -> 4.5s
-o 狼徽章：伤害减免 22% -> 25%
+o 腐败熊猫之锅：每个⭐食物道具额外提供 3% 中毒暴击率
+o 神圣长矛：伤害 -3
+o 小蜗：冷却时间 12s → 13s，每个药水加速 15% → 20%
+o 黑暗剑：伤害 +2
+o 血棘：耐力消耗 1.6 → 1.5
+o 勇气盾牌：费用 12g → 11g
+o 剧毒蛇杖：毒液复制概率 35% → 40%
+o 石制头盔：暴击抵抗 25% → 30%
+o 吸血护甲：消耗生命值 45 → 50，吸血 2 → 4
+o 燃烧煤炭（护甲）：冰冷抗性 6 → 7
+o 冰霜盾牌：耐力削减 0.7 → 0.8
+o 霜冻之剑：吸血 7 → 8
+o 冰霜护甲：格挡 80 → 90
+o 财富之吻：冷却时间 4s → 3.5s
+o 全身防护：冷却时间 4.5s → 4s
+o 火辣香蕉：触发概率 85% → 50%，灼热 1 → 2
+o 小板栗：交易概率 30% → 40%
 
 [center][b]游侠[/b][/center]
-o 大师雪人：冷却时间 1.7s -> 1.5s
-o 弓箭：费用 7g -> 6g
+o 穿甲箭：幸运触发概率 40% → 35%
+o 白色百合花项圈：获得神圣属性，触发概率 35% → 30%
+o 打造大师雪人：冷却时间 1.5s → 1.3s
+o 刺猬：尖刺 2 → 3
+o 超级刺猬：尖刺 3 → 4
+o 藤条编织篮：治疗加成 10% → 12%
 
 [center][b]收割者[/b][/center]
-o 不愈法杖：治疗量 25 -> 28
-o 剧毒黏黏：治疗量 9 -> 10
-o 剧毒蛙：冷却时间 2.4s -> 2.1s
-o 致幻蘑菇：冷却时间 3.6s -> 3.5s
+o 愚者：费用 3g → 2g
+o 冰霜巨龙：格挡 60 → 75
+o 遗物箱：冷却时间 2.8s → 2.7s
+o 卡牌之心：法力 4 → 5
+o 不愈法杖：治疗量 28 → 30
 
 [center][b]火焰魔导士[/b][/center]
-o 日耀盾牌：伤害减免 17 -> 18
+o 炽热长矛：现在同样计算空格槽
+o 燃烧旗帜：冷却时间 3.8s → 4.0s
+o 辣椒黏黏：治疗量 15 → 16
+o 凤凰：获得一个宝石槽
 
 [center][b]狂战士[/b][/center]
-o 愤怒加倍：延迟 3s -> 2s
-o 龙骑士：吸血上限 20% -> 25%
+o 尖刺墙：获得2个宝石槽
+o 愤怒加倍：延迟 2s → 1s
+o 龙骑士套装：生命偷取上限 25% → 30%
 
-[center][b]法师[/b][/center]
-o 吞噬圆球：冷却时间 1.9s -> 1.7s
-o 幽灵獾：冷却时间 4.2s -> 4.5s
-o 幽灵猫：冷却时间 4s -> 3.7s
-o 哈洛德，仇恨之帽：不愈效果 5% -> 4%
-o 魔法杯糕黏黏：治疗量 30 -> 35
-o 拼图背包：速度加成 55% -> 50%
-o 终极升腾：冰冷 1 -> 2
+[center][b]魔法师[/b][/center]
+o 水元素：获得1个宝石槽，并附加冰冷属性
+o 棋盘：冷却时间 0.7s → 0.8s
+o 吞噬圆球：冷却时间 1.7s → 1.5s
+o 浆果提灯：冷却时间 2.1s → 2.0s
+o 终极升腾：幸运 1 → 2
+o 幽灵獾：冷却时间 4.5s → 4.7s
+o 幽灵猫：冷却时间 3.7s → 3.4s
+o 大自然编年史：林木：冷却时间 2.5s → 2.3s
 
 [center][b]冒险家[/b][/center]
-o 超长矛：耐力消耗 1.7 -> 1.5"
-japanese = "[center]皆さんこんにちは！2月4日リリース予定のモバイル版はご存知ですか？本日は少しバランスを調整したいと思います。
+o 水银元素：伤害转化格挡比例 45% → 50%。获得1个宝石插槽
 
-続報をお楽しみに ;)
 
-[/center]
-o 吸血とトゲでの回復/ダメージ時のアニメーションを追加
+[b]其他[/b]
 
-[center][b]バージョン1.0.10の変更内容[/b][/center]
+o 当背包已到达边界无法移动时，新增提示动画
+o 子职业/技能出现时新增动画
+o 当合成连接因道具已参与其他配方而无法建立时，新增提示动画
+o 开始合成配方时新增动画
+o 切换角色与配装时新增动画
+o 在历史记录中切换构筑时新增动画
+o 随机角色按钮新增更多视觉反馈
+o 新增生命值上限提升的增益图标
+o \"开始战斗\"按钮新增粒子特效"
+japanese = "[center][b]皆さんこんにちは！
+エンジニアをはじめ、共通アイテムや既存クラスのアイテム、快適性を向上する機能を含む大型アップデートを実施します！
+
+ついに公開できることを嬉しく思いますし、気に入ってくださることを願っています。 [img=0x40]res://Assets/Character/StaminaUsage_1.png[/img]
+
+いつも通りバグ修正と新アイテムのバランス調整で近いうちにまたお会いしましょう。
+
+- ドロ＆マリオより [img=0x28]res://Assets/Heart.png[/img]
+[/b][/center]
+
+[b]新コンテンツ[/b]
+
+o 新クラス：エンジニア！
+
+o 他クラス用の新アイテム35種
+
+o 新モード：スイッチモード（ランク＆カジュアル）
+
+o 元に戻す/やり直し操作が可能な切り替え式のツールバーを画面下部に追加。アイテムを保管ボックスに移動する操作はツールバーの中に移動。
+
+o バッグのみを編集するモードとアイテムのみを編集するモードを追加し、それぞれを独立して移動できるように変更（ツールバーから選択可能）。
+
+o 保管ボックスのグリッド化モードを追加（ツールバーから選択可能）。Ctrl + マウスホイールで拡大縮小できる。
+
+o 新ランクシーズン開幕 - 新たなランクは前シーズンのランクに応じて決定される。
+
+o アイテム名にテキストアニメーションを追加（オプションから切り替え可能）
+
+o キーバインド追加：元に戻す/やり直し、新たに追加されたバックパック編集モードの切り替え、保管ボックスのグリッド化切替（初期設定はG）、レシピのツールチップ表示（初期設定はAltキー）、アイテムライブラリを開く（初期設定はTabキー）
+
+o 戦闘：ステータスUIの剣のアイコンが自分/相手の体力+シールドの合計に応じて動くように変更
+
+o ヒストリー：ランクの増減量を表示するように変更。クラスとモードのフィルタを追加。現在のバージョンと異なる場合のみバージョン情報を表示するように変更。アイテム数とアイテム種を表示するように変更。右クリックでヒストリー対戦の相手として設定できるように変更。
+
+o アイテムライブラリ：情報パネルのクラフト素材などをクリックすると、そのアイテムを表示できるように変更（Altキーを押してレシピを表示した場合も表示される）。Ctrl + マウスホイールでライブラリを拡大縮小できるように変更。
+
+o ショップ：ランク/カジュアルモードで変化をつけるために一定確率でロビーモードやスイッチモードのBGMが流れるように変更。別のアイテムとクラフトできるアイテムがショップに出現した時のアニメーションを追加。
+
+o コントローラー対応：右スティックで操作可能場所にジャンプできる機能を追加。十字キーでスクロールバーをスクロールできるように変更。
+
+[b]バランス調整[/b]
 [center][b]共通[/b][/center]
-o クリスマスシーズンが終わったため掘出物の出現確率を通常に戻します！
-o ルビーの幼竜：ヒート 4 ▷ 5
-o ライトセイバー：価格 10G ▷ 9G
-o ハヤブサのつるぎ：☆スロット 2追加
-o クロスブレード：使用速度ボーナス 60% ▷ 65%
-o フロストバイト：吸血 5 ▷ 7
-o スパイシーバナナ：ヒート獲得確率 75% ▷ 85%
-o 全身防備：クールダウン 5秒 ▷ 4.5秒
-o ウルフバッジ：ダメージ軽減 22% ▷ 25%
+o パンダモニウムの⭐食べ物1個につき3%の毒クリティカル率を獲得
+o ホーリースピア：ダメージ -3
+o シェリー：クールダウン 12秒 ▷ 13秒、ポーションごとの使用速度アップ 15% ▷ 20%
+o ダークセイバー：ダメージ +2
+o ブラッドソーン：スタミナ消費値 1.6 ▷ 1.5
+o 勇気の盾：価格 12G ▷ 11G
+o 毒蛇の杖：毒追加付与確率 35% ▷ 40%
+o 石のヘルム：クリティカル防止 25% ▷ 30%
+o 吸血鬼のアーマー：体力消費量 45 ▷ 50、吸血 2 ▷ 4
+o 燃える石炭（非武器）：フリーズ無効化 6 ▷ 7
+o 凍てつく盾：スタミナ除去 0.7 ▷ 0.8
+o フロストバイト：吸血 7 ▷ 8
+o 氷の鎧：シールド 80 ▷ 90
+o フォルトゥナのキス：クールダウン 4秒 ▷ 3.5秒
+o 全身防備：クールダウン 4.5秒 ▷ 4秒
+o スパイシーバナナ：フレイム生成確率 85% ▷ 50%、ヒート 1 ▷ 2
+o チェストナット君：トレード確率 30% ▷ 40%
 
 [center][b]レンジャー[/b][/center]
-o スノーマスター：クールダウン 1.7秒 ▷ 1.5秒
-o 弓矢：価格 7G ▷ 6G
+o つらぬきの矢：幸運生成確率 40% ▷ 35%
+o 白ユリの首飾り：神聖属性を追加、生成確率 35% ▷ 30%
+o スノーマスター：クールダウン 1.5秒 ▷ 1.3秒
+o ハリネズミ：トゲ 2 ▷ 3
+o ハイパー・ハリネズミ：トゲ 3 ▷ 4
+o つる織りバスケット：回復量増加 10% ▷ 12%
 
 [center][b]リーパー[/b][/center]
-o 癒さずの杖：回復量 25 ▷ 28
-o ポイズン・スラバート：回復量 9 ▷ 10
-o ドクガエル：クールダウン 2.4秒 ▷ 2.1秒
-o ベニテングダケ：クールダウン 3.6秒 ▷ 3.5秒
+o 愚者のカード：価格 3G ▷ 2G
+o アイスドラゴン：シールド 60 ▷ 75
+o レリックケース：クールダウン 2.8秒 ▷ 2.7秒
+o カードの心臓：マナ 4 ▷ 5
+o 癒さずの杖：回復量 28 ▷ 30
 
 [center][b]パイロマンサー[/b][/center]
-o 太陽の盾：ダメージ軽減 17 ▷ 18
+o ヒートスピア：空きスロットでも効果発動
+o 燃えさかる旗印：クールダウン 3.8秒 ▷ 4.0秒
+o トウガラシ・スラバート：回復量 15 ▷ 16
+o フェニックス：宝石ソケットを1つ追加
 
 [center][b]バーサーカー[/b][/center]
-o さらなる怒り：発動遅延 3秒 ▷ 2秒
-o ドラゴンセット：体力吸収率上限 20% ▷ 25%
+oトゲの壁：宝石ソケットを2つ追加
+oさらなる怒り：発動遅延 2秒 ▷ 1秒
+oドラゴンセット：体力吸収率上限 25% ▷ 30%
 
 [center][b]メイジ[/b][/center]
-o 貪食のスフィア：クールダウン 1.9秒 ▷ 1.7秒
-o アナグマの精霊：クールダウン 4.2秒 ▷ 4.5秒
-o ネコの精霊：クールダウン 4秒 ▷ 3.7秒
-o 憎たらしい帽子・ハロルド：暗黒アイテムごとのアンヒーリング 5% ▷ 4%
-o カップケーキ・スラバート：回復量 30 ▷ 35
-o パズルボックス：使用速度ボーナス 55% ▷ 50%
-o 超覚醒：フリーズ 1 ▷ 2
+o 水のエレメンタル：宝石ソケットを1つ追加、氷結属性を追加
+o チェスボード：クールダウン 0.7秒 ▷ 0.8秒
+o 貪食のスフィア：クールダウン 1.7秒 ▷ 1.5秒
+o ランタンベリー：クールダウン 2.1秒 ▷ 2.0秒
+o 超覚醒：幸運 1 ▷ 2
+o アナグマの精霊：クールダウン 4.5秒 ▷ 4.7秒
+o ネコの精霊：クールダウン 3.7秒 ▷ 3.4秒
+o 自然の年代記：木々：クールダウン 2.5秒 ▷ 2.3秒
 
 [center][b]アドベンチャラー[/b][/center]
-o ベリーロングスピア：スタミナ消費値 1.7 ▷ 1.5"
+o 水銀のエレメンタル：シールド獲得割合 45% ▷ 50%宝石ソケットを1つ追加
+
+
+[b]その他[/b]
+
+o バックパックがすでに端にあってこれ以上ずらせない時のアニメーションを追加
+o サブクラス/スキルが登場する時のアニメーションを追加
+o アイテムがすでに異なるアイテムとクラフトされる予定で、今並べたアイテムとクラフトできない時のアニメーションを追加
+o クラフトを開始する時のアニメーションを追加
+o キャラクターおよび装備を変更する時のアニメーションを追加
+o ヒストリーでビルドを切り替える時のアニメーションを追加
+o ランダムキャラクターボタンを押している時の視覚効果を追加
+o 体力最大値獲得の増減のバフアイコンを追加
+o 「バックパックバトルスタート」ボタンにパーティクルエフェクトを追加"
 
 [node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = -2299.0
 margin_top = -3000.0
 margin_right = 4329.0
@@ -400,110 +528,302 @@ custom_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
 custom_fonts/bold_font = SubResource( 161 )
 custom_fonts/normal_font = SubResource( 297 )
 bbcode_enabled = true
-bbcode_text = "[center]Hi everyone! Did you know the mobile version of Backpack Battles 
-is launching February 4th? Anyway… today, we do a little balancing.
+bbcode_text = "[center][b]Hi everyone!
+The big update is here - including the Engineer, 
+neutral and class items for all existing classes and 
+several quality-of-life features!
 
-Have fun and stay tuned for more news ;)
+We are so excited to finally get it out there and 
+hope you will like it [img=0x40]res://Assets/Character/StaminaUsage_1.png[/img]
 
-[/center]
-o The Vampirism and Spikes counters now play an animation when 
-   healing/dealing damage
+You will hear from us soon with the usual fixes and 
+balance adjustments to get the new stuff in line.
 
-[center][b]Balancing[/b][/center]
+Doro and Mario [img=0x28]res://Assets/Heart.png[/img]
+[/b][/center]
+
+[b]New Content[/b]
+
+o NEW CLASS: Engineer!
+ 
+o 35 NEW ITEMS for the other classes
+
+o NEW MODE: Switch Mode (Ranked & Unranked)
+
+o Added a toggleable toolbar on the bottom of the screen 
+   where you can access undo/redo. 
+   Pushing items to storage was moved inside the toolbar.
+
+o Added modes to only edit bags or only edit items, where 
+   they can be moved freely independent of each other 
+   (can be accessed via the toolbar).
+
+o Added grid storage mode (can be accessed via the toolbar). 
+   Can be zoomed with Ctrl+mouse wheel.
+
+o Added text animations for item names (can be toggled in Options).
+
+o Added Keybinds: Undo/Redo, switching between the new 
+   inventory edit modes, toggle grid storage (G by default), 
+   showing recipe tooltips (Alt by default), open library (Tab by default)
+
+o Combat: The swords on the status UI now move according
+    to player/opponent health + Block totals.
+
+o History: Now shows rank gains and losses.
+   Added filters for classes and modes.
+   Now only shows the version of a run if it differs from the current 
+   game version. 
+   Now shows the number of items and the distinct types. 
+   History runs can now be marked as opponent with right click.
+
+o Item Library: Ingredients etc. on the info panel can now be 
+   spotlighted by clicking them. 
+   Library can now be zoomed with Ctrl+mouse wheel.
+
+o Shop: BGM now has a chance to play the lobby mode / switch mode 
+   track in ranked/unranked for variety. 
+   Added an animation when an item comes up in the shop 
+   that can craft with another item.
+
+o Controller Support: Added right stick jumping between points 
+   of interest. D-Pad now scrolls scrollbars.
+
+o Title Screen: Falling items now react to your cursor
+
+[b]Balance[/b]
 [center][b]Neutral[/b][/center]
-o Treasure chances are back to normal after the Christmas bonus!
-o Ruby Whelp: Heat 4 -> 5
-o Lightsaber: Cost 10g -> 9g
-o Falcon Blade: Added 2 * slots
-o Cross Blades: Speed bonus 60% -> 65%
-o Frostbite: Vampirism 5 -> 7
-o Spicy Banana: Heat chance 75% -> 85%
-o Full Body Protection: Cooldown 5s -> 4.5s
-o Wolf Badge: Damage reduction 22% -> 25%
+o Pandamonium now gives 3% Poison crit chance per ⭐Food
+o Holy Spear: Damage -3
+o Shelly: Cooldown 12s -> 13s, speed up per Potion 15% -> 20%
+o Darksaber: Damage +2
+o Bloodthorne: Stamina cost 1.6 -> 1.5
+o Shield of Valor: Cost 12g -> 11g
+o Serpent Staff: Poison duplication chance 35% -> 40%
+o Stone Helm: Critical hit resistance 25% -> 30%
+o Vampiric Armor: Health used 45 -> 50, Vampirism 2 -> 4.
+o Burning Coal (Armor): Cold resist 6 -> 7
+o Frozen Buckler: Stamina removal 0.7 -> 0.8
+o Frostbite: Vampirism 7 -> 8
+o Ice Armor: Block 80 -> 90
+o Fortuna’s Kiss: Cooldown 4s -> 3.5s
+o Full Body Protection: Cooldown 4.5s -> 4s
+o Spicy Banana: Chance 85% -> 50%, Heat 1 -> 2
+o Lil Chestnut: Trade chance 30% -> 40%
 
 [center][b]Ranger[/b][/center]
-o Snowmaster: Cooldown 1.7s -> 1.5s
-o Bow and Arrow: Cost 7g -> 6g
+o Piercing Arrow: Luck generation chance 40% -> 35%
+o White Lily Collar: Gains Holy type, chance 35% -> 30%
+o Snowmaster: Cooldown 1.5s -> 1.3s
+o Hedgehog: Spikes 2 -> 3
+o Hyper Hedgehog: Spikes 3 -> 4
+o Vineweave Basket: Heal amplification 10% -> 12%
 
 [center][b]Reaper[/b][/center]
-o Staff of Unhealing: Heal 25 -> 28
-o Poison Goobert: Heal 9 -> 10
-o Poison Frog: Cooldown 2.4s -> 2.1s
-o Fly Agaric: Cooldown 3.6s -> 3.5s
+o The Fool: Cost 3g -> 2g
+o Ice Dragon: Block 60 -> 75
+o Relic Case: Cooldown 2.8s -> 2.7s
+o Heart of the Cards: Mana 4 -> 5
+o Staff of Unhealing: Heal 28 -> 30
 
 [center][b]Pyromancer[/b][/center]
-o Sun Shield: Damage reduction 17 -> 18
+o Molten Spear: Now also counts empty slots
+o Burning Banner: Cooldown 3.8s ->  4.0s
+o Chili Goobert: Heal 15 -> 16
+o Phoenix: Gains a gemstone socket
 
 [center][b]Berserker[/b][/center]
-o Extra Angy: Delay 3s -> 2s
-o Dragon Set: Lifesteal limit 20% -> 25
+o Spiked Wall: Gains 2 gemstone sockets
+o Extra Angy: Delay 2s -> 1s
+o Dragon Set: Lifesteal limit 25% -> 30%
 
 [center][b]Mage[/b][/center]
-o Devouring Sphere: Cooldown 1.9s -> 1.7s
-o Badger Spirit Companion: Cooldown 4.2s -> 4.5s
-o Cat Spirit Companion: Cooldown 4s -> 3.7s
-o Harold, the Hateful Hat: Unhealing per Dark item 5% -> 4%
-o Cupcake Goobert: Heal 30 -> 35
-o Puzzlebox: Speed bonus 55% -> 50%
-o Ultima Ascension: Cold 1 -> 2
+o Water Elemental: Gains 1 gemstone socket and Ice type
+o Chess Board: Cooldown 0.7s -> 0.8s
+o Devouring Sphere: Cooldown 1.7s -> 1.5s
+o Lantern Berry: Cooldown 2.1s -> 2.0s
+o Badger Spirit Companion: Cooldown 4.5s -> 4.7s
+o Cat Spirit Companion: Cooldown 3.7s -> 3.4s
+o Nature Chronicles: Trees: Cooldown 2.5s -> 2.3s
+o Ultima Ascension: Luck 1 -> 2
 
 [center][b]Adventurer[/b][/center]
-o Very Long Spear: Stamina cost 1.7 -> 1.5"
-text = "Hi everyone! Did you know the mobile version of Backpack Battles 
-is launching February 4th? Anyway… today, we do a little balancing.
-
-Have fun and stay tuned for more news ;)
+o Mercury Elemental: Damage as Block 45% -> 50%. Gains 1 gemstone
+   socket 
 
 
-o The Vampirism and Spikes counters now play an animation when 
-   healing/dealing damage
+[b]Other[/b]
 
-Balancing
+o Added an animation when inventory cannot be shifted because 
+   it is already at the border
+o Added animations for subclass/skill appearance
+o Added an animation when a crafting connection could not be 
+   started because the item is already part of a different recipe
+o Added an animation when starting a recipe
+o Added animations when changing character and loadout
+o Added an animation when switching between builds in history
+o Added more visual feedback for the random-character button
+o Added buff icon for maximum health gain
+o Added a particle effect for the “Start Battle” button
+o When crafting recipes with more than 2 ingredients, 
+   missing ingredients are now shown; improved layouting 
+   of crafting texts
+
+
+[b]1.1.0b[/b]
+
+o Updated translations, small fixes"
+text = "Hi everyone!
+The big update is here - including the Engineer, 
+neutral and class items for all existing classes and 
+several quality-of-life features!
+
+We are so excited to finally get it out there and 
+hope you will like it 
+
+You will hear from us soon with the usual fixes and 
+balance adjustments to get the new stuff in line.
+
+Doro and Mario 
+
+
+New Content
+
+o NEW CLASS: Engineer!
+ 
+o 35 NEW ITEMS for the other classes
+
+o NEW MODE: Switch Mode (Ranked & Unranked)
+
+o Added a toggleable toolbar on the bottom of the screen 
+   where you can access undo/redo. 
+   Pushing items to storage was moved inside the toolbar.
+
+o Added modes to only edit bags or only edit items, where 
+   they can be moved freely independent of each other 
+   (can be accessed via the toolbar).
+
+o Added grid storage mode (can be accessed via the toolbar). 
+   Can be zoomed with Ctrl+mouse wheel.
+
+o Added text animations for item names (can be toggled in Options).
+
+o Added Keybinds: Undo/Redo, switching between the new 
+   inventory edit modes, toggle grid storage (G by default), 
+   showing recipe tooltips (Alt by default), open library (Tab by default)
+
+o Combat: The swords on the status UI now move according
+    to player/opponent health + Block totals.
+
+o History: Now shows rank gains and losses.
+   Added filters for classes and modes.
+   Now only shows the version of a run if it differs from the current 
+   game version. 
+   Now shows the number of items and the distinct types. 
+   History runs can now be marked as opponent with right click.
+
+o Item Library: Ingredients etc. on the info panel can now be 
+   spotlighted by clicking them. 
+   Library can now be zoomed with Ctrl+mouse wheel.
+
+o Shop: BGM now has a chance to play the lobby mode / switch mode 
+   track in ranked/unranked for variety. 
+   Added an animation when an item comes up in the shop 
+   that can craft with another item.
+
+o Controller Support: Added right stick jumping between points 
+   of interest. D-Pad now scrolls scrollbars.
+
+o Title Screen: Falling items now react to your cursor
+
+Balance
 Neutral
-o Treasure chances are back to normal after the Christmas bonus!
-o Ruby Whelp: Heat 4 -> 5
-o Lightsaber: Cost 10g -> 9g
-o Falcon Blade: Added 2 * slots
-o Cross Blades: Speed bonus 60% -> 65%
-o Frostbite: Vampirism 5 -> 7
-o Spicy Banana: Heat chance 75% -> 85%
-o Full Body Protection: Cooldown 5s -> 4.5s
-o Wolf Badge: Damage reduction 22% -> 25%
+o Pandamonium now gives 3% Poison crit chance per ⭐Food
+o Holy Spear: Damage -3
+o Shelly: Cooldown 12s -> 13s, speed up per Potion 15% -> 20%
+o Darksaber: Damage +2
+o Bloodthorne: Stamina cost 1.6 -> 1.5
+o Shield of Valor: Cost 12g -> 11g
+o Serpent Staff: Poison duplication chance 35% -> 40%
+o Stone Helm: Critical hit resistance 25% -> 30%
+o Vampiric Armor: Health used 45 -> 50, Vampirism 2 -> 4.
+o Burning Coal (Armor): Cold resist 6 -> 7
+o Frozen Buckler: Stamina removal 0.7 -> 0.8
+o Frostbite: Vampirism 7 -> 8
+o Ice Armor: Block 80 -> 90
+o Fortuna’s Kiss: Cooldown 4s -> 3.5s
+o Full Body Protection: Cooldown 4.5s -> 4s
+o Spicy Banana: Chance 85% -> 50%, Heat 1 -> 2
+o Lil Chestnut: Trade chance 30% -> 40%
 
 Ranger
-o Snowmaster: Cooldown 1.7s -> 1.5s
-o Bow and Arrow: Cost 7g -> 6g
+o Piercing Arrow: Luck generation chance 40% -> 35%
+o White Lily Collar: Gains Holy type, chance 35% -> 30%
+o Snowmaster: Cooldown 1.5s -> 1.3s
+o Hedgehog: Spikes 2 -> 3
+o Hyper Hedgehog: Spikes 3 -> 4
+o Vineweave Basket: Heal amplification 10% -> 12%
 
 Reaper
-o Staff of Unhealing: Heal 25 -> 28
-o Poison Goobert: Heal 9 -> 10
-o Poison Frog: Cooldown 2.4s -> 2.1s
-o Fly Agaric: Cooldown 3.6s -> 3.5s
+o The Fool: Cost 3g -> 2g
+o Ice Dragon: Block 60 -> 75
+o Relic Case: Cooldown 2.8s -> 2.7s
+o Heart of the Cards: Mana 4 -> 5
+o Staff of Unhealing: Heal 28 -> 30
 
 Pyromancer
-o Sun Shield: Damage reduction 17 -> 18
+o Molten Spear: Now also counts empty slots
+o Burning Banner: Cooldown 3.8s ->  4.0s
+o Chili Goobert: Heal 15 -> 16
+o Phoenix: Gains a gemstone socket
 
 Berserker
-o Extra Angy: Delay 3s -> 2s
-o Dragon Set: Lifesteal limit 20% -> 25
+o Spiked Wall: Gains 2 gemstone sockets
+o Extra Angy: Delay 2s -> 1s
+o Dragon Set: Lifesteal limit 25% -> 30%
 
 Mage
-o Devouring Sphere: Cooldown 1.9s -> 1.7s
-o Badger Spirit Companion: Cooldown 4.2s -> 4.5s
-o Cat Spirit Companion: Cooldown 4s -> 3.7s
-o Harold, the Hateful Hat: Unhealing per Dark item 5% -> 4%
-o Cupcake Goobert: Heal 30 -> 35
-o Puzzlebox: Speed bonus 55% -> 50%
-o Ultima Ascension: Cold 1 -> 2
+o Water Elemental: Gains 1 gemstone socket and Ice type
+o Chess Board: Cooldown 0.7s -> 0.8s
+o Devouring Sphere: Cooldown 1.7s -> 1.5s
+o Lantern Berry: Cooldown 2.1s -> 2.0s
+o Badger Spirit Companion: Cooldown 4.5s -> 4.7s
+o Cat Spirit Companion: Cooldown 3.7s -> 3.4s
+o Nature Chronicles: Trees: Cooldown 2.5s -> 2.3s
+o Ultima Ascension: Luck 1 -> 2
 
 Adventurer
-o Very Long Spear: Stamina cost 1.7 -> 1.5"
+o Mercury Elemental: Damage as Block 45% -> 50%. Gains 1 gemstone
+   socket 
+
+
+Other
+
+o Added an animation when inventory cannot be shifted because 
+   it is already at the border
+o Added animations for subclass/skill appearance
+o Added an animation when a crafting connection could not be 
+   started because the item is already part of a different recipe
+o Added an animation when starting a recipe
+o Added animations when changing character and loadout
+o Added an animation when switching between builds in history
+o Added more visual feedback for the random-character button
+o Added buff icon for maximum health gain
+o Added a particle effect for the “Start Battle” button
+o When crafting recipes with more than 2 ingredients, 
+   missing ingredients are now shown; improved layouting 
+   of crafting texts
+
+
+1.1.0b
+
+o Updated translations, small fixes"
 script = ExtResource( 5 )
 
 [node name="CloseButton" type="Button" parent="."]
-margin_left = 830.0
+margin_left = 917.0
 margin_top = 811.0
-margin_right = 970.0
+margin_right = 1057.0
 margin_bottom = 869.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 1, 0.92549, 0.831373, 1 )
@@ -520,9 +840,9 @@ translationKey = "BUTTON_Close"
 
 [node name="UpdateButton" type="Button" parent="."]
 visible = false
-margin_left = 660.0
+margin_left = 747.0
 margin_top = 811.0
-margin_right = 800.0
+margin_right = 887.0
 margin_bottom = 869.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 1, 0.92549, 0.831373, 1 )
@@ -539,9 +859,9 @@ translationKey = ""
 
 [node name="IgnoreButton" type="Button" parent="."]
 visible = false
-margin_left = 1000.0
+margin_left = 1087.0
 margin_top = 811.0
-margin_right = 1140.0
+margin_right = 1227.0
 margin_bottom = 869.0
 mouse_default_cursor_shape = 2
 custom_colors/font_color_disabled = Color( 1, 0.92549, 0.831373, 1 )
