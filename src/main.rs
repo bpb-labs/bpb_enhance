@@ -232,17 +232,24 @@ impl RootView {
     fn on_apply_click(&mut self, window: &mut Window, cx: &mut GpuiContext<Self>) {
         let input_path = self.current_path(cx);
 
-        let result = resolve_pck_path(&input_path).and_then(|pck_path| {
-            let pck_str = pck_path
-                .to_str()
-                .ok_or_else(|| anyhow!("路径包含非法字符"))?
-                .to_string();
+        let caught = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+            resolve_pck_path(&input_path).and_then(|pck_path| {
+                let pck_str = pck_path
+                    .to_str()
+                    .ok_or_else(|| anyhow!("路径包含非法字符"))?
+                    .to_string();
 
-            tweak_game_gde(&pck_str)
-                .with_context(|| format!("修改失败，文件: {}", pck_str))?;
+                tweak_game_gde(&pck_str)
+                    .with_context(|| format!("修改失败，文件: {}", pck_str))?;
 
-            Ok::<_, anyhow::Error>(pck_str)
-        });
+                Ok::<_, anyhow::Error>(pck_str)
+            })
+        }));
+
+        let result = match caught {
+            Ok(result) => result,
+            Err(_) => Err(anyhow!("应用补丁时发生内部错误，请检查 release 资源是否完整。")),
+        };
 
         match result {
             Ok(path) => {

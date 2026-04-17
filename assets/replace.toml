@@ -1,9 +1,9 @@
 ﻿[version]
-required-game-version = "1.1.0g"
-plugin-version = "1.0.1"
+required-game-version = "1.1.3"
+plugin-version = "2026.4.17"
 
 [version-hash]
-"1.1.0g" = "c024f26c0b27be4254b3d2ad94922e5e"
+"1.1.3" = "78b581116dfa325eb3c9bf35ffd47660"
 
 [replace]
 "res://.import/Combat.png-88ad49c2809e77384a81bc33d532ba51.md5" = ".import/Combat.png-88ad49c2809e77384a81bc33d532ba51.md5"

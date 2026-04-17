@@ -1,11 +1,15 @@
 use crate::pck;
-use anyhow::{anyhow, bail, Context, Result};
+use anyhow::{anyhow, Context, Result};
 use binrw::BinRead;
 use cfg_if::cfg_if;
 use std::borrow::Cow;
 use std::collections::HashMap;
 use std::fs::OpenOptions;
 use std::io::{Read, Seek, SeekFrom};
+
+#[cfg(not(feature = "gui"))]
+use anyhow::bail;
+#[cfg(not(feature = "gui"))]
 use std::path::PathBuf;
 
 cfg_if! {
@@ -25,10 +29,12 @@ cfg_if! {
                 Ok(asset.data.to_vec())
             }
 
-            fn config_content(&self) -> Cow<'static, str> {
-                let config = EmbeddedAssets::get("replace.toml").expect("嵌入资源中缺少 replace.toml");
-                let content = std::str::from_utf8(&config.data).expect("无法解析 replace.toml 为 UTF-8");
-                Cow::Owned(content.to_string())
+            fn config_content(&self) -> Result<Cow<'static, str>> {
+                let config = EmbeddedAssets::get("replace.toml")
+                    .ok_or_else(|| anyhow!("嵌入资源中缺少 replace.toml"))?;
+                let content = std::str::from_utf8(&config.data)
+                    .context("无法解析 replace.toml 为 UTF-8")?;
+                Ok(Cow::Owned(content.to_string()))
             }
         }
 
@@ -59,12 +65,11 @@ cfg_if! {
                     .with_context(|| format!("无法读取资产文件: {}", full_path.display()))
             }
 
-            fn config_content(&self) -> Cow<'static, str> {
+            fn config_content(&self) -> Result<Cow<'static, str>> {
                 let config_path = self.base_path.join("replace.toml");
                 let config_str = std::fs::read_to_string(&config_path)
-                    .with_context(|| format!("无法读取 replace.toml: {}", config_path.display()))
-                    .unwrap();
-                Cow::Owned(config_str)
+                    .with_context(|| format!("无法读取 replace.toml: {}", config_path.display()))?;
+                Ok(Cow::Owned(config_str))
             }
         }
 
@@ -86,7 +91,7 @@ struct VersionConfig {
 
 trait AssetSource {
     fn get_file(&self, relative_path: &str) -> Result<Vec<u8>>;
-    fn config_content(&self) -> Cow<'static, str>;
+    fn config_content(&self) -> Result<Cow<'static, str>>;
 }
 
 fn run_tweak<S: AssetSource>(file_path: &str, source: &S) -> Result<()> {
@@ -101,7 +106,10 @@ fn run_tweak<S: AssetSource>(file_path: &str, source: &S) -> Result<()> {
         .with_context(|| format!("修改失败，读取 PCK 头与索引失败: {}", file_path))?;
 
     println!("正在加载版本配置...");
-    let version_config = parse_version_config(&source.config_content())
+    let config_content = source
+        .config_content()
+        .with_context(|| format!("修改失败，无法读取 replace.toml: {}", file_path))?;
+    let version_config = parse_version_config(config_content.as_ref())
         .with_context(|| format!("修改失败，加载版本配置失败: {}", file_path))?;
     println!(
         "✓ 版本配置加载成功，要求游戏版本: {}",
@@ -120,7 +128,7 @@ fn run_tweak<S: AssetSource>(file_path: &str, source: &S) -> Result<()> {
 
     println!("正在加载替换配置...");
     let (mut replacements_owned, delete_list) =
-        parse_config(&source.config_content(), |asset_path| {
+        parse_config(config_content.as_ref(), |asset_path| {
             source.get_file(asset_path)
         })
         .context("加载 replace.toml 失败")?;
