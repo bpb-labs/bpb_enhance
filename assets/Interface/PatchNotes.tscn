@@ -217,170 +217,130 @@ visible = false
 position = Vector2( 0, 2500 )
 z_index = 20
 script = ExtResource( 6 )
-chinese = "[center][b]大家好！
-我们又带来了一些新的调整！
-玩得开心，我们很快再见 :)
+chinese = "[center][b]大家好，
 
--Doro & Mario
+我们带来了更多调整，还有一首新的 BGM 曲目！
+
+这是我们的朋友 Fabian（FaRu-Music）创作的原创曲目，也欢迎看看他为《背包乱斗》制作的其他音乐！
+
+祝大家玩得开心 :)
+
+ -Doro 和 Mario
 [/b][/center]
 
-o 已为未挖掘潜力、徽章、捕梦网、铁砧、食物护符、宝石存钱罐、兽语大师、给予之袋和彩虹魔药添加 Alt 提示。
+o 新增一首 BGM 曲目，会在子职业回合的商店中播放。
 
-[b]平衡性调整[/b]
+[b]平衡调整[/b]
 [center][b]通用[/b][/center]
-o 幽灵匕首：冷却时间 2.1s -> 1.9s
-o 吸血匕首：冷却时间 2.3s -> 2.1s
-o 幽灵匕首：冷却时间 2.7s -> 2.5s
-o 沸腾大锅：恢复量 5 -> 8
-o 锯刃：价格 8g -> 7g
-o 松林守护者：恢复量 5 -> 6
-o 腐败水晶（背包）：冷却时间 4.1s -> 3.9s
-o 怪力少女：速度加成 25% -> 30%
-o 鲜血支配：速度加成 20% -> 25%
-o 魔法大师：速度加成 20% -> 25%
-o 附魔武器：重复触发几率 20% -> 22%
-o 火辣香蕉：获得狂热的几率 50% -> 55%
-o 别着急：冰冷 4 -> 5
-o 回响战嚎：速度加成 50% -> 55%
-o 投资机会：最大生命值 4 -> 5
-o 铁匠入门指南：耐力消耗减少 25% -> 30%
-o 万里挑一：特别物品出现几率 50% -> 60%
-o 刀刀见血：每把匕首提供的触发速度 40% -> 50%
-o 开怀畅饮：每种魔药提供的触发速度 80% -> 90%
-o 月亮之力：最大生命值 65% -> 70%
-o 双重彩虹：速度加成 30% -> 35%
-o 财富之吻：几率加成 30% -> 33%
-o 背包盛宴：触发速度 5% -> 7%，基础耐力恢复 5% -> 7%
-o 硬木：护盾 20 -> 22
-o 投石手：伤害减弱 20% -> 22%
-o 纯粹加成 / 更多加成：最大生命值 10% -> 12%
+o 沸腾大锅：恢复生命值 8 -> 10，速度提升 10% -> 15%
+o 黄金护甲：攻击速度减慢 35% -> 50%
+o 菠萝：冷却时间 3.1秒 -> 2.9秒
+o 松林守护者：恢复生命值 6 -> 8
+o 珠宝之王：商店刷新几率 60% -> 70%
+o 投资机会：最大生命值 5 -> 6
+o 月亮之力：致盲（月光护甲）1 -> 2
+o 回响战嚎：触发速度加成 55% -> 60%
+o 超大容量：触发速度 14% -> 15%，打折几率 40% -> 45%
+o 万里挑一：宝藏几率 60% -> 65%
+o 冰霜护甲：护盾 90 -> 100，冷却时间 5秒 -> 4.7秒
+o 冰霜盾牌：耐力减少 0.8 -> 0.9
+o 霜冻之剑：吸血 8 -> 10
+o 冰霜巨龙：护盾 75 -> 80
 
 [center][b]游侠[/b][/center]
-o 幽光（武器）：伤害阈值 25 -> 30
-o 女射手：攻击速度 35% -> 40%
+o 白色百合花项圈：幸运/恢复几率 30% -> 25%
+o 蓝色鼠尾草花项圈：每点幸运获得魔法的几率 5% -> 6%
 
 [center][b]收割者[/b][/center]
-o 蛇蛇：每个宠物提供的生命值 45 -> 40
-o 小丑牌：随机增益效果 6 -> 7
-o 致死蘑菇：冷却时间 3s -> 3.1s
-o 青蛙王子：冷却时间 3.5s -> 3.2s
-o 卡牌之心：法力值 5 -> 6
-o 黑暗仪式：吸血 10 -> 12
+o 大煮锅：冷却时间 2.7秒 -> 2.6秒
+o 战镰：伤害 +2
+o 青蛙王子：冷却时间 3.2秒 -> 2.9秒
 
 [center][b]火焰魔导士[/b][/center]
-o 急速小蜗：冷却时间 11s -> 11.5s
-o 炽热巨剑：火焰物品计数 6 -> 8
-o 炽焰长矛：火焰物品计数 6 -> 7
+o 燃烧旗帜：冷却时间 4秒 -> 4.2秒
+o 炽热巨剑：充能 3 -> 4
+o 急速小蜗：冷却时间 11.5秒 -> 12秒
+o 蓝宝石幼龙：护盾 8 -> 10
 
 [center][b]狂战士[/b][/center]
-o 尖刺法杖：尖刺 2 -> 3
-o 装甲巨龙：反射 7 -> 8，额外伤害 5 -> 6
-o 龙骑士：冷却时间 0.9s -> 0.8s
+o 萨满面具：冷却时间 3.2秒 -> 3.4秒
+o 尖刺法杖：尖刺 3 -> 4
+o 锁链鞭：恢复生命值 10 -> 12
 
 [center][b]魔法师[/b][/center]
-o 彩虹魔药：随机增益效果 5 -> 6
-o 幽灵獾：冷却时间 4.7s -> 4.8s
-o 幽灵猫：冷却时间 3.2s -> 3s
-o 魔法杯糕：价格 6g -> 5g
-o 棋盘：冷却时间 0.8s -> 0.9s
-o 棋艺大师：冷却加成 30% -> 35%
-o 终极升腾：每个法术提供的触发速度 50% -> 75%
+o 幽灵猫：冷却时间 3秒 -> 2.7秒
+o 死亡莲花：冷却时间 3.2秒 -> 3.0秒
+o 失调魔棒：冷却时间 3.3秒 -> 3.1秒
 
 [center][b]冒险家[/b][/center]
-o 心形盾牌：格挡伤害 14 -> 17
+o 高级戒指：基于生命值的数值与战斗开始时的数值略微提高
 
 [center][b]工程师[/b][/center]
-o 特斯拉线圈：打折几率 70% -> 80%，冷却时间 6s -> 5.5s
-o 机械护甲：冷却时间 3.2s -> 3s
-o 实验台：恢复 12 -> 10，吸血 13 -> 12
-o 奥术长靴：护盾 25 -> 30
-o 永动机：返还 35% -> 32%
-o 自动进食机：其他食物速度加成 45% -> 50%
-o 毒气手雷：中毒 18 -> 20，自身承受 10 -> 12
-o 闪电法杖：伤害 +2
-o 电能火炬：速度加成 30% -> 35%"
-japanese = "[center][b]皆さんこんにちは！ 
-バランス調整のお時間です！
-楽しんで！近いうちにまたお会いしましょう :)
+o 电能火炬：致盲 6 -> 7，持续时间 6秒 -> 7秒
+o 自动进食机：其他食物的触发速度 50% -> 60%
+o 吉瓦特：触发速度 10% -> 15%"
+japanese = "[center][b]皆さんこんにちは！
+
+新しいBGMと合わせてバランス調整パッチをお届けします。
+
+私たちの友人であるFabian(FaRu-Music)のオリジナルトラックです。『バックパック・バトル』のために作ったほかの楽曲もチェックしましょう！
+
+楽しんで :)
 
 - ドロ＆マリオより
 [/b][/center]
 
-o 未鑑定のスキル、バッジ、精霊のベル、かなとこ、大食のアミュレット、富のブタちゃん、動物との対話、施し袋、レインボーポーションにAltキーで見られるツールチップを追加
+o ショップやサブクラスラウンドで流れるBGMを1曲追加。
 
 [b]バランス調整[/b]
 [center][b]共通[/b][/center]
-o ポイズンダガー：クールダウン 2.1秒 ▷ 1.9秒
-o ブラッディダガー：クールダウン 2.3秒 ▷ 2.1秒
-o ゴーストダガー：クールダウン 2.7秒 ▷ 2.5秒
-o 煮え立つ鍋：回復量 5 ▷ 8
-o ノコ刃の剣：価格 8G ▷ 7G
-o パインの盾：回復量 5 ▷ 6
-o 堕落のクリスタル（バックパック）：クールダウン 4.1秒 ▷ 3.9秒
-o ガールパワー：使用速度ボーナス 25% ▷ 30%
-o 血操術：使用速度ボーナス 20% ▷ 25%
-o 魔法熟達：使用速度ボーナス 20% ▷ 25%
-o 武器エンチャント：再発動確率 20% ▷ 22%
-o スパイシーバナナ：ヒート獲得確率 50% ▷ 55%
-o 急かさないで！：フリーズ 4 ▷ 5
-o こだまする雄叫び：使用速度ボーナス 50% ▷ 55%
-o 投資機会：体力最大値増加 4 ▷ 5
-o サルでもわかる鍛冶：スタミナ減少 25% ▷ 30%
-o ユニークなユニーク：掘出物出現率 50% ▷ 60%
-o ナイフ・トゥ・ミーチュー：ダガーごとの使用速度ボーナス 40% ▷ 50%
-o ガブ飲み：ポーションごとの使用速度ボーナス 80% ▷ 90%
-o 月の力：体力最大値増加 65% ▷ 70%
-o ダブルレインボー：使用速度ボーナス 30% ▷ 35%
-o フォルトゥナのキス：発動確率向上 30% ▷ 33%
-o バッグり仰天：使用速度アップ 5% ▷ 7%、基礎スタミナ回復 5% ▷ 7%
-o 堅木：シールド 20 ▷ 22
-o 石塁：ダメージ軽減 20% ▷ 22%
-o ちょっと力を！/ もっと力を！：体力最大値増加 10% ▷ 12%
+o 煮え立つ鍋：回復量 8 ▷ 10、使用速度ボーナス 10% ▷ 15%
+o 金の鎧：使用速度低下 35% ▷ 50%
+o パイナップル：クールダウン 3.1秒 ▷ 2.9秒
+o パインの盾：回復量 6 ▷ 8
+o キンキラ・キング：補充確率 60% ▷ 70%
+o 投資機会：体力最大値増加 5 ▷ 6
+o 月の力：目くらまし（月の鎧） 1 ▷ 2
+o こだまする雄叫び：使用速度ボーナス 55% ▷ 60%
+o 大容量：使用速度アップ 14% ▷ 15%、セール発生確率 40% ▷ 45%
+o ユニークなユニーク：掘出物確率 60% ▷ 65%
+o 氷の鎧：シールド 90 ▷ 100、クールダウン 5秒 ▷ 4.7秒
+o 凍てつく盾：スタミナ除去 0.8 ▷ 0.9
+o フロストバイト：吸血 8 ▷ 10
+o アイスドラゴン：シールド 75 ▷ 80
 
 [center][b]レンジャー[/b][/center]
-o ウィスプ（武器）：ダメージ条件 25 ▷ 30
-o マークスウーマン：使用速度アップ 35% ▷ 40%
+o 白ユリの首飾り：幸運/リジェネ獲得確率 30% ▷ 25%
+o 青セージの首飾り：幸運ごとのマナ獲得確率 5% ▷ 6%
 
 [center][b]リーパー[/b][/center]
-o ヘビ：ペットの数ごとの体力増加量 45 ▷ 40
-o ジョーカー：ランダムバフ 6 ▷ 7
-o ハメツダケ：クールダウン 3秒 ▷ 3.1秒
-o カエル王子：クールダウン 3.5秒 ▷ 3.2秒
-o カードの心臓：マナ 5 ▷ 6
-o 闇の儀式：吸血 10 ▷ 12
+o 大ナベ：クールダウン 2.7秒 ▷ 2.6秒
+o 戦鎌：ダメージ +2
+o カエル王子：クールダウン 3.2秒 ▷ 2.9秒
 
 [center][b]パイロマンサー[/b][/center]
-o ターボ・シェリークールダウン 11秒 ▷ 11.5秒
-o ヒートグレートソード：火炎アイテム個数 6 ▷ 8
-o ブレイズスピア：火炎アイテム個数 6 ▷ 7
+o 燃えさかる旗印：クールダウン 4秒 ▷ 4.2秒
+o ヒートグレートソード：強化 3 ▷ 4
+o ターボ・シェリー：クールダウン 11.5秒 ▷ 12秒
+o サファイアの幼竜：シールド 8 ▷ 10
 
 [center][b]バーサーカー[/b][/center]
-o トゲの杖：トゲ 2 ▷ 3
-o パンツァードラゴン：反射 7 ▷ 8、ダメージ値増加 5 ▷ 6
-o ドラゴンセット：クールダウン 0.9秒 ▷ 0.8秒
+o シャーマンの仮面：クールダウン 3.2秒 ▷ 3.4秒
+o トゲの杖：トゲ 3 ▷ 4
+o チェーンウィップ：回復量 10 ▷ 12
 
 [center][b]メイジ[/b][/center]
-o レインボーポーション：ランダムバフ 5 ▷ 6
-o アナグマの精霊：クールダウン 4.7秒 ▷ 4.8秒
-o ネコの精霊：クールダウン 3.2秒 ▷ 3秒
-o カップケーキ：価格 6G ▷ 5G
-o チェスボード：クールダウン 0.8秒 ▷ 0.9秒
-o チェスマスター：使用速度ボーナス 30% ▷ 35%
-o 超覚醒：呪文ごとの使用速度ボーナス 50% ▷ 75%
+o ネコの精霊：クールダウン 3秒 ▷ 2.7秒
+o デス・ロータス：クールダウン 3.2秒 ▷ 3.0秒
+o 不協和のワンド：クールダウン 3.3秒 ▷ 3.1秒
 
 [center][b]アドベンチャラー[/b][/center]
-o ハートの盾：ダメージ軽減 14 ▷ 17
+o 至高の指輪：体力量で発動する効果とバトル開始時に発動する効果をわずかに強化
 
 [center][b]エンジニア[/b][/center]
-o テスラコイル：セール発生確率 70% ▷ 80%、クールダウン 6秒 ▷ 5.5秒
-o メカアーマー：クールダウン 3.2秒 ▷ 3秒
-o 実験所：リジェネ 12 ▷ 10、吸血 13 ▷ 12
-o 神秘のブーツ：シールド 25 ▷ 30
-o 永久運動：返還量 35% ▷ 32%
-o イート・オ・マティック：ほかの食べ物の使用速度ボーナス 45% ▷ 50%
-o ポイズングレネード：毒 18 ▷ 20、自分への毒 10 ▷ 12
-o 雷の杖：ダメージ +2
-o 電動たいまつ：使用速度ボーナス 30% ▷ 35%"
+o 電動たいまつ：目くらまし 6 ▷ 7、持続時間 6秒 ▷ 7秒
+o イート・オ・マティック：ほかの食べ物の使用速度ボーナス 50% ▷ 60%
+o ギガワット：使用速度アップ 10% ▷ 15%"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -469,173 +429,125 @@ custom_fonts/normal_font = SubResource( 297 )
 custom_styles/focus = ExtResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center][b]Hi everyone, 
-We are back with some more adjustments!
-Have fun and see y’all soon :)
+We are back with some more adjustments
+and a new BGM track!
+Have fun :)
 
 - Doro and Mario
 [/b][/center]
 
-o Added Alt tooltips for Unidentified Skill, Badges, Spirit Bells, 
-   Anvil, Amulet of Feasting, Piggy of Riches, Speak with Animals, 
-   Bag of Giving and Rainbow Potion.
+o Added a BGM track that plays in the shop in the subclass round.
 
 [b]Balancing[/b]
 [center][b]Neutral[/b][/center]
-o Poison Dagger: Cooldown 2.1s -> 1.9s
-o Bloody Dagger: Cooldown 2.3s -> 2.1s
-o Spectral Dagger: Cooldown 2.7s -> 2.5s
-o Boiling Pot: Heal 5 -> 8
-o Ripsaw Blade: Cost 8g -> 7g
-o Pine Protector: Heal 5 -> 6
-o Corrupted Crystal (Inventory): Cooldown 4.1s -> 3.9s
-o Girl Power: Speed bonus 25% -> 30%
-o Blood Manipulation: Speed bonus 20% -> 25%
-o Mana Mastery: Speed bonus 20% -> 25%
-o Enchanted Weapons: Repeat chance 20% -> 22%
-o Spicy Banana: Heat chance 50% -> 55%
-o No Rush Please: Cold 4 -> 5
-o Echoing Battlecry: Speed bonus 50% -> 55%
-o Investment Opportunity: Maximum health 4 -> 5
-o Smithing for Dummies: Stamina reduction 25% -> 30%
-o Uniquely Unique: Unique chance 50% -> 60%
-o Knife to Meet You: Triggers faster per dagger 40% -> 50%
-o Heavy Drinking: Speed per potion 80% -> 90%
-o Power of the Moon: Maximum health 65% -> 70%
-o Double Rainbow: Speed bonus 30% -> 35%
-o Fortuna’s Kiss: Chance increase 30% -> 33%
-o Bagtacular: Trigger speed 5% -> 7%, stamina regeneration 5% -> 7%
-o Hardwood: Block 20 -> 22
-o Stoned: Damage reduction 20% -> 22%
-o Just Stats / More Stats: Maximum health 10% -> 12%
+o Boiling Pot: Heal 8 -> 10, speed increase 10% -> 15%
+o Gold Armor: Attack slow 35% -> 50% 
+o Pineapple: Cooldown 3.1s -> 2.9s
+o Pine Protector: Heal 6 -> 8
+o King of the Bling: Restock chance 60% -> 70%
+o Investment Opportunity: Maximum health 5 -> 6
+o Power of the Moon: Blind (Moon Armor) 1 -> 2
+o Echoing Battlecry: Bonus speed 55% -> 60%
+o Superspacious: Trigger speed 14% -> 15%, sales chance 40% -> 45%
+o Uniquely Unique: Treasure chance 60% -> 65%
+o Ice Armor: Block 90 -> 100, cooldown 5s -> 4.7s
+o Frozen Buckler: Stamina reduction 0.8 -> 0.9
+o Frostbite: Vampirism 8 -> 10
+o Ice Dragon: Block 75 -> 80
 
 [center][b]Ranger[/b][/center]
-o Wisp (Weapon): Damage threshold 25 -> 30
-o Markswoman: Attack speed 35% -> 40%
+o White Lily Collar: Luck/Regeneration chance 30% -> 25%
+o Blue Sage Collar: Mana chance per Luck 5% -> 6%
 
 [center][b]Reaper[/b][/center]
-o Snake: Health per Pet 45 -> 40
-o Jimbo: Random buffs 6 -> 7
-o Doom Cap: Cooldown 3s -> 3.1s
-o Frog Prince: Cooldown 3.5s -> 3.2s
-o Heart of the Cards: Mana 5 -> 6
-o Dark Ritual: Vampirism 10 -> 12
+o Cauldron: Cooldown 2.7s -> 2.6s
+o War Scythe: Damage +2
+o Frog Prince: Cooldown 3.2s -> 2.9s
 
 [center][b]Pyromancer[/b][/center]
-o Turbo-Shelly: Cooldown 11s -> 11.5s
-o Molten Greatsword: Fire item count 6 -> 8
-o Blazing Spear: Fire item count 6 -> 7
+o Burning Banner: Cooldown 4s -> 4.2s
+o Molten Greatsword: Empower 3 -> 4
+o Turbo Shelly: Cooldown 11.5s -> 12s
+o Sapphire Whelp: Block 8 -> 10
 
 [center][b]Berserker[/b][/center]
-o Spiked Staff: Spikes 2 -> 3
-o Panzer Dragon: Reflect 7 -> 8, bonus damage 5 -> 6
-o Dragon Set: Cooldown 0.9s -> 0.8s
+o Shaman Mask: Cooldown 3.2 -> 3.4s
+o Spiked Staff: Spikes 3 -> 4
+o Chain Whip: Heal 10 -> 12
 
 [center][b]Mage[/b][/center]
-o Rainbow Potion: Random buffs 5 -> 6
-o Badger Spirit Companion: Cooldown 4.7s -> 4.8s
-o Cat Spirit Companion: Cooldown 3.2s -> 3s
-o Cupcake: Cost 6g  -> 5g
-o Chess Board: Cooldown 0.8s -> 0.9s
-o Chess Master: Cooldown bonus 30% -> 35%
-o Ultima Ascension: Trigger speed per spell 50% -> 75%
+o Cat Spirit Companion: Cooldown 3s -> 2.7s
+o Death Lotus: Cooldown 3.2s -> 3.0s
+o Wand of Dissonance: Cooldown 3.3s -> 3.1s
 
 [center][b]Adventurer[/b][/center]
-o Heart Shield: Damage block 14 -> 17
+o Superior Ring: Health-based and start-of-battle amounts 
+   slightly increased
 
 [center][b]Engineer[/b][/center]
-o Tesla Coil: Sales chance 70% -> 80%, cooldown 6s -> 5.5s
-o Mecha Armor: Cooldown 3.2s -> 3s
-o Laboratory: Regeneration 12 -> 10, Vampirism 13 -> 12
-o Arcane Boots: Block 25 -> 30
-o Perpetuum Mobile: Refund 35% -> 32%
-o Eat-o-Matic: Other food speed bonus 45% -> 50%
-o Poison Grenade: Poison 18 -> 20, self-inflicted 10 -> 12
-o Lightning Staff: Damage +2
-o Electric Torch: Speed bonus 30% -> 35%"
+o Electric Torch: Blind 6 -> 7, duration 6s -> 7s
+o Eat-o-matic: Other food speed 50% -> 60%
+o Gigawatz: Trigger speed 10% -> 15%"
 text = "Hi everyone, 
-We are back with some more adjustments!
-Have fun and see y’all soon :)
+We are back with some more adjustments
+and a new BGM track!
+Have fun :)
 
 - Doro and Mario
 
 
-o Added Alt tooltips for Unidentified Skill, Badges, Spirit Bells, 
-   Anvil, Amulet of Feasting, Piggy of Riches, Speak with Animals, 
-   Bag of Giving and Rainbow Potion.
+o Added a BGM track that plays in the shop in the subclass round.
 
 Balancing
 Neutral
-o Poison Dagger: Cooldown 2.1s -> 1.9s
-o Bloody Dagger: Cooldown 2.3s -> 2.1s
-o Spectral Dagger: Cooldown 2.7s -> 2.5s
-o Boiling Pot: Heal 5 -> 8
-o Ripsaw Blade: Cost 8g -> 7g
-o Pine Protector: Heal 5 -> 6
-o Corrupted Crystal (Inventory): Cooldown 4.1s -> 3.9s
-o Girl Power: Speed bonus 25% -> 30%
-o Blood Manipulation: Speed bonus 20% -> 25%
-o Mana Mastery: Speed bonus 20% -> 25%
-o Enchanted Weapons: Repeat chance 20% -> 22%
-o Spicy Banana: Heat chance 50% -> 55%
-o No Rush Please: Cold 4 -> 5
-o Echoing Battlecry: Speed bonus 50% -> 55%
-o Investment Opportunity: Maximum health 4 -> 5
-o Smithing for Dummies: Stamina reduction 25% -> 30%
-o Uniquely Unique: Unique chance 50% -> 60%
-o Knife to Meet You: Triggers faster per dagger 40% -> 50%
-o Heavy Drinking: Speed per potion 80% -> 90%
-o Power of the Moon: Maximum health 65% -> 70%
-o Double Rainbow: Speed bonus 30% -> 35%
-o Fortuna’s Kiss: Chance increase 30% -> 33%
-o Bagtacular: Trigger speed 5% -> 7%, stamina regeneration 5% -> 7%
-o Hardwood: Block 20 -> 22
-o Stoned: Damage reduction 20% -> 22%
-o Just Stats / More Stats: Maximum health 10% -> 12%
+o Boiling Pot: Heal 8 -> 10, speed increase 10% -> 15%
+o Gold Armor: Attack slow 35% -> 50% 
+o Pineapple: Cooldown 3.1s -> 2.9s
+o Pine Protector: Heal 6 -> 8
+o King of the Bling: Restock chance 60% -> 70%
+o Investment Opportunity: Maximum health 5 -> 6
+o Power of the Moon: Blind (Moon Armor) 1 -> 2
+o Echoing Battlecry: Bonus speed 55% -> 60%
+o Superspacious: Trigger speed 14% -> 15%, sales chance 40% -> 45%
+o Uniquely Unique: Treasure chance 60% -> 65%
+o Ice Armor: Block 90 -> 100, cooldown 5s -> 4.7s
+o Frozen Buckler: Stamina reduction 0.8 -> 0.9
+o Frostbite: Vampirism 8 -> 10
+o Ice Dragon: Block 75 -> 80
 
 Ranger
-o Wisp (Weapon): Damage threshold 25 -> 30
-o Markswoman: Attack speed 35% -> 40%
+o White Lily Collar: Luck/Regeneration chance 30% -> 25%
+o Blue Sage Collar: Mana chance per Luck 5% -> 6%
 
 Reaper
-o Snake: Health per Pet 45 -> 40
-o Jimbo: Random buffs 6 -> 7
-o Doom Cap: Cooldown 3s -> 3.1s
-o Frog Prince: Cooldown 3.5s -> 3.2s
-o Heart of the Cards: Mana 5 -> 6
-o Dark Ritual: Vampirism 10 -> 12
+o Cauldron: Cooldown 2.7s -> 2.6s
+o War Scythe: Damage +2
+o Frog Prince: Cooldown 3.2s -> 2.9s
 
 Pyromancer
-o Turbo-Shelly: Cooldown 11s -> 11.5s
-o Molten Greatsword: Fire item count 6 -> 8
-o Blazing Spear: Fire item count 6 -> 7
+o Burning Banner: Cooldown 4s -> 4.2s
+o Molten Greatsword: Empower 3 -> 4
+o Turbo Shelly: Cooldown 11.5s -> 12s
+o Sapphire Whelp: Block 8 -> 10
 
 Berserker
-o Spiked Staff: Spikes 2 -> 3
-o Panzer Dragon: Reflect 7 -> 8, bonus damage 5 -> 6
-o Dragon Set: Cooldown 0.9s -> 0.8s
+o Shaman Mask: Cooldown 3.2 -> 3.4s
+o Spiked Staff: Spikes 3 -> 4
+o Chain Whip: Heal 10 -> 12
 
 Mage
-o Rainbow Potion: Random buffs 5 -> 6
-o Badger Spirit Companion: Cooldown 4.7s -> 4.8s
-o Cat Spirit Companion: Cooldown 3.2s -> 3s
-o Cupcake: Cost 6g  -> 5g
-o Chess Board: Cooldown 0.8s -> 0.9s
-o Chess Master: Cooldown bonus 30% -> 35%
-o Ultima Ascension: Trigger speed per spell 50% -> 75%
+o Cat Spirit Companion: Cooldown 3s -> 2.7s
+o Death Lotus: Cooldown 3.2s -> 3.0s
+o Wand of Dissonance: Cooldown 3.3s -> 3.1s
 
 Adventurer
-o Heart Shield: Damage block 14 -> 17
+o Superior Ring: Health-based and start-of-battle amounts 
+   slightly increased
 
 Engineer
-o Tesla Coil: Sales chance 70% -> 80%, cooldown 6s -> 5.5s
-o Mecha Armor: Cooldown 3.2s -> 3s
-o Laboratory: Regeneration 12 -> 10, Vampirism 13 -> 12
-o Arcane Boots: Block 25 -> 30
-o Perpetuum Mobile: Refund 35% -> 32%
-o Eat-o-Matic: Other food speed bonus 45% -> 50%
-o Poison Grenade: Poison 18 -> 20, self-inflicted 10 -> 12
-o Lightning Staff: Damage +2
-o Electric Torch: Speed bonus 30% -> 35%"
+o Electric Torch: Blind 6 -> 7, duration 6s -> 7s
+o Eat-o-matic: Other food speed 50% -> 60%
+o Gigawatz: Trigger speed 10% -> 15%"
 script = ExtResource( 5 )
 
 [node name="CloseButton" type="Button" parent="."]
