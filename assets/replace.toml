@@ -1,6 +1,6 @@
 [version]
 required-game-version = "1.1.5b"
-plugin-version = "0.7.0"
+plugin-version = "0.7.1"
 
 [version-hash]
 "1.1.5b" = "e55c8e1dd9b6247b628943d5d6161902"
