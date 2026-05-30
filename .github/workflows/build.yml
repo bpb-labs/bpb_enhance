@@ -58,6 +58,47 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
 
     steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Prepare release asset name
+        id: release_asset
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 <<'PY'
+          import datetime as dt
+          import os
+          import pathlib
+          import re
+          import tomllib
+
+          tag = os.environ["GITHUB_REF_NAME"]
+          match = re.fullmatch(r"v(\d{4})\.(\d{1,2})\.(\d{1,2})", tag)
+          if not match:
+              print(f"::error::Release tag must match vYYYY.M.D; got {tag!r}")
+              raise SystemExit(1)
+
+          year, month, day = map(int, match.groups())
+          try:
+              release_date = dt.date(year, month, day)
+          except ValueError as exc:
+              print(f"::error::Release tag contains an invalid date: {tag!r} ({exc})")
+              raise SystemExit(1)
+
+          with pathlib.Path("assets/replace.toml").open("rb") as config_file:
+              config = tomllib.load(config_file)
+
+          game_version = config["version"]["required-game-version"]
+          asset_name = f"bpb-enhance-gv{game_version}-{release_date:%y%m%d}.exe"
+
+          with pathlib.Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as output:
+              output.write(f"asset_name={asset_name}\n")
+
+          print(f"Release asset name: {asset_name}")
+          PY
+
       - name: Download Windows artifact
         uses: actions/download-artifact@v4
         with:
@@ -65,10 +106,25 @@ jobs:
           path: dist/windows
 
       - name: Rename Windows binary
-        run: mv dist/windows/* dist/
+        shell: bash
+        env:
+          ASSET_NAME: ${{ steps.release_asset.outputs.asset_name }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p dist/release
+          mapfile -t exe_files < <(find dist/windows -maxdepth 1 -type f -name '*.exe' -print)
+
+          if [ "${#exe_files[@]}" -ne 1 ]; then
+            echo "::error::Expected exactly one Windows .exe in dist/windows, found ${#exe_files[@]}"
+            printf '%s\n' "${exe_files[@]}"
+            exit 1
+          fi
+
+          mv "${exe_files[0]}" "dist/release/${ASSET_NAME}"
 
       - name: Create GitHub Release and upload assets
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/**
+          files: dist/release/*.exe
           tag_name: ${{ github.ref_name }}

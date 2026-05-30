@@ -51,7 +51,7 @@
 
 ## 安装与使用
 
-1.  在 Release 中下载最新版本的 `bpb-enhance-vX.Y.Z.exe`。
+1.  在 Release 中下载最新版本的 `bpb-enhance-gvX.Y.Z-YYMMDD.exe`。
 2.  运行程序，选择游戏路径（通常会自动识别，也可手动选择）。
 
 ![安装软件截图](./pics/image.png)
