@@ -1,9 +1,9 @@
 [version]
-required-game-version = "1.1.5b"
+required-game-version = "1.1.6"
 plugin-version = "0.7.1"
 
 [version-hash]
-"1.1.5b" = "e55c8e1dd9b6247b628943d5d6161902"
+"1.1.6" = "4c644868071bcbc579fa0b91c881a3ff"
 
 [replace]
 # --- Compiled bytecode (.gde) and remap files ---

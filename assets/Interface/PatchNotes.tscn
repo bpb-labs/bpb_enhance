@@ -217,130 +217,134 @@ visible = false
 position = Vector2( 0, 2500 )
 z_index = 20
 script = ExtResource( 6 )
-chinese = "[center][b]大家好，
+chinese = "[center][b]大家好！
+我们又带来了一些新的调整，还有一首全新 BGM 曲目！
+这是我们的朋友 Fabian（FaRu-music）创作的原创曲目，欢迎去听听他为《背包乱斗》制作的其他音乐！
+玩得开心 :)
 
-我们带来了更多调整，还有一首新的 BGM 曲目！
-
-这是我们的朋友 Fabian（FaRu-Music）创作的原创曲目，也欢迎看看他为《背包乱斗》制作的其他音乐！
-
-祝大家玩得开心 :)
-
- -Doro 和 Mario
+-Doro and Mario
 [/b][/center]
 
-o 新增一首 BGM 曲目，会在子职业回合的商店中播放。
+o 新增一首在你只剩最后一颗心时会播放的 BGM 曲目
 
-[b]平衡调整[/b]
+[b]平衡性调整[/b]
 [center][b]通用[/b][/center]
-o 沸腾大锅：恢复生命值 8 -> 10，速度提升 10% -> 15%
-o 黄金护甲：攻击速度减慢 35% -> 50%
-o 菠萝：冷却时间 3.1秒 -> 2.9秒
-o 松林守护者：恢复生命值 6 -> 8
-o 珠宝之王：商店刷新几率 60% -> 70%
-o 投资机会：最大生命值 5 -> 6
-o 月亮之力：致盲（月光护甲）1 -> 2
-o 回响战嚎：触发速度加成 55% -> 60%
-o 超大容量：触发速度 14% -> 15%，打折几率 40% -> 45%
-o 万里挑一：宝藏几率 60% -> 65%
-o 冰霜护甲：护盾 90 -> 100，冷却时间 5秒 -> 4.7秒
-o 冰霜盾牌：耐力减少 0.8 -> 0.9
-o 霜冻之剑：吸血 8 -> 10
-o 冰霜巨龙：护盾 75 -> 80
+o 旅行袋：现在也可以使用锤子合成（不会消耗锤子）
+o 财富之盒：现在也可以使用锤子合成（不会消耗锤子）
+o 沸腾大锅：速度加成 15% -> 30%
+o 石制护甲：护盾 110 -> 120
+o 霜冻之剑：吸血 10 -> 12
+o 制胜转盘：冷却时间 3.5s -> 3.6s
+o 珠宝之王：补货几率 70% -> 75%
+o 一锤定音：冷却时间 5s -> 5.2s
+o 兽语大师：打折几率 20% -> 25%
+o 投资机会：最大生命值 6 -> 7
+o 铁匠入门指南：耐力消耗 -30% -> -35%
+o 刀刀见血：每把匕首提供的速度 50% -> 60%
+o 月亮之力：疲惫时间 -5s -> -6s
+o 鲜血支配：每个吸血物品提供的速度 25% -> 30%
+o 怪力少女：每个职业物品提供的速度 30% -> 35%
+o 财富之吻：几率加成 33% -> 35%
+o 硬木：伤害加成 150% -> 165%
+o 附魔武器：重复触发几率 22% -> 25%
+o 回响战嚎：速度加成 60% -> 65%
+
+[center][b]多职业[/b][/center]
+o 冰霜巨龙：护盾 80 -> 90
+o 胡搞魔咒：最大耐力 5 -> 6，每点耐力提供的增益效果 5 -> 4
 
 [center][b]游侠[/b][/center]
-o 白色百合花项圈：幸运/恢复几率 30% -> 25%
-o 蓝色鼠尾草花项圈：每点幸运获得魔法的几率 5% -> 6%
+o 暴击法杖：暴击增益持续时间 1.4s -> 1.5s
 
 [center][b]收割者[/b][/center]
-o 大煮锅：冷却时间 2.7秒 -> 2.6秒
-o 战镰：伤害 +2
-o 青蛙王子：冷却时间 3.2秒 -> 2.9秒
+o 青蛙王子：冷却时间 2.9s -> 2.6s
+o 遗物箱：冷却时间 2.6s -> 2.5s
+o 黑暗仪式：每个黑暗物品提供的速度 20% -> 25%
 
 [center][b]火焰魔导士[/b][/center]
-o 燃烧旗帜：冷却时间 4秒 -> 4.2秒
-o 炽热巨剑：充能 3 -> 4
-o 急速小蜗：冷却时间 11.5秒 -> 12秒
-o 蓝宝石幼龙：护盾 8 -> 10
+o 龙的巢穴：法力值 4 -> 6
+o 怒火凤凰：每个火焰物品提供的暴击几率 5% -> 6%
 
 [center][b]狂战士[/b][/center]
-o 萨满面具：冷却时间 3.2秒 -> 3.4秒
-o 尖刺法杖：尖刺 3 -> 4
-o 锁链鞭：恢复生命值 10 -> 12
-
-[center][b]魔法师[/b][/center]
-o 幽灵猫：冷却时间 3秒 -> 2.7秒
-o 死亡莲花：冷却时间 3.2秒 -> 3.0秒
-o 失调魔棒：冷却时间 3.3秒 -> 3.1秒
+o 萨满面具：冷却时间 3.4s -> 3.6s
+o 龙骑士：冷却时间 0.8s -> 0.7s
 
 [center][b]冒险家[/b][/center]
-o 高级戒指：基于生命值的数值与战斗开始时的数值略微提高
+o 软呢帽：冷却时间 2.3s -> 2.5s
 
 [center][b]工程师[/b][/center]
-o 电能火炬：致盲 6 -> 7，持续时间 6秒 -> 7秒
-o 自动进食机：其他食物的触发速度 50% -> 60%
-o 吉瓦特：触发速度 10% -> 15%"
+o 电能火炬：致盲 7 -> 8
+o 闪电法杖：耐力消耗 1 -> 0.7
+o 电锯：耐力消耗 1 -> 0.7
+o 弹簧装填器：冷却时间 8s -> 7.5s
+o 自动进食机：其他食物加成 60% -> 65%
+o 铋立方体：最大触发次数 15 -> 12"
 japanese = "[center][b]皆さんこんにちは！
 
 新しいBGMと合わせてバランス調整パッチをお届けします。
 
-私たちの友人であるFabian(FaRu-Music)のオリジナルトラックです。『バックパック・バトル』のために作ったほかの楽曲もチェックしましょう！
+私たちの友人であるFabian(FaRu-music)のオリジナルトラックです。
+『バックパック・バトル』のために作ったほかの楽曲もチェックしましょう！
 
 楽しんで :)
 
 - ドロ＆マリオより
 [/b][/center]
 
-o ショップやサブクラスラウンドで流れるBGMを1曲追加。
+o 残りトライ1の時に流れるBGMを追加
 
 [b]バランス調整[/b]
 [center][b]共通[/b][/center]
-o 煮え立つ鍋：回復量 8 ▷ 10、使用速度ボーナス 10% ▷ 15%
-o 金の鎧：使用速度低下 35% ▷ 50%
-o パイナップル：クールダウン 3.1秒 ▷ 2.9秒
-o パインの盾：回復量 6 ▷ 8
-o キンキラ・キング：補充確率 60% ▷ 70%
-o 投資機会：体力最大値増加 5 ▷ 6
-o 月の力：目くらまし（月の鎧） 1 ▷ 2
-o こだまする雄叫び：使用速度ボーナス 55% ▷ 60%
-o 大容量：使用速度アップ 14% ▷ 15%、セール発生確率 40% ▷ 45%
-o ユニークなユニーク：掘出物確率 60% ▷ 65%
-o 氷の鎧：シールド 90 ▷ 100、クールダウン 5秒 ▷ 4.7秒
-o 凍てつく盾：スタミナ除去 0.8 ▷ 0.9
-o フロストバイト：吸血 8 ▷ 10
-o アイスドラゴン：シールド 75 ▷ 80
+o 旅行カバン：ハンマーを使ってもクラフトできるように変更（消費しない）
+o 幸運の箱：ハンマーを使ってもクラフトできるように変更（消費しない）
+o 煮え立つ鍋：使用速度ボーナス 15% ▷ 30%
+o 石の鎧：シールド 110 ▷ 120
+o フロストバイト：吸血 10 ▷ 12
+o ルーレット：クールダウン 3.5秒 ▷ 3.6秒
+o キンキラ・キング：補充確率 70% ▷ 75%
+o 交渉成立：クールダウン 5秒 ▷ 5.2秒
+o 動物との対話：セール発生確率 20% ▷ 25%
+o 投資機会：体力最大値増加 6 ▷ 7
+o サルでもわかる鍛冶：スタミナ消費値 -30% ▷ -35%
+o ナイフ・トゥ・ミーチュー：ダガーごとの使用速度 50% ▷ 60%
+o 月の力：疲労タイミング -5秒 ▷ -6秒
+o 血操術：吸血アイテムごとの使用速度 25% ▷ 30%
+o ガールパワー：クラスアイテムごとの使用速度 30% ▷ 35%
+o フォルトゥナのキス：確率ボーナス 33% ▷ 35%
+o 堅木：ダメージボーナス 150% ▷ 165%
+o 武器エンチャント：再発動確率 22% ▷ 25%
+o こだまする雄叫び：使用速度ボーナス 60% ▷ 65%
+
+[center][b]マルチクラス[/b][/center]
+o アイスドラゴン：シールド 80 ▷ 90
+o アブラガダブラ：スタミナ上限 5 ▷ 6、スタミナごとのバフ 5 ▷ 4
 
 [center][b]レンジャー[/b][/center]
-o 白ユリの首飾り：幸運/リジェネ獲得確率 30% ▷ 25%
-o 青セージの首飾り：幸運ごとのマナ獲得確率 5% ▷ 6%
+o クリティカルの杖：クリティカル効果時間 1.4秒 ▷ 1.5秒
 
 [center][b]リーパー[/b][/center]
-o 大ナベ：クールダウン 2.7秒 ▷ 2.6秒
-o 戦鎌：ダメージ +2
-o カエル王子：クールダウン 3.2秒 ▷ 2.9秒
+o カエル王子：クールダウン 2.9秒 ▷ 2.6秒
+o レリックケース：クールダウン 2.6秒 ▷ 2.5秒
+o 闇の儀式：暗黒アイテムごとの使用速度 20% ▷ 25%
 
 [center][b]パイロマンサー[/b][/center]
-o 燃えさかる旗印：クールダウン 4秒 ▷ 4.2秒
-o ヒートグレートソード：強化 3 ▷ 4
-o ターボ・シェリー：クールダウン 11.5秒 ▷ 12秒
-o サファイアの幼竜：シールド 8 ▷ 10
+o ドラゴンの寝床：マナ 4 ▷ 6
+o 怒れるフェニックス：火炎アイテムごとのクリティカル率 5% ▷ 6%
 
 [center][b]バーサーカー[/b][/center]
-o シャーマンの仮面：クールダウン 3.2秒 ▷ 3.4秒
-o トゲの杖：トゲ 3 ▷ 4
-o チェーンウィップ：回復量 10 ▷ 12
-
-[center][b]メイジ[/b][/center]
-o ネコの精霊：クールダウン 3秒 ▷ 2.7秒
-o デス・ロータス：クールダウン 3.2秒 ▷ 3.0秒
-o 不協和のワンド：クールダウン 3.3秒 ▷ 3.1秒
+o シャーマンの仮面：クールダウン 3.4秒 ▷ 3.6秒
+o ドラゴンセット：クールダウン 0.8秒 ▷ 0.7秒
 
 [center][b]アドベンチャラー[/b][/center]
-o 至高の指輪：体力量で発動する効果とバトル開始時に発動する効果をわずかに強化
+o フェドーラ帽：クールダウン 2.3秒 ▷ 2.5秒
 
 [center][b]エンジニア[/b][/center]
-o 電動たいまつ：目くらまし 6 ▷ 7、持続時間 6秒 ▷ 7秒
-o イート・オ・マティック：ほかの食べ物の使用速度ボーナス 50% ▷ 60%
-o ギガワット：使用速度アップ 10% ▷ 15%"
+o 電動たいまつ：目くらまし 7 ▷ 8
+o 雷の杖：スタミナ消費値 1 ▷ 0.7
+o チェーンソー：スタミナ消費値 1 ▷ 0.7
+o バネ式加速器：クールダウン 8秒 ▷ 7.5秒
+o イート・オ・マティック：ほかの食べ物の使用速度ボーナス 60% ▷ 65%
+o ビスマスキューブ：最大使用回数 15 ▷ 12"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -436,62 +440,61 @@ Have fun :)
 - Doro and Mario
 [/b][/center]
 
-[b]1.1.5b[/b]
-o Bugfixes
-
-[b]1.1.5[/b]
-o Added a BGM track that plays in the shop in the subclass round.
+o Added a BGM track that plays when you are on your last heart.
 
 [b]Balancing[/b]
 [center][b]Neutral[/b][/center]
-o Boiling Pot: Heal 8 -> 10, speed increase 10% -> 15%
-o Gold Armor: Attack slow 35% -> 50% 
-o Pineapple: Cooldown 3.1s -> 2.9s
-o Pine Protector: Heal 6 -> 8
-o King of the Bling: Restock chance 60% -> 70%
-o Investment Opportunity: Maximum health 5 -> 6
-o Power of the Moon: Blind (Moon Armor) 1 -> 2
-o Echoing Battlecry: Bonus speed 55% -> 60%
-o Superspacious: Trigger speed 14% -> 15%, sales chance 40% -> 45%
-o Uniquely Unique: Treasure chance 60% -> 65%
-o Ice Armor: Block 90 -> 100, cooldown 5s -> 4.7s
-o Frozen Buckler: Stamina reduction 0.8 -> 0.9
-o Frostbite: Vampirism 8 -> 10
-o Ice Dragon: Block 75 -> 80
+o Holdall: Can now also be crafted using Hammer (without consuming it)
+o Box of Prosperity: Can now also be crafted using Hammer
+   (without consuming it)
+o Boiling Pot: Speed bonus 15% -> 30%
+o Stone Armor: Block 110 -> 120
+o Frostbite: Vampirism 10 -> 12
+o Spin to Win: Cooldown 3.5s -> 3.6s
+o King of the Bling: Restock chance 70% -> 75%
+o Seal the Deal: Cooldown 5s -> 5.2s
+o Speak with Animals: Sale chance 20% -> 25%
+o Investment Opportunity: Maximum health 6 -> 7
+o Smithing for Dummies: Stamina cost -30% -> -35%
+o Knife to Meet You: Speed per dagger 50% -> 60%
+o Power of the Moon: Fatigue timing -5s -> -6s
+o Blood Manipulation: Speed per vampiric item 25% -> 30%
+o Girl Power: Speed per class item 30% -> 35%
+o Fortuna’s Kiss: Chance bonus 33% -> 35%
+o Hardwood: Damage bonus 150% -> 165%
+o Enchanted Weapons: Repeat chance 22% -> 25%
+o Echoing Battlecry: Speed bonus 60% -> 65%
+
+[center][b]Multiclass[/b][/center]
+o Ice Dragon: Block 80 -> 90
+o Hogus Bogus: Stamina maximum 5 -> 6, buffs per stamina 5 -> 4
 
 [center][b]Ranger[/b][/center]
-o White Lily Collar: Luck/Regeneration chance 30% -> 25%
-o Blue Sage Collar: Mana chance per Luck 5% -> 6%
+o Critwood Staff: Crit buff duration 1.4s -> 1.5s
 
 [center][b]Reaper[/b][/center]
-o Cauldron: Cooldown 2.7s -> 2.6s
-o War Scythe: Damage +2
-o Frog Prince: Cooldown 3.2s -> 2.9s
+o Frog Prince: Cooldown 2.9s -> 2.6s
+o Relic Case: Cooldown 2.6s -> 2.5s
+o Dark Ritual: Speed per darkness item 20% -> 25%
 
 [center][b]Pyromancer[/b][/center]
-o Burning Banner: Cooldown 4s -> 4.2s
-o Molten Greatsword: Empower 3 -> 4
-o Turbo Shelly: Cooldown 11.5s -> 12s
-o Sapphire Whelp: Block 8 -> 10
+o Dragon Nest: Mana 4 -> 6
+o Enraged Phoenix: Crit chance per fire item 5% -> 6%
 
 [center][b]Berserker[/b][/center]
-o Shaman Mask: Cooldown 3.2 -> 3.4s
-o Spiked Staff: Spikes 3 -> 4
-o Chain Whip: Heal 10 -> 12
-
-[center][b]Mage[/b][/center]
-o Cat Spirit Companion: Cooldown 3s -> 2.7s
-o Death Lotus: Cooldown 3.2s -> 3.0s
-o Wand of Dissonance: Cooldown 3.3s -> 3.1s
+o Shaman Mask: Cooldown 3.4s -> 3.6s
+o Dragon Set: Cooldown 0.8s -> 0.7
 
 [center][b]Adventurer[/b][/center]
-o Superior Ring: Health-based and start-of-battle amounts 
-   slightly increased
+o Fedora: Cooldown 2.3s -> 2.5s
 
 [center][b]Engineer[/b][/center]
-o Electric Torch: Blind 6 -> 7, duration 6s -> 7s
-o Eat-o-matic: Other food speed 50% -> 60%
-o Gigawatz: Trigger speed 10% -> 15%"
+o Electric Torch: Blind 7 -> 8
+o Lightning Staff: Stamina cost 1 -> 0.7
+o Chainsaw: Stamina cost 1 -> 0.7
+o Spring Loader: Cooldown 8s -> 7.5s
+o Eat-o-matic: Other food bonus 60% -> 65%
+o Bismuth Cube: Maximum uses 15 -> 12"
 text = "Hi everyone, 
 We are back with some more adjustments
 and a new BGM track!
@@ -500,58 +503,61 @@ Have fun :)
 - Doro and Mario
 
 
-o Added a BGM track that plays in the shop in the subclass round.
+o Added a BGM track that plays when you are on your last heart.
 
 Balancing
 Neutral
-o Boiling Pot: Heal 8 -> 10, speed increase 10% -> 15%
-o Gold Armor: Attack slow 35% -> 50% 
-o Pineapple: Cooldown 3.1s -> 2.9s
-o Pine Protector: Heal 6 -> 8
-o King of the Bling: Restock chance 60% -> 70%
-o Investment Opportunity: Maximum health 5 -> 6
-o Power of the Moon: Blind (Moon Armor) 1 -> 2
-o Echoing Battlecry: Bonus speed 55% -> 60%
-o Superspacious: Trigger speed 14% -> 15%, sales chance 40% -> 45%
-o Uniquely Unique: Treasure chance 60% -> 65%
-o Ice Armor: Block 90 -> 100, cooldown 5s -> 4.7s
-o Frozen Buckler: Stamina reduction 0.8 -> 0.9
-o Frostbite: Vampirism 8 -> 10
-o Ice Dragon: Block 75 -> 80
+o Holdall: Can now also be crafted using Hammer (without consuming it)
+o Box of Prosperity: Can now also be crafted using Hammer
+   (without consuming it)
+o Boiling Pot: Speed bonus 15% -> 30%
+o Stone Armor: Block 110 -> 120
+o Frostbite: Vampirism 10 -> 12
+o Spin to Win: Cooldown 3.5s -> 3.6s
+o King of the Bling: Restock chance 70% -> 75%
+o Seal the Deal: Cooldown 5s -> 5.2s
+o Speak with Animals: Sale chance 20% -> 25%
+o Investment Opportunity: Maximum health 6 -> 7
+o Smithing for Dummies: Stamina cost -30% -> -35%
+o Knife to Meet You: Speed per dagger 50% -> 60%
+o Power of the Moon: Fatigue timing -5s -> -6s
+o Blood Manipulation: Speed per vampiric item 25% -> 30%
+o Girl Power: Speed per class item 30% -> 35%
+o Fortuna’s Kiss: Chance bonus 33% -> 35%
+o Hardwood: Damage bonus 150% -> 165%
+o Enchanted Weapons: Repeat chance 22% -> 25%
+o Echoing Battlecry: Speed bonus 60% -> 65%
+
+Multiclass
+o Ice Dragon: Block 80 -> 90
+o Hogus Bogus: Stamina maximum 5 -> 6, buffs per stamina 5 -> 4
 
 Ranger
-o White Lily Collar: Luck/Regeneration chance 30% -> 25%
-o Blue Sage Collar: Mana chance per Luck 5% -> 6%
+o Critwood Staff: Crit buff duration 1.4s -> 1.5s
 
 Reaper
-o Cauldron: Cooldown 2.7s -> 2.6s
-o War Scythe: Damage +2
-o Frog Prince: Cooldown 3.2s -> 2.9s
+o Frog Prince: Cooldown 2.9s -> 2.6s
+o Relic Case: Cooldown 2.6s -> 2.5s
+o Dark Ritual: Speed per darkness item 20% -> 25%
 
 Pyromancer
-o Burning Banner: Cooldown 4s -> 4.2s
-o Molten Greatsword: Empower 3 -> 4
-o Turbo Shelly: Cooldown 11.5s -> 12s
-o Sapphire Whelp: Block 8 -> 10
+o Dragon Nest: Mana 4 -> 6
+o Enraged Phoenix: Crit chance per fire item 5% -> 6%
 
 Berserker
-o Shaman Mask: Cooldown 3.2 -> 3.4s
-o Spiked Staff: Spikes 3 -> 4
-o Chain Whip: Heal 10 -> 12
-
-Mage
-o Cat Spirit Companion: Cooldown 3s -> 2.7s
-o Death Lotus: Cooldown 3.2s -> 3.0s
-o Wand of Dissonance: Cooldown 3.3s -> 3.1s
+o Shaman Mask: Cooldown 3.4s -> 3.6s
+o Dragon Set: Cooldown 0.8s -> 0.7
 
 Adventurer
-o Superior Ring: Health-based and start-of-battle amounts 
-   slightly increased
+o Fedora: Cooldown 2.3s -> 2.5s
 
 Engineer
-o Electric Torch: Blind 6 -> 7, duration 6s -> 7s
-o Eat-o-matic: Other food speed 50% -> 60%
-o Gigawatz: Trigger speed 10% -> 15%"
+o Electric Torch: Blind 7 -> 8
+o Lightning Staff: Stamina cost 1 -> 0.7
+o Chainsaw: Stamina cost 1 -> 0.7
+o Spring Loader: Cooldown 8s -> 7.5s
+o Eat-o-matic: Other food bonus 60% -> 65%
+o Bismuth Cube: Maximum uses 15 -> 12"
 script = ExtResource( 5 )
 
 [node name="CloseButton" type="Button" parent="."]
