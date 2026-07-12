@@ -1,0 +1,194 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Interface/PopupBox.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Interface/Lobbies/TeamSwitchValidationPopup.gd" type="Script" id=4]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=5]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_normal.tres" type="StyleBox" id=6]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_hovered.tres" type="StyleBox" id=7]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_pressed.tres" type="StyleBox" id=8]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 22
+outline_size = 2
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Hide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 2, -2 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "onClosed"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Show"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.32, 0.5 ),
+"transitions": PoolRealArray( 2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+}
+
+[node name="TeamSwitchValidationPopup" type="Node2D"]
+pause_mode = 2
+position = Vector2( 960, 540 )
+z_index = 20
+script = ExtResource( 4 )
+
+[node name="Sheet" type="NinePatchRect" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -300.0
+margin_top = -200.0
+margin_right = 300.0
+margin_bottom = 200.0
+texture = ExtResource( 1 )
+patch_margin_left = 46
+patch_margin_top = 46
+patch_margin_right = 48
+patch_margin_bottom = 50
+
+[node name="Label" type="RichTextLabel" parent="."]
+margin_left = -250.0
+margin_top = -170.0
+margin_right = 250.0
+margin_bottom = -130.0
+rect_clip_content = false
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Team Switch Validation"
+text = "Team Switch Validation"
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 5 )
+translationKey = "UI_TeamSwitchValidationTitle"
+prefix = "[center]"
+
+[node name="IssuesLabel" type="RichTextLabel" parent="."]
+margin_left = -250.0
+margin_top = -110.0
+margin_right = 250.0
+margin_bottom = 80.0
+rect_clip_content = false
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[center]Issues will appear here."
+text = "Issues will appear here."
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 5 )
+
+[node name="ForceStartButton" type="Button" parent="."]
+margin_left = -250.0
+margin_top = 100.0
+margin_right = -10.0
+margin_bottom = 150.0
+mouse_default_cursor_shape = 2
+custom_colors/font_color_disabled = Color( 0.701961, 0.643137, 0.568627, 1 )
+custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_hover = Color( 1, 0.890196, 0.215686, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = ExtResource( 7 )
+custom_styles/pressed = ExtResource( 8 )
+custom_styles/focus = ExtResource( 9 )
+custom_styles/disabled = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
+text = "Start Game"
+script = ExtResource( 5 )
+translationKey = "BUTTON_StartGame"
+
+[node name="CancelButton" type="Button" parent="."]
+margin_left = 10.0
+margin_top = 100.0
+margin_right = 250.0
+margin_bottom = 150.0
+mouse_default_cursor_shape = 2
+custom_colors/font_color_disabled = Color( 0.701961, 0.643137, 0.568627, 1 )
+custom_colors/font_color_focus = Color( 1, 0.890196, 0.215686, 1 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_hover = Color( 1, 0.890196, 0.215686, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = ExtResource( 7 )
+custom_styles/pressed = ExtResource( 8 )
+custom_styles/focus = ExtResource( 9 )
+custom_styles/disabled = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
+text = "Cancel"
+script = ExtResource( 5 )
+translationKey = "BUTTON_Cancel"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Hide = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+anims/Show = SubResource( 5 )
+
+[connection signal="pressed" from="ForceStartButton" to="." method="onForceStartPressed"]
+[connection signal="pressed" from="CancelButton" to="." method="onCancelPressed"]

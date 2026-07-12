@@ -1,0 +1,197 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Interface/Lobbies/CrownIcon.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Heart.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Trophy.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Buffs/Empower.png" type="Texture" id=5]
+[ext_resource path="res://Assets/TitleScreen/RangerIcon.png" type="Texture" id=6]
+[ext_resource path="res://Interface/Lobbies/MemberStylebox_Player.tres" type="StyleBox" id=7]
+[ext_resource path="res://Interface/Lobbies/LobbyScoreboardEntry.gd" type="Script" id=8]
+[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=9]
+[ext_resource path="res://Interface/RedXButton.png" type="Texture" id=10]
+[ext_resource path="res://Interface/RedXButton_hovered.png" type="Texture" id=11]
+[ext_resource path="res://Interface/Checkmark.png" type="Texture" id=12]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+content_margin_left = 5.0
+
+[node name="LobbyMember" type="Panel"]
+margin_right = 450.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 450, 45 )
+mouse_filter = 1
+custom_styles/panel = ExtResource( 7 )
+script = ExtResource( 8 )
+
+[node name="ObButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+custom_styles/focus = ExtResource( 13 )
+flat = true
+
+[node name="HboxContainer" type="HBoxContainer" parent="."]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 449.0
+margin_bottom = 44.0
+mouse_filter = 2
+custom_constants/separation = 0
+
+[node name="Ranking" type="Label" parent="HboxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="ClassIcon" type="TextureRect" parent="HboxContainer"]
+margin_left = 40.0
+margin_right = 80.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 30 )
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 6
+
+[node name="Name" type="Label" parent="HboxContainer"]
+margin_left = 80.0
+margin_right = 300.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 220, 40 )
+rect_pivot_offset = Vector2( 110, -98 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "PlayerName"
+valign = 1
+clip_text = true
+
+[node name="TrophyIcon" type="TextureRect" parent="HboxContainer"]
+margin_left = 300.0
+margin_right = 325.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 25, 30 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="Wins" type="Label" parent="HboxContainer"]
+margin_left = 325.0
+margin_right = 365.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+text = "14"
+align = 1
+valign = 1
+
+[node name="TriesIcon" type="TextureRect" parent="HboxContainer"]
+visible = false
+margin_left = 365.0
+margin_right = 390.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 25, 35 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[node name="Tries" type="Label" parent="HboxContainer"]
+visible = false
+margin_left = 365.0
+margin_right = 395.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 30, 40 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="ScoreIcon" type="TextureRect" parent="HboxContainer"]
+visible = false
+margin_left = 365.0
+margin_right = 395.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 30, 30 )
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="Score" type="Label" parent="HboxContainer"]
+visible = false
+margin_left = 365.0
+margin_right = 405.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+text = "5"
+align = 1
+valign = 1
+
+[node name="StatusIcon" type="TextureRect" parent="HboxContainer"]
+margin_left = 365.0
+margin_right = 405.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 30 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="KickButton" type="TextureButton" parent="HboxContainer"]
+margin_left = 405.0
+margin_right = 445.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
+expand = true
+script = ExtResource( 9 )
+tooltipKey = "HINT_Kick"
+tooltipOffset = Vector2( 100, 0 )
+
+[node name="HostIcon" type="Sprite" parent="."]
+visible = false
+position = Vector2( 91, 2 )
+scale = Vector2( 0.242857, 0.242857 )
+texture = ExtResource( 1 )
+
+[connection signal="pressed" from="ObButton" to="." method="onObButtonPressed"]
+[connection signal="pressed" from="HboxContainer/KickButton" to="." method="onKickButtonPressed"]

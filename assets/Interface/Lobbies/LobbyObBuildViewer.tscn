@@ -1,0 +1,293 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Core/Inventory.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Interface/Lobbies/LobbyObBuildViewer.gd" type="Script" id=2]
+[ext_resource path="res://Interface/Lobbies/BuildViewer.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/Patch3.png" type="Texture" id=5]
+[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=6]
+[ext_resource path="res://Interface/ArrowButton_up_hovered.png" type="Texture" id=7]
+[ext_resource path="res://Interface/ArrowButton_up.png" type="Texture" id=8]
+[ext_resource path="res://Items/Particles/SubtractiveCanvasItem.material" type="Material" id=9]
+[ext_resource path="res://Interface/NonLocalizedControl.gd" type="Script" id=10]
+[ext_resource path="res://Interface/VScrollbar.png" type="Texture" id=11]
+[ext_resource path="res://Interface/VScrollbar_grabber.png" type="Texture" id=12]
+[ext_resource path="res://Interface/Lobbies/LobbyResultEntry.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Interface/BuildHistory/RoundResultCursor.png" type="Texture" id=14]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=15]
+[ext_resource path="res://Interface/Lobbies/ClickOutside.gd" type="Script" id=16]
+
+[sub_resource type="Animation" id=206]
+resource_name = "Appear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 0.482968, 1 ),
+"update": 0,
+"values": [ Vector2( 97, 1300 ), Vector2( 97, 605 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "opened"
+} ]
+}
+
+[sub_resource type="Animation" id=207]
+resource_name = "Hide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 2.2974, 1 ),
+"update": 0,
+"values": [ Vector2( 97, 605 ), Vector2( 97, 1300 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "closed"
+} ]
+}
+
+[sub_resource type="Animation" id=208]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 97, 605 ) ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxTexture" id=203]
+texture = ExtResource( 12 )
+region_rect = Rect2( -14.8741, 0, 70.4767, 64.1349 )
+margin_left = 7.49648
+margin_right = 22.0208
+margin_top = 15.6563
+margin_bottom = 14.4243
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id=204]
+texture = ExtResource( 11 )
+region_rect = Rect2( -6, 0.0862274, 57.0044, 461.484 )
+margin_left = 9.0
+margin_right = 8.92128
+margin_top = 8.49884
+margin_bottom = 5.31932
+
+[sub_resource type="Theme" id=205]
+VScrollBar/styles/grabber = SubResource( 203 )
+VScrollBar/styles/grabber_highlight = SubResource( 203 )
+VScrollBar/styles/grabber_pressed = SubResource( 203 )
+VScrollBar/styles/scroll = SubResource( 204 )
+
+[node name="LobbyObBuildViewer" type="Node2D"]
+position = Vector2( 97, 605 )
+z_index = 101
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Appear = SubResource( 206 )
+anims/Hide = SubResource( 207 )
+anims/RESET = SubResource( 208 )
+
+[node name="ClickOutside" type="Control" parent="."]
+margin_left = -2000.0
+margin_top = -2000.0
+margin_right = 4000.0
+margin_bottom = 4000.0
+mouse_filter = 0
+script = ExtResource( 16 )
+
+[node name="PanelBackground" type="Control" parent="."]
+margin_left = -40.0
+margin_top = -40.0
+margin_right = 1350.0
+margin_bottom = 410.0
+mouse_filter = 0
+
+[node name="Paper1" type="Sprite" parent="."]
+position = Vector2( 664, 192 )
+texture = ExtResource( 3 )
+
+[node name="PlayerName" type="Label" parent="."]
+margin_left = 35.9998
+margin_top = -35.0
+margin_right = 362.0
+margin_bottom = 1.0
+grow_horizontal = 2
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Player Name"
+align = 1
+script = ExtResource( 10 )
+
+[node name="RoundNum" type="Label" parent="."]
+margin_left = 82.0
+margin_top = 6.0
+margin_right = 317.0
+margin_bottom = 42.0
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Round 1/18"
+align = 1
+script = ExtResource( 15 )
+translationKey = "UI_RoundCounter"
+
+[node name="NinePatchRect12" type="NinePatchRect" parent="."]
+visible = false
+modulate = Color( 0.0563401, 0.0603966, 0.0644531, 1 )
+material = ExtResource( 9 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -39.0002
+margin_top = 9.99994
+margin_right = 438.0
+margin_bottom = 377.0
+texture = ExtResource( 5 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Items" type="Node2D" parent="."]
+position = Vector2( -19.0002, 61.9999 )
+scale = Vector2( 0.6, 0.6 )
+z_index = 3
+
+[node name="Inventory" parent="Items" instance=ExtResource( 1 )]
+z_index = 0
+
+[node name="NextMember" type="TextureButton" parent="."]
+visible = false
+margin_left = 432.0
+margin_top = -89.0
+margin_right = 465.0
+margin_bottom = -48.0
+rect_rotation = 90.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 6 )
+
+[node name="NextRound" type="TextureButton" parent="."]
+visible = false
+margin_left = 343.0
+margin_top = -49.0
+margin_right = 376.0
+margin_bottom = -8.0
+rect_rotation = 90.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 6 )
+
+[node name="PreviousMember" type="TextureButton" parent="."]
+visible = false
+margin_top = -59.0
+margin_right = 33.0
+margin_bottom = -18.0
+rect_rotation = -90.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 6 )
+
+[node name="PreviousRound" type="TextureButton" parent="."]
+visible = false
+margin_left = 79.0
+margin_top = -13.0
+margin_right = 112.0
+margin_bottom = 28.0
+rect_rotation = -90.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 6 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 447.0
+margin_top = 56.0
+margin_right = 1343.0
+margin_bottom = 400.0
+theme = SubResource( 205 )
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 896.0
+margin_bottom = 45.0
+size_flags_horizontal = 3
+custom_constants/separation = 10
+
+[node name="LobbyMember" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 13 )]
+
+[node name="Cursor" type="Sprite" parent="ScrollContainer/VBoxContainer"]
+position = Vector2( 357, -2 )
+scale = Vector2( 0.467391, 0.495283 )
+z_index = 1
+texture = ExtResource( 14 )
+centered = false
+
+[connection signal="pressed" from="NextMember" to="." method="nextMember"]
+[connection signal="pressed" from="NextRound" to="." method="nextRound"]
+[connection signal="pressed" from="PreviousMember" to="." method="previousMember"]
+[connection signal="pressed" from="PreviousRound" to="." method="previousRound"]

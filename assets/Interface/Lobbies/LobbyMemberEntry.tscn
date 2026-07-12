@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=2]
+[ext_resource path="res://Interface/RedXButton.png" type="Texture" id=3]
+[ext_resource path="res://Interface/RedXButton_hovered.png" type="Texture" id=4]
+[ext_resource path="res://Interface/Lobbies/LobbyMemberEntry.gd" type="Script" id=5]
+[ext_resource path="res://Interface/RedXButton_disabled.png" type="Texture" id=6]
+[ext_resource path="res://Assets/TitleScreen/RangerIcon.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+content_margin_left = 5.0
+
+[node name="MemberEntry" type="Control"]
+margin_right = 354.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 0, 44 )
+size_flags_horizontal = 3
+script = ExtResource( 5 )
+
+[node name="HboxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="ClassIcon" type="TextureRect" parent="HboxContainer"]
+margin_right = 40.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 40, 30 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="TeamLabel" type="Label" parent="HboxContainer"]
+margin_left = 40.0
+margin_top = 2.0
+margin_right = 120.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 60, 40 )
+custom_colors/font_color = Color( 1, 0.890196, 0.215686, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+text = ""
+align = 2
+valign = 1
+clip_text = true
+
+[node name="Name" type="Label" parent="HboxContainer"]
+margin_left = 40.0
+margin_top = 2.0
+margin_right = 314.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 140, 40 )
+rect_pivot_offset = Vector2( 110, -98 )
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+text = "PlayerName"
+valign = 1
+clip_text = true
+
+[node name="KickButton" type="TextureButton" parent="HboxContainer"]
+margin_left = 314.0
+margin_right = 354.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 40, 40 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_disabled = ExtResource( 6 )
+expand = true
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="HboxContainer/KickButton" to="." method="onKickButtonPressed"]

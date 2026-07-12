@@ -1,0 +1,830 @@
+key,en,de,zh_Hans_CN,ja,ko,zh_Hant_TW,fr,ru,pt_BR,es
+<!MissingKey:0:Alt>,Alt,Alt,Alt,Altキー,Alt,Alt,Alt,Alt,Alt,Alt
+<!MissingKey:1:Nullified {amount}{debuff}>,Nullified {amount}{debuff},{amount}{debuff} neutralisiert.,{amount}{debuff}无效,{amount} {debuff} 獲得阻害,{amount}{debuff} 무효화,{amount}層{debuff}無效,{amount} {debuff} annulé(s),Снят эффект: {amount} {debuff},Anulou {amount} {debuff},Has anulado {amount} {debuff}
+<!MissingKey:2:Shift inventory down>,Shift inventory down,Inventar nach unten,向下移动背包,バッグを下へ移動,아래쪽으로 인벤토리 이동,向下移動背包,Décaler l'inventaire vers le bas,Сместить инвентарь вниз,Mover inventário para baixo,Mover inventario (abajo)
+<!MissingKey:3:{amount} {debuff} resisted ({origin}).>,{amount} {debuff} resisted ({origin}).,{amount} {debuff} vermieden ({origin}).,{amount} {debuff}被抵挡（{origin}）。,{amount} {debuff} が無効化された（{origin}）。,{amount} {debuff} 저항당함 ({origin}).,{amount} {debuff}被抵擋（{origin}）。,{amount} {debuff} résisté(s) ({origin}).,Проигнорировано: {amount} {debuff} ({origin}).,Resistiu a {amount} {debuff} ({origin}).,Has resistido {amount} {debuff} ({origin}).
+<!MissingKey:4:Fatigue sets in...>,Fatigue sets in...,Erschöpfung setzt ein...,开始感觉疲惫……,疲労がたまってきた…,피로가 몰려옵니다...,開始感到疲勞……,Début de la fatigue dans…,Истощение активируется через...,Bate o cansaço...,La fatiga empieza en...
+<!MissingKey:5:Stamina Usage>,Stamina Usage,Ausdauer- verbrauch ,耐力消耗,スタミナ消費,스태미나 사용량,耐力消耗,Utilisation d'endurance,Расход энергии,Gasto de vigor,Consumo de resistencia
+<!MissingKey:6:Perfect Survival Bonus!>,Perfect Survival Bonus!,Perfekter Survival-Bonus!,完美生存奖励！,完全サバイバルボーナス！,퍼펙트 서바이벌 보너스!,完美生存獎勵！,Bonus de survie parfaite !,Бонус идеального выживания!,Bônus de sobrevivência perfeita!,¡Bonus de supervivencia perfecta!
+<!MissingKey:7:Comma>,Comma,Komma,逗号键,"[,]キー",쉼표,逗号键,Virgule,",",Vírgula,Coma
+<!MissingKey:8:Acquired>,Acquired,Erhalten,获得次数,入手した回数,구매한 횟수,获得次数,Obtenu(s),Кол-во получений,Adquirido,Adquirido
+<!MissingKey:9:MB4>,MB4,Maustaste 4,鼠标键4,第4マウスボタン,마우스 버튼 4,鼠标键4,Clic latéral haut,Кнопка мыши - 4,Botão do mouse 4,Clic 4 (ratón)
+<!MissingKey:10:Options>,Options,Optionen,选项,オプション,설정,選項,Options,Настройки,Opções,Opciones
+<!MissingKey:11:MB5>,MB5,Maustaste 5,鼠标键5,第5マウスボタン,마우스 버튼 5,鼠标键5,Clic latéral bas,Кнопка мыши - 5,Botão do mouse 5,Clic 5 (ratón)
+<!MissingKey:12:Start Survival Mode: >,"Start Survival Mode:
+ Survive {rounds} Rounds ({roundsLeft} left) ","Survival-Modus:
+ Überlebe {rounds} Runden ({roundsLeft} übrig)  ","开始生存模式：
+ 生存{rounds}回合 剩下（{roundsLeft}回合）","サバイバルモード開始：
+ {rounds}ラウンド生き延びる（残り{roundsLeft}）","서바이벌 모드 시작:
+{rounds} 라운드 동안 생존하세요 ({roundsLeft} 남음)","開始生存模式：
+生存{rounds}回合（剩下{roundsLeft}回合）","Commencer le mode survie :
+ survivez à {rounds} tours ({roundsLeft} restants)","Начать режим выживания:
+ Всего раундов - {rounds} (осталось: {roundsLeft})","Iniciar modo de sobrevivência:
+ Sobreviva {rounds} rodadas (restam: {roundsLeft})","Empezar Modo superviviencia:
+ Sobrevive {rounds} rondas (quedan: {roundsLeft})"
+<!MissingKey:13:Game over>,Game over,Spiel vorbei,失败！,ゲームオーバー,게임 오버,遊戲失敗！,Partie perdue,Вы проиграли,Fim da partida,Fin de la partida
+<!MissingKey:14:Resume>,Resume,Fortsetzen,继续,再開,계속하기,繼續,Reprendre,Продолжить,Retomar,Reanudar
+<!MissingKey:15:Input>,Input,Eingabe,键位设置,操作設定,입력,輸入,Contrôles,Назначение клавиш,Entrada,Ajuste de teclas
+<!MissingKey:16:Removed {stamina} stamina ({origin}).>,Removed {stamina} stamina ({origin}).,{stamina} Ausdauer entfernt ({origin}).,消耗{stamina}点耐力（{origin}）。,スタミナを{stamina}除去した（{origin}）。,{stamina} 스태미나 흡수 ({origin}).,消耗{stamina}點耐力（{origin}）。,{stamina} d'endurance retirés ({origin}).,Отнимает {stamina} ед. энергии ({origin}).,Diminuiu {stamina} de vigor ({origin}).,Has quitado {stamina} de resistencia ({origin}).
+<!MissingKey:17:Lobby found.>,Lobby found.,Lobby gefunden.,找到大厅。,ロビーが見つかりました。,로비를 발견했습니다.,找到大廳。,Salle trouvée.,Комната найдена.,Salão encontrado.,Sala encontrada.
+<!MissingKey:18:Gated by>,Gated by,Voraussetzung,获得前提,前提アイテム,"필요한
+특수 아이템",獲得前提,Associé(s) à,Необходимо,Restringido por,Bloqueado por
+<!MissingKey:19:Elimination>,Elimination,Eliminierung,歼灭,勝ち抜き,배제,殲滅,Élimination,Выбывание,Eliminação,Eliminación
+<!MissingKey:20:Are you sure?>,Are you sure?,Bist du sicher?,是否确认？,本当に実行しますか？,정말 추방하시겠습니까?,是否確認？,Confirmer ?,Вы уверены?,Você tem certeza?,¿Seguro?
+<!MissingKey:21:Pick items>,Pick items,Gegenstände greifen,捡起物品,アイテムをつかむ,아이템 집기,撿起物品,Prendre les objets,Взять предметы,Pegar itens,Elegir objetos
+<!MissingKey:22:Character Name>,Character Name,Charaktername,角色姓名,キャラの名前,캐릭터 이름,角色名稱,Nom de personnage,Имя персонажа,Nome do Personagem,Nombre del personaje
+<!MissingKey:23:{amount} reflected {debuff} resisted ({origin}).>,{amount} reflected {debuff} resisted ({origin}).,{amount} reflektierte {debuff} vermieden ({origin}). ,反弹的{amount} {debuff}被抵挡（{origin}）。,反射された{debuff}が{amount}無効化された（{origin}）。,반사한 {debuff} {amount} 저항당함 ({origin}).,反彈的{amount} {debuff}被抵擋（{origin}）。,{amount} renvoyé(s) {debuff} résisté(s) ({origin}).,Не удалось отразить: {amount} {debuff} ({origin}).,"Refletiu {amount}, resistiu a {debuff} ({origin}).",Has resistido {amount} {debuff} devuelto/s ({origin}).
+<!MissingKey:24:Current score>,Current score,Aktueller Score,当前积分,現在のスコア,현재 점수,當前積分,Score actuel,Тек. счет,Pontuação atual,Puntaje actual
+<!MissingKey:25:Settings>,Settings,Einstellungen,设置,設定,설정,設置,Paramètres,Настройки,Configurações,Configuración
+<!MissingKey:26:Kick member>,Kick member,Mitspieler rauswerfen,踢出玩家,メンバーをキック,멤버 추방하기,踢出玩家,Expulser le membre,Исключить участника,Expulsar membro,Expulsar a miembro
+<!MissingKey:27:Battle Rage ended.>,Battle Rage ended.,Kampfrausch endet.,狂战士之怒结束。,バーサクが終了した。,전투 격노 종료.,戰鬥狂怒結束。,Rage de combat terminée.,Ярость развеяна,Fim da Fúria de Combate.,Ha terminado la Rabia de batalla.
+<!MissingKey:28:Item Chances>,Item Chances,Laden-Verteilung,物品出现几率,アイテム出現率,아이템 확률,物品出現機率,Chances d'apparition,Шанс появления,Chances de itens,Prob. de objeto
+<!MissingKey:29:Store item/swap bag>,Store item/swap bag,Lagern/Taschen tauschen,储存物品/交换选中背包,ボックスへ移動/バッグ切替,"아이템 보관/
+가방 교체",儲存物品/互換背包,Ranger l'objet/Changer de sac,Убрать в ящик/поменять местами,Guardar item / Mudar bolsa,Guardar objeto/cambiar mochila
+<!MissingKey:30:Members face the host regularly.>,Members face the host regularly.,Kämpfe regelmäßig gegen den Ersteller.,玩家们将频繁对抗房主,定期的にホストとマッチングします。,다른 멤버는 호스트와 정기적으로 만납니다.,玩家們將頻繁對抗房主,Les membres sont régulièrement confrontés à l'hébergeur.,Игроки чаще сражаются с хостом.,Os membros enfrentam o anfitrião regularmente.,Los miembros se enfrentan frecuentemente al anfitrión.
+<!MissingKey:31:Name>,Name,Name,姓名,名前,이름,名稱,Nom,Имя,Nome,Nombre
+<!MissingKey:32:Inflicted:>,Inflicted:,Verursacht:,向对手施加：,付与：,부여:,向對手施加：,Infligé(s) :,Нанесено:,Infligiu:,Infligido:
+<!MissingKey:33:Tab>,Tab,Tab,Tab,Tabキー,Tab,Tab,Tab,Tab,Tab,Tab
+<!MissingKey:34:Group by Price>,Group by Price,Nach Preis gruppieren,按价格分组,値段で分類,가격으로 분류,按價格分組,Filtrer par prix,Группировка по цене,Agrupar por Preço,Agrupar por precio
+<!MissingKey:35:Opponent>,Opponent,Gegner,对手,対戦相手,상대,對手,Adversaire,Противник,Oponente,Rival
+<!MissingKey:36:Rank: {rank}>,Rank: {rank},Rang: {rank},排名：{rank},順位：{rank},랭크: {rank},排名：{rank},Classement : {rank},Рейтинг: {rank},Ranque: {rank},Clasificación: {rank}
+<!MissingKey:37:Seen in shop>,Seen in shop,Im Laden angeboten,商店中出现次数,"ショップで
+見た回数","상점에서
+본 횟수",商店中出现次数,Vu en boutique,Появления в магазине,Visto na loja,Visto en la tienda
+<!MissingKey:38:Max. health>,Max. health,Maximalleben,生命值倍数,体力倍率,체력 배율,生命值倍數,Multiplicateur de PV,Множитель здоровья,Multiplicador de vida,Multiplicador de salud
+<!MissingKey:39:You were kicked.>,You were kicked.,Du wurdest rausgeworfen.,你被踢了。,あなたはキックされました。,추방당했습니다.,你被踢了。,Vous avez été expulsé.,Вас исключили из комнаты.,Você foi expulso.,Has sido expulsado.
+<!MissingKey:40:Open>,"Open
+ Log","Log-
+ buch öffnen",打开日志,"ログ
+開く","기록
+열기",打開日誌,Ouvrir le rapport,Журнал боя,Abrir Diário,Abrir registro
+<!MissingKey:41:Cooldown>,Cooldown,Abklingzeit,冷却,クールダウン,재사용 대기 시간,冷卻,TdR,Перезарядка,Recarga,Recarga
+<!MissingKey:42:Hover to preview. Press {button} to select or unlock.>,Hover to preview. Press {button} to select or unlock.,"{button} drücken, um auszuwählen oder freizuschalten.",鼠标移动至上方来预览。按下{button}键来选择或解锁。,カーソルを乗せて閲覧、{button}で選択/アンロック,커서를 올려 미리보기. {button}(을)를 눌러 선택 및 잠금 해제.,鼠标移動至上方來預覽。按下{button}鍵來選擇或解鎖。,Passez la souris dessus pour obtenir un aperçu. Appuyez sur {button} pour choisir cet élément ou le déverrouiller.,"Наведите курсор для предпросмотра. Нажмите {button}, чтобы выбрать или разблокировать.",Passe o cursor para ver. Aperte {button} para selecionar ou desbloquear.,Pasa cursor para previsualizar. Pulsa {button} para elegir o desbloquear.
+<!MissingKey:43:Out of gold!>,Out of gold!,Zu wenig Gold!,金币不足！,ゴールドが足りない！,골드 부족!,金幣不足！,À court d'or !,Мало золота!,Sem ouro!,¡Sin oro!
+<!MissingKey:44:Dark Reflection>,Dark Reflection,Schatten,黑暗倒影,ドッペルゲンガー,어둠의 환영,黑暗分身,Sombre réflexion,Темная тень,Sósia Maligna,Sombra
+<!MissingKey:45:VSync>,VSync,VSync,垂直同步,垂直同期,VSync,垂直同步,Synchronisation verticale,Верт. синхронизация,VSync,Vsync
+<!MissingKey:46:Head>,Head,,,,,,,,,
+<!MissingKey:47:New Record!>,New Record!,Neuer Rekord!,新纪录！,新記録！,기록 갱신!,新紀錄！,Nouveau record !,Новый результат!,Novo recorde!,¡Nuevo récord!
+<!MissingKey:48:Invulnerability ended ({origin}).>,Invulnerability ended ({origin}).,Unverwundbarkeit endete ({origin}).,无敌结束（{origin}）。,無敵状態が切れた（{origin}）。,무적 상태 종료 ({origin}).,無敵結束（{origin}）。,Invulnérabilité terminée ({origin}).,Неуязвимость развеяна ({origin}).,Fim da invulnerabilidade ({origin}).,La invulnerabilidad ha terminado ({origin}).
+<!MissingKey:49:Resisted {amount}{debuff}>,Resisted {amount}{debuff},{amount}{debuff} vermieden,抵挡住{amount}{debuff},{amount}{debuff}無効化,{amount}{debuff} 저항,抵擋了{amount}層{debuff},{amount} {debuff} résisté(s),Проигнорировано: {amount} {debuff},Resistiu a {amount} {debuff},Has resistido {amount} {debuff}
+<!MissingKey:50:FPS Limit>,FPS Limit,FPS Limit,FPS限制,FPS上限,최대 FPS,幀數限制,Limite de FPS,Ограничение FPS,Limite de FPS,Límite de FPS
+<!MissingKey:51:Survive {rounds} more rounds.>,Survive {rounds} more rounds.,Überlebe noch {rounds} Runden.,再存活{rounds}回合。,サバイバル：残り{rounds}ラウンド,{rounds} 라운드 더 생존하세요.,再存活{rounds}回合。,Survivez {rounds} tours supplémentaires.,Осталось раундов выживания: {rounds}.,Sobreviva mais {rounds} rodadas.,Sobrevive {rounds} rondas más.
+<!MissingKey:52:Reserved>,Reserved,Reserviert,保留,取置き中,예약,保留,Réservé(e),Reserved,Reservado,Reservado
+<!MissingKey:53:Removed:>,Removed:,Entfernt:,移除：,除去：,제거:,移除：,Retiré(s) :,Убрано:,Removeu:,Quitado:
+<!MissingKey:54:Join failed (lobby is full).>,Join failed (lobby is full).,Beitreten gescheitert (Lobby ist voll).,加入失败（大厅已满）。,参加に失敗しました（ロビーが満員）。,참여하지 못했습니다 (로비가 꽉 찼습니다).,加入失敗（大廳已滿）。,Échec de la rejonction (la salle est pleine).,Неудача (нет места в комнате).,Falha ao se juntar (salão cheio).,Error de acceso (la sala está llena).
+<!MissingKey:55:Rotate item (right)>,Rotate item (right),Rotieren (rechts),"旋转物品
+（顺时针）","アイテム回転
+（右）","아이템 회전
+(오른쪽)","旋轉物品
+（順時針）",Faire pivoter l'objet (droit),Повернуть предмет (влево),Girar item (direita),Rotar objeto (derecha)
+<!MissingKey:56:New>,"New
+Ranked
+Game","Neues
+gewertetes
+Spiel","新排名
+游戏","新規
+ランク
+モード","새로운
+랭크 게임",新排名遊戲,Nouvelle partie classée,Новая игра - Рейтинг,Nova Partida Ranqueada,Nueva partida clasificatoria
+<!MissingKey:57:Show Chibis>,Show Chibis,Chibis zeigen,显示Q版人物形象,チビキャラを表示,SD 캐릭터 표시,顯示Q版,Afficher Chibi,Показывать чиби-героев,Exibir Chibis,Mostrar chibis
+<!MissingKey:58:Gained {amount} maximum health ({origin}).>,Gained {amount} maximum health ({origin}).,{amount} Maximalleben erhalten.,获得{amount}最大生命值({origin})。,体力最大値が{amount}増えた（{origin}）。,최대 체력 {amount} 획득 ({origin}).,獲得{amount}點最大生命值（{origin}）。,{amount} des PV max gagnés ({origin}).,Максимальное здоровье повышено на {amount} ед. ({origin}).,Ganhou {amount} de vida máxima ({origin}).,Has obtenido {amount} PS máx. ({origin})
+<!MissingKey:59:Wins>,Wins,Siege,胜利,勝利回数,승리,勝利,Victoires,Победы,Vitórias,Victorias
+<!MissingKey:60:Regenerated {stamina} stamina ({origin}).>,Regenerated {stamina} stamina ({origin}).,{stamina} Ausdauer regeneriert ({origin}).,恢复{stamina}点耐力（{origin}）。,スタミナを{stamina}回復した（{origin}）。,{stamina} 스태미나 회복 ({origin}).,恢復{stamina}點耐力（{origin}）。,{stamina} d'endurance régénérés ({origin}).,Восстанавливает {stamina} ед. энергии ({origin}).,Recuperou {stamina} de vigor ({origin}).,Has recuperado {stamina} de resistencia ({origin}).
+<!MissingKey:61:Community>,"Community
+Wiki","Community
+Wiki","社区
+Wiki","コミュニティ
+Wiki","커뮤니티
+위키","社區
+維基","Wiki
+de communauté","Сообщество
+Вики","Wiki
+Comunitária","Comunidad
+Wiki"
+<!MissingKey:62:Join failed.>,Join failed.,Beitreten gescheitert.,加入失败。,参加に失敗しました。,참여하지 못했습니다.,加入失敗。,Échec de la rejonction.,Не удалось присоединиться.,Falha ao se juntar.,Error de acceso.
+<!MissingKey:63:Press the round buttons to view the backpack in specific rounds.>,Press the round buttons to view the backpack in specific rounds.,"Drücke die Pfeile, um dein Inventar anzusehen.",按下回合按钮查看特定回合中的背包。,ラウンドボタンを押すと、特定のラウンド時点でのバックパックが見られます。,라운드 버튼을 눌러 특정 라운드에서의 배낭을 확인할 수 있습니다.,按下回合按鈕查看特定回合中的背包。,Appuyez sur les boutons des tours pour afficher le sac à dos dans des tours spécifiques.,"Нажимайте на раунды, чтобы просмотреть рюкзак в определенных раундах.",Pressione os botões redondos para visualizar a mochila em rodadas específicas.,Pulsa los botones de ronda para ver la mochila en rondas específicas.
+<!MissingKey:64:Crit Resisted>,Crit Resisted,Kritischen Treffer vermieden,暴击抵挡,クリティカル防止,치명타 저항,暴擊抵擋,Crit. résisté,Проигнорировано: критический удар,Resistência a crítico,Has resistido el crítico
+<!MissingKey:65:Face the players with most wins.>,Face the players with most wins.,Gegner mit den meisten Siegen.,对抗胜利数最多的玩家。,最多勝利回数のプレイヤーとマッチングします。,가장 승리 횟수가 많은 플레이어를 만납니다.,對抗勝利數最多的玩家。,Affrontez les joueurs qui ont remporté le plus de victoires.,Подбор игроков с наибольшим количеством побед.,Enfrente os jogadores com mais vitórias.,Te enfrentas a jugadores con más victorias.
+<!MissingKey:66:New>,"New
+Unranked
+Game","Neues
+ungewertetes
+Spiel","新休闲
+游戏","新規
+カジュアル
+モード","새로운
+일반 게임",新休閒遊戲,Nouvelle partie non-classée,Новая игра - Обычная игра,Nova Partida Casual,Nueva partida amistosa
+<!MissingKey:67:Total>,Total,Summe,统计,合計,총합,統計,Total,Всего,Total,Total
+<!MissingKey:68:Save resources when unfocused>,Save resources when unfocused,Ressourcen sparen wenn nicht im Fokus,在闲置时节省资源,非フォーカス時はリソースを節約,비활성화 시 리소스 절약,在閒置時節省資源,Réduire les ressources en cas d'absence,Экономия ресурсов при бездействии,Salvar recursos em segundo plano,Ahorrar recursos al minimizar
+<!MissingKey:69:$num Tries Left>,$num Tries Left,$num Versuche übrig,剩下$num次重试,トライ残数$num,남은 생명: $num,還剩$num次嘗試機會,$num essais restants,Осталось попыток: $num,Restam $num tentativas,Quedan $num intentos
+<!MissingKey:70:Matching>,Matching,Gegnerwahl,匹配类型,マッチング方式,매칭,匹配類型,Mise en correspondance en cours,Подбор противника,Pareando,Emparejando
+<!MissingKey:71:s>,s,s,s,秒,초,s,s,сек.,s,s
+<!MissingKey:72:Open/close options>,Open/close options,,,,,,,,,
+<!MissingKey:73:Survive 1 more round.>,Survive 1 more round.,Überlebe noch 1 Runde.,再存活1回合。,サバイバル：残り1ラウンド,1 라운드 더 생존하세요.,再存活1回合。,Survivez 1 tour supplémentaire.,Продержитесь еще 1 раунд.,Sobreviva mais 1 rodada.,Sobrevive 1 ronda más.
+<!MissingKey:74:Lost {amount} {buff} ({origin}).>,Lost {amount} {buff} ({origin}).,{amount} {buff} verloren ({origin}).,失去{amount}层 {buff}（{origin}）。,{amount} {buff} を失った（{origin}）。,{amount} {buff} 소실 ({origin}).,失去{amount}層 {buff}（{origin}）。,{amount} {buff} perdus ({origin}).,Теряет {amount} {buff} ({origin}).,Perdeu {amount} {buff} ({origin}).,Has perdido {amount} {buff} ({origin}).
+<!MissingKey:75:Get the >,"Get the
+ full version!",Hol dir die Vollversion!,"购买
+完整版吧！","製品版を
+ストアで購入！","정식 버전을
+위시리스트에
+추가하세요!","購買
+完整版吧！","Obtenez la version
+ complète !","Получите
+ полную версию!","Obtenha a
+ versão completa!","¡Consigue la
+ versión completa!"
+<!MissingKey:76:Shop>,Shop,Laden,商店,ショップ,상점,商店,Boutique,Магазин,Loja,Tienda
+<!MissingKey:77:Crafted Items>,Crafted Items,Hergestellt,融合物品,クラフトアイテム,제작 아이템,融合物品,Objets fabriqués,Предметы созидания,Itens fabricados,Objetos fabricados
+<!MissingKey:78:Offered {num} times>,Offered {num} times,{num} mal angeboten,{num}次商店出现,{num}回販売,{num}번 제공됨,{num}次商店出現,Proposé(e) {num} fois,Появления в магазине: {num},Oferecido {num} vezes,A la venta {num} veces
+<!MissingKey:79:Pull down>,Pull down,Runterziehen,往下拉,引っぱる,당겨보세요,往下拉,Tirer,Потяните вниз,Puxe para baixo,¡Tira!
+<!MissingKey:80:Neutral>,Neutral,Neutral,通用,共通,공통,通用,Neutre,Общие,Neutro,Neutral
+<!MissingKey:81:Place bags permanently>,Place bags permanently,Taschen dauerhaft plazieren,永久放置背包,バッグ配置変更不可,가방을 영구적으로 배치,永久放置背包,Placer des sacs de façon permanente,Фиксированная позиция сумок,Colocar bolsas permanentemente,Colocar las bolsas permanentemente
+<!MissingKey:82:Your class and loadout will be randomly chosen.>,Your class and loadout will be randomly chosen.,Deine Klasse und Ausrüstung werden zufällig bestimmt.,将随机选择职业和初始装备。,クラスと装備がランダムに選ばれるぞ,직업과 장비가 무작위로 선택됩니다.,將隨機選擇職業和初始裝備。,Votre classe et votre équipement seront choisis de manière aléatoire.,Класс и снаряжение будут выбраны случайно.,Sua classe e seu equipamento serão escolhidos aleatoriamente.,Se elegirá tu clase y equipo al azar.
+<!MissingKey:83:Very high>,Very high,Sehr hoch,很高,"とても
+多い",매우 높음,很高,Très haute,Очень высокий,Muito alto,Muy alta
+<!MissingKey:84:Inflicted {amount} {debuff} ({origin}).>,Inflicted {amount} {debuff} ({origin}).,{amount} {debuff} verursacht ({origin}).,施加{amount}层 {debuff}（{origin}）。,{amount} {debuff} を付与した（{origin}）。,{amount} {debuff} 부여 ({origin}).,施加{amount}層 {debuff}（{origin}）。,{amount} {debuff} infligés ({origin}).,Накладывает {amount} {debuff} ({origin}).,Infligiu {amount} {debuff} ({origin}).,Has infligido {amount} {debuff} ({origin}).
+<!MissingKey:85:Game won!>,Game won!,Spiel gewonnen!,获胜！,勝利！,게임 승리!,遊戲勝利！,Partie gagnée !,Победа!,Partida vencida!,¡Has ganado la partida!
+<!MissingKey:86:Minus>,Minus,Minus,减号键,[-]キー,마이너스,减号键,Moins,-,Menos,Menos
+<!MissingKey:87:Disconnected from lobby.>,Disconnected from lobby.,Verbindung zur Lobby unterbrochen,从大厅断开连接。,ロビーから切断されました。,로비와의 연결이 끊겼습니다.,從大廳斷開連接。,Déconnecté de la salle.,Отключение от комнаты.,Desconectado do salão.,Sin conexión a la sala.
+<!MissingKey:88:Gated Items>,Gated Items,mit Voraussetzung,生成类物品,特殊出現アイテム,특수 아이템,生成類物品,Objets associés,Побочные предметы,Itens gerados,Objetos bloqueados
+<!MissingKey:89:$t[Requires:] {itemName}.>,$t[Requires:] {itemName}.,$t[Erfordert:] {itemName}.,$t[需要：] {itemName},$t[必要：]{itemName},$t[필요:] {itemName}.,$t[需要：] {itemName},$t[Exigence :] {itemName}.,$t[Необходимо:] {itemName}.,$t[Requer:] {itemName}.,$t[Requiere:] {itemName}.
+<!MissingKey:90:{gold} per round>,{gold} per round,{gold} pro Runde,每回合{gold},各ラウンド {gold},라운드당 {gold},每回合{gold},{gold} par tour,{gold} за раунд,{gold} por rodada,{gold} por ronda
+<!MissingKey:91:Round won!>,Round won!,Gewonnen!,回合胜利！,ラウンド勝利！,라운드 승리!,回合勝利！,Tour gagné !,Победа!,Rodada vencida!,¡Has ganado la ronda!
+<!MissingKey:92:Special>,Special,,,,,,,,,
+<!MissingKey:93:Hide activations>,Hide activations,Aktivierungen ausblenden,隐藏物品激活,発動アイテム非表示,발동 숨기기,隱藏物品啟動,Masquer les activations,Скрыть подробности,Ocultar ativações,Ocultar activaciones
+<!MissingKey:94:Activations>,Activations,Aktivierungen,激活数,アイテム発動回数,발동,啟動數,Activations,Срабатывание предметов,Ativações,Activaciones
+<!MissingKey:95:Random>,Random,Zufällig,随机匹配,ランダム,무작위,隨機匹配,Aléatoire,Случайно,Aleatório,Aleatorio
+<!MissingKey:96:Creating Lobby...>,Creating Lobby...,Erstelle Lobby...,创建大厅中……,ロビーを作成しています…,로비 생성 중...,創建大廳中……,Création de salle en cours…,Создание комнаты...,Criando Salão...,Creando sala...
+<!MissingKey:97:Credits>,Credits,Credits,制作名单,クレジット,크레딧,製作名單,Crédits,Разработчики,Créditos,Créditos
+<!MissingKey:98:Regenerated {amount} health ({origin}).>,Regenerated {amount} health ({origin}).,{amount} Leben regeneriert ({origin}).,恢复{amount}点生命值（{origin}）。,体力を{amount}回復した（{origin}）。,{amount} 체력 회복 ({origin}).,恢復{amount}點生命值（{origin}）。,{amount} PV régénérés ({origin}).,Восстанавливает {amount} ед. здоровья ({origin}).,Recuperou {amount} de vida ({origin}).,Has recuperado {amount} PS ({origin}).
+"<!MissingKey:99:As host, you can kick members from the scoreboard.>","As host, you can kick members from the scoreboard.",Als Ersteller kannst du Spieler von der Rangliste aus rauswerfen.,作为主持者，你可以在计分板中踢出玩家。,ホストのプレイヤーは、スコアボードからメンバーをキックできます。,호스트는 스코어보드에서 멤버를 쫓아낼 수 있습니다.,作為主持者，你可以在計分板中踢出玩家。,"En tant qu'hébergeur, vous pouvez expulser des membres du classement.",Вы хост. Хост может исключать игроков с помощью таблицы участников.,"Como anfitrião, você pode expulsar membros da tabela de classificação.","Como organizador, puedes expulsar a los miembros del marcador."
+<!MissingKey:100:Group by Version>,Group by Version,Nach Version gruppieren,按版本分组,バージョンで分類,버전으로 분류,按版本分組,Grouper par version,Группировка по версии,Ordenar por versão,Agrupar por versión
+<!MissingKey:101:Open Wardrobe>,Open Wardrobe,"Kleider-
+schrank öffnen",打开衣柜,クローゼットを開く,옷장 열기,打開衣櫃,Ouvrir la garde-robe,Открыть гардероб,Abrir Armário,Abrir armario
+"<!MissingKey:102:If you abandon the lobby, it will be closed.>","If you abandon the lobby, it will be closed.","Wenn du die Lobby aufgibst, wird sie geschlossen.",如果你退出大厅，大厅将会被关闭。,ロビーを破棄した場合、ロビーは閉じられます。,"로비를 포기할 시, 포기한 로비는 폐쇄됩니다.",如果你退出大廳，大廳將會被關閉。,"Si vous abandonnez la salle, elle sera fermée.","Если вы распустите комнату, она будет закрыта.","Se você abandonar o salão, ele será fechado.","Si abandonas la sala, se cierra."
+<!MissingKey:103:{amount} {debuff} protected from cleansing ({origin}).>,{amount} {debuff} protected from cleansing ({origin}).,{amount} {debuff} vor Entfernung geschützt ({origin}).,对{amount} {debuff}的净化被保护（{origin}）。,{amount} {debuff} の解除を阻害された（{origin}）。,{amount} {debuff} 정화 저지됨 ({origin}).,對{amount} {debuff}的淨化被保護（{origin}）。,{amount} {debuff} protégé(s) de la purge ({origin}).,Отмена снятия: {amount} {debuff} ({origin}).,{amount} {debuff} protegido contra purificação ({origin}).,Has impedido que se salven de {amount} {debuff} ({origin}).
+<!MissingKey:104:Ranking change: {rankLow} to {rankHigh}>,Ranking change: {rankLow} to {rankHigh},Rangänderung: {rankLow} bis {rankHigh},排名改变：{rankLow}到{rankHigh},ランキング変動：{rankLow}から{rankHigh}へ,랭킹 변화: {rankLow}에서 {rankHigh},排名改變：{rankLow}到{rankHigh},Classement modifié : de {rankLow} à {rankHigh},Рейтинг изменен: с {rankLow} на {rankHigh},Mudança no ranque: de {rankLow} para {rankHigh},Cambio de clasificación: {rankLow} a {rankHigh}
+<!MissingKey:105:Unique Shop Items>,Unique Shop Items,Einzigartige Laden-Gegenstände,特殊商店物品,ユニークショップアイテム,특별 상점 아이템,特殊商店物品,Objets de boutique uniques,Уникальные предметы магазина,Itens Únicos da Loja,Objetos de tienda únicos
+<!MissingKey:106:Search...>,Search...,Suchen...,搜索……,検索…,검색...,搜索……,Chercher…,Поиск...,Buscar...,Buscar...
+<!MissingKey:107:MMB>,MMB,Mittelklick,鼠标中键,中央マウスボタン,가운데 클릭,鼠标中键,Clic milieu,Средняя кнопка мыши,Botão central do mouse,Clic medio (ratón)
+<!MissingKey:108:{origin} activated.>,{origin} activated.,{origin} aktiviert.,{origin}以显示。,{origin}が発動した。,{origin} 발동함.,{origin}以顯示。,{origin} activé(s).,{origin}: активация.,{origin} ativado(a).,Has activado {origin}.
+<!MissingKey:109:{hour} hours ago>,{hour} hours ago,Vor {hour} Stunden,{hour}小时前,{hour}時間前,{hour}시간 전,{hour}小時前,{hour} heures plus tôt,{hour} ч. назад,{hour} horas atrás,Hace {hour} horas
+<!MissingKey:110:Mute when unfocused>,Mute when unfocused,Stumm wenn nicht im Fokus,在闲置时静音,非フォーカス時は音声をミュート,비활성화 시 음소거,在閒置時靜音,Couper le son en cas d'absence,Отключение звука при бездействии,Silenciar em segundo plano,Silenciar al minimizar
+<!MissingKey:111:1 Try Left>,1 Try Left,1 Versuch übrig,1次重试机会,トライ残数1,남은 생명: 1,還剩1次嘗試機會,1 essai restant,Осталась 1 попытка,Resta 1 tentativa,Queda 1 intento
+<!MissingKey:112:Borderless>,Borderless,Randlos,无边框,ボーダーレス,테두리 없음,無邊框,Sans bordure,Оконный режим без рамки,Sem bordas,Sin bordes
+<!MissingKey:113:Borderless Maximized>,Borderless Maximized,Randlos maximiert,无边框最大化,最大化ボーダーレス,테두리 없는 최대화,無邊框最大化,Sans bordure max,Без рамки во весь экран,Maximizado sem bordas,Sin bordes maximizado
+<!MissingKey:114:Strongest>,Strongest,Stärkste,适者生存,最強,강한 순,適者生存,Les plus forts,Сильнейшие,Mais Forte,Con el más duro
+<!MissingKey:115:Crit chance>,Crit chance,Kritische Trefferchance,暴击几率,クリティカル率,치명타 확률,暴擊機率,Chance de coup critique,Шанс критического урона,Chance de crítico,Prob. de crítico
+<!MissingKey:116:Reserve shop item>,Reserve shop item,Reservieren,保留商店物品,商品の予約,상점 아이템 예약,保留商店物品,Réserver un objet de la boutique,Зарезервировать предмет,Reservar item da loja,Reservar objeto
+<!MissingKey:117:Survive {rounds} rounds>,Survive {rounds} rounds,Überlebe {rounds} Runden,生存{rounds}回合,残り{rounds}ラウンド,남은 라운드: {rounds},生存{rounds}回合,Survivre {rounds} tours,Всего раундов выживания - {rounds},Sobreviva {rounds} rodadas,Sobrevive {rounds} rondas
+<!MissingKey:118:Default Battle Speed>,Default Battle Speed,Standard Kampf Tempo,默认战斗速度,デフォルトのバトル速度,기본 전투 속도,預設戰鬥速度,Vitesse de combat par défaut,Скорость боя по умолчанию,Velocidade padrão da batalha,Vel. de batalla por defecto
+<!MissingKey:119:Enter lobby code...>,Enter lobby code...,Lobby-Code eingeben...,输入大厅代码：,ロビーコードを入力…,로비 코드를 입력하세요...,輸入大廳代碼：,Saisie d'un code de salle…,Введите код комнаты...,Insira o código...,Introduce el código de la sala...
+<!MissingKey:120:Score: {score}>,Score: {score},Score: {score},积分：{score},スコア：{score},점수: {score},積分：{score},Score : {score},Счет: {score},Pontuação: {score},Puntaje: {score}
+<!MissingKey:121:Up>,Up,Oben,方向键上,方向キー上,위쪽 방향키,方向键上,Haut,Вверх,Cima,Arriba
+<!MissingKey:122:Cancel>,Cancel,Abbrechen,取消,キャンセル,취소,取消,Annuler,Отмена,Cancelar,Cancelar
+<!MissingKey:123:Fatigue Damage: {counter}>,Fatigue Damage: {counter},Erschöpfungsschaden: {counter},疲惫伤害：{counter},疲労ダメージ：{counter},피로 피해: {counter},疲勞傷害：{counter},Dégâts de fatigue : {counter},Урон истощения: {counter},Dano de Cansaço: {counter},Daño por fatiga: {counter}
+<!MissingKey:124:Hover to preview. Click to select or unlock.>,Hover to preview. Click to select or unlock.,"Klicken, um auszuwählen oder freizuschalten.","鼠标悬浮至上方预览，
+点击进行选择或解锁。",カーソルを乗せて閲覧、クリックで選択またはアンロック,"마우스를 올려 미리보기.
+클릭하여
+선택 및 잠금
+해제.","游標移動至上方預覽，
+點擊進行選擇或解鎖。",Passez la souris dessus pour obtenir un aperçu. Cliquer pour choisir cet élément ou le déverrouiller.,"Наведите курсор для предпросмотра. Нажмите, чтобы выбрать или разблокировать.",Passe o cursor para ver. Clique para selecionar ou desbloquear.,Pasar cursor para previsualizar. Clic para elegir o desbloquear.
+<!MissingKey:125:Self-inflicted {amount} {debuff} for {duration}s ({origin}).>,Self-inflicted {amount} {debuff} for {duration}s ({origin}).,{amount} {debuff} für {duration}s auf sich selbst verursacht ({origin}).,对自己施加了{amount} {debuff}，持续{duration}秒 ({origin})。,{duration}秒間 {amount} {debuff} を自分に付与した（{origin}）。,{duration}초 동안 자신에게 {amount} {debuff} 부여 ({origin}).,對自己施加了{amount}層{debuff}，持續{duration}秒（{origin}）。,{amount} {debuff} auto-infligé(s) pendant {duration}s ({origin}).,Накладывает на себя: {amount} {debuff} на {duration} сек. ({origin}).,Infligiu-se {amount} {debuff} por {duration} s ({origin}).,Te has autoinfligido {amount} {debuff} durante {duration} s ({origin}).
+<!MissingKey:126:Shift>,Shift,Umschalt,Shift,Shiftキー,Shift,Shift,Maj.,Shift,Shift,Shift
+<!MissingKey:127:Damage blocked>,Damage blocked,Vermiedener Schaden,伤害抵挡数,防いだダメージ,막힌 대미지,傷害抵擋數,Dégâts bloqués,Урон заблокирован,Dano bloqueado,Daño bloqueado
+<!MissingKey:128:Highlight empty slots>,Highlight empty slots,,高亮空槽,空きスロットをハイライト,빈 슬롯을 강조,標記空槽,Marquer les emplacements vides,Подсвечивать пустые слоты,Destacar espaços vagos,Iluminar espacios vacíos
+<!MissingKey:129:Enter a lobby code.>,Enter a lobby code.,Gib einen Code ein.,输入一个大厅代码。,ロビーコードを入力してください。,로비 코드를 입력하세요.,輸入一個大廳代碼。,Saisir un code de salle.,Введите код комнаты,Insira um código de Salão.,Introduce un código de sala.
+<!MissingKey:130:Continue Game>,Continue Game,Weiterspielen,继续游戏,ゲームを続行,게임계속하기,繼續遊戲,Continuer le jeu,Продолжить игру,Continuar Partida,Continuar la partida
+<!MissingKey:131:Close Wardrobe>,Close Wardrobe,"Kleider-
+schrank schließen",关闭衣柜,クローゼットを閉じる,옷장 닫기,關閉衣櫃,Fermer la garde-robe,Закрыть гардероб,Fechar Armário,Cerrar armario
+<!MissingKey:132:Reflected {amount}{debuff}>,Reflected {amount}{debuff},{amount}{debuff} reflektiert.,反弹{amount} {debuff},{amount} {debuff} 反射,{amount} 반사 {debuff},反彈{amount}層{debuff},{amount} {debuff} renvoyé(s),Отражение {amount} {debuff},Refletiu {amount} {debuff},Has devuelto {amount} {debuff}
+<!MissingKey:133:{absDmg} ({dps}/s)>,{absDmg} ({dps}/s),{absDmg} ({dps}/s),{absDmg} ({dps}/s),{absDmg}（{dps}/秒）,{absDmg} ({dps}/s),{absDmg}（{dps}/s）,{absDmg} ({dps}/s),{absDmg} ({dps}/сек.),{absDmg} ({dps}/s),{absDmg} ({dps}/s)
+<!MissingKey:134:Damage Taken>,Damage Taken,Erhaltener Schaden,受到伤害,被ダメージ,입은 피해,受到傷害,Dégâts subis,Урона получено,Dano sofrido,Daño recibido
+<!MissingKey:135:Cursor Speed>,Cursor Speed,Cursorgeschwindigkeit,鼠标速度,カーソル速度,커서 속도,滑鼠速度,Vitesse du curseur,Скорость курсора,Velocidade do cursor,Velocidad del cursor
+<!MissingKey:136:Heal>,Heal,Heilung,治愈,体力回復,치유,治癒,Guérison,Восстановление здоровья,Cura,Curación
+<!MissingKey:137:Class Items>,Class Items,Klassengegenst.,职业物品,クラスアイテム,직업 아이템,流派物品,Objets de classe,Предметы класса,Itens da Classe,Objetos por clase
+<!MissingKey:138:Reroll shop>,Reroll shop,Angebot erneuern,刷新商店,商品の入替,상점 새로고침,重骰商店,Actualiser la boutique,Обновление магазина,Atualizar loja,Renovar objetos
+<!MissingKey:139:Windowed>,Windowed,Fenster,窗口,ウィンドウモード,창 모드,視窗化,Fenêtré,Оконный режим,Janela,En modo ventana
+<!MissingKey:140:Low>,Low,Niedrig,低,少ない,낮음,低,Faible,Низкий,Baixo,Baja
+<!MissingKey:141:Storage>,Storage,Lager,储存箱,保管ボックス,창고,儲存箱,Réserve,Ящик,Depósito,Almacenamiento
+<!MissingKey:142:Starting in >,Starting in ,Startet in,即将开始,開始まで,시작까지,即將開始,Début dans ,Начало через,Começando em,Empieza en
+<!MissingKey:143:Lobby Results>,Lobby Results,Lobby-Ergebnisse,对局结果,ロビー結果,로비 결과,對局結果,Résultats de salle,Результаты комнаты,Resultados do Salão,Resultados de la sala
+<!MissingKey:144:Show borders of bags with effects>,Show borders of bags with effects,,显示背包的边缘特效,効果付きバッグにラインを表示,효과가 있는 가방을 외곽선으로 표시,顯示背包的邊緣特效,Afficher les bordures des sacs avec effets,Показывать эффекты границ сумок,Exibir bordas das bolsas com efeitos,Mostrar los bordes de la mochila
+<!MissingKey:145:Acquired {num} times>,Acquired {num} times,{num} mal erhalten,{num}次获得,{num}回入手,{num}번 획득함,{num}次獲得,Obtenu(e) {num} fois,Получение предмета: {num},Adquirido {num} vezes,Adquirido {num} veces
+<!MissingKey:146:You can switch to Chibi style in the wardrobe!>,You can switch to Chibi style in the wardrobe!,Du kannst im Kleiderschrank zum Chibi-Style wechseln.,"你可以在衣柜中把
+角色换成Q版美术风格。","クローゼットで
+チビキャラに切り替えられます！","옷장에서 SD 스타일로
+변경할 수 있습니다!","你可以在衣櫃中把
+角色換成Q版美術風格。",Vous pouvez opter pour un style Chibi à partir de la garde-robe !,В гардеробе можно переключиться на стиль чиби!,Você pode mudar para o estilo Chibi no Armário!,¡Puedes cambiar al estilo chibi en el armario!
+<!MissingKey:147:Unnamed>,Unnamed,Unbenannt,未命名,名無し,이름 없음,未命名,Sans nom,Безымянный игрок,Sem nome,Sin nombre
+<!MissingKey:148:Concede Active Game (Ranking {rankDif})>,Concede Active Game (Ranking {rankDif}),Aktives Spiel aufgeben (Rang {rankDif}),放弃进行中的游戏（排名{rankDif}）,"現在のゲームを
+棄権（ランク：{rankDif}）","진행 중인 게임
+포기 (랭킹 {rankDif})",放棄進行中的遊戲（排名{rankDif}）,Abandonner un jeu actif (classement {rankDif}),Покинуть текущую игру (рейтинг: {rankDif}),Encerrar Partida Ativa (ranque: {rankDif}),Aceptar la derrota (Clasificación {rankDif})
+<!MissingKey:149:UI/Confirm>,UI/Confirm,UI/Bestätigen,UI/确定,UI/確定,UI/확인,UI/確定,IU/Confirmer,UI/Подтвердить,Interface/Confirmar,IU/Confirmar
+<!MissingKey:150:Click me for $h[valuable] tips!>,Click me for $h[valuable] tips!,Klick mich für $h[wertvolle] Tipps!,点击我来获得$h[实用]提示！,クリックして！ $h[役立つ]ヒントを教えるよ！,"$h[쓸모있는] 팁을 보려면
+저를 클릭하세요!",點擊此處查看$h[實用]提示！,Cliquez ici pour obtenir de $h[précieux] conseils !,"Нажмите на меня, чтобы получить $h[ценные] советы!",Clique em mim para receber dicas $h[valiosas]!,¡Haz clic en mí para que te dé $h[valiosos] consejos!
+<!MissingKey:151:1 minute ago>,1 minute ago,Vor 1 Minute,1分钟前,1分前,1분 전,1分鐘前,1 minute plus tôt,1 мин. назад,1 minuto atrás,Hace 1 minuto
+<!MissingKey:152:Voice>,Voice,Stimmen,语音,ボイス,음성,語音,Voix,Голос,Voz,Voces
+<!MissingKey:153:Opponent>,Opponent,Gegner,对手,対戦相手,상대,對手,Adversaire,Противник,Oponente,Rival
+<!MissingKey:154:No players are matched against custom runs.>,No players are matched against custom runs.,Niemand wird gegen Spieler mit Sonderregeln spielen.,在自定义规则对局时，其他玩家不会匹配到你。,"カスタムルールを設定すると
+ほかのプレイヤーは
+あなたとマッチングしなくなります。",커스텀 런에서는 플레이어를 상대하지 않습니다.,在自定義規則對局時，其他玩家不會匹配到你。,Aucun joueur n'est adapté aux parties personnalisées.,Не найдены игроки для пользовательской игры.,Nenhum jogador é pareado com corridas personalizadas.,No se encuentran jugadores para las rondas personalizadas.
+<!MissingKey:155:Reroll>,Reroll,Erneuern,刷新,更新,새로고침,重骰,Actualiser,Обновить,Atualizar,Renovar
+<!MissingKey:156:Perfect Win!>,Perfect Win!,Perfekter Sieg!,完美胜利！,完全勝利！,완벽한 승리!,完美勝利！,Victoire parfaite !,Идеальная победа!,Vitória perfeita!,¡Victoria perfecta!
+<!MissingKey:157:~{avrRound}s / {totalDur}min>,~{avrRound}s / {totalDur}min,~{avrRound}s / {totalDur}min,~{avrRound}秒 / {totalDur}分钟,約 {avrRound}秒 / {totalDur}分,~{avrRound}초 / {totalDur}분,~{avrRound}秒 / {totalDur}分鐘,~{avrRound} s/{totalDur} min,~{avrRound} сек. / {totalDur} мин.,~{avrRound} s / {totalDur} min,~{avrRound} s / {totalDur} m
+<!MissingKey:158:RMB>,RMB,Rechtsklick,鼠标右键,右マウスボタン,우클릭,鼠标右键,Clic droit,ПКМ,BDM,Clic der (ratón)
+<!MissingKey:159:Music>,Music,Musik,音乐,BGM,배경음,音樂,Musique,Музыка,Música,Música
+<!MissingKey:160:Silver>,Silver,Silber,白银,シルバー,실버,白銀,Argent,Серебро,Prata,Plata
+<!MissingKey:161:Gained {amount} {buff} for {duration}s ({origin}).>,Gained {amount} {buff} for {duration}s ({origin}).,{amount} {buff} für {duration}s erhalten ({origin}).,获得了{amount} {buff}，持续{duration}秒 ({origin})。,{duration}秒間 {amount} {buff} を獲得した（{origin}）。,{duration}초 동안 {amount} {buff} 획득 ({origin}).,獲得了{amount}層{buff}，持續{duration}秒（{origin}）。,{amount} {buff} gagné(s) pendant {duration} s ({origin}).,Добавлено: {amount} {buff} на {duration} сек. ({origin}).,Ganhou {amount} {buff} por {duration} s ({origin}).,Has obtenido {amount} {buff} durante {duration} s ({origin}).
+<!MissingKey:162:{item} gained +{damage} damage ({origin}).>,{item} gained +{damage} damage ({origin}).,{item} erhielt +{damage} Schaden ({origin}).,{item}获得了+{damage}点伤害（{origin}）。,{item}のダメージ値が+{damage}された（{origin}）。,{item}의 피해가 {damage} 증가({origin}).,{item}獲得了+{damage}點傷害（{origin}）。,{item} gagné +{damage} de dégâts ({origin}).,Предмет {item} повышает атаку на {damage} ед. ({origin}).,{item} ganhou +{damage} de dano ({origin}).,{item} inflige {damage} más de daño ({origin}).
+<!MissingKey:163:Close>,"Close
+ Log","Log-
+ buch schließen",关闭日志,"ログ
+閉じる","기록
+닫기",關閉日誌,Fermer le rapport,Закрыть журнал,Fechar Diário,Cerrar registro
+<!MissingKey:164:Hover entries to jump back in time.>,Hover entries to jump back in time.,"Cursor über die Einträge halten, um in der Zeit zurückzuspringen.",鼠标停放在条目上观看回放。,エントリにカーソルを乗せて戻る,마우스를 올려 특정 시점으로 돌아갈 수 있습니다.,游標移動到條目上方可回顧歷史。,Passez la souris sur les données pour revenir en arrière dans le temps.,"Наведите курсор на строку, чтобы переместиться в прошлое.",Passe o cursor sobre os registros para voltar no tempo.,Pasa el ratón sobre la entrada para retroceder.
+<!MissingKey:165:Custom Unranked>,Custom Unranked,Ungewertet mit Sonderregeln,自定义休闲游戏,カスタムカジュアル,커스텀 일반,自定義休閒遊戲,Personnaliser non-classé,Пользовательская игра (обычная),Personalização Casual,Partida personalizada no clasificatoria
+<!MissingKey:166:Rank>,Rank,Rang,排名,ランク,랭크,排名,Classement,Рейтинг,Ranque,Clasificación
+<!MissingKey:167:Gold>,Gold,Gold,黄金,ゴールド,골드,黃金,Or,Золото,Ouro,Oro
+<!MissingKey:168:[center]Coming Early 2026>,[center]Coming Early 2026,[center]Frühjahr 2026,[center]2026 年春季,[center]2026年春,[center]2026년 봄,[center]2026 年春季,[center]Printemps 2026,[center]Весна 2026,[center]Primavera de 2026,[center]Primavera de 2026
+<!MissingKey:169:Used:>,Used:,Genutzt:,消耗：,消費：,사용:,消耗：,Utilisé(s) :,Использовано:,Gastou:,Usado:
+<!MissingKey:170:Looking for opponent...>,Looking for opponent...,Suche Gegner...,寻找对手……,"対戦相手を
+検索中…","상대를
+찾는 중...",正在尋找對手……,Recherche d'adversaire en cours…,"Поиск
+противника...",Buscando oponente...,Buscando un rival...
+<!MissingKey:171:No Grouping>,No Grouping,Keine Gruppierung,不分组,分類オフ,분류하지 않기,不分組,Aucun filtrage,Без группировки,Não agrupar,Sin agrupar
+<!MissingKey:172:Other>,"Other
+Game
+Modes","Weitere
+Spiel-
+Modi","其他
+游戏
+模式","サブ
+ゲーム
+モード","기타
+게임
+모드","其他
+遊戲
+模式","Autres
+modes
+de jeu","Другие
+режимы
+игры","Outros
+Modos
+de Jogo","Otros
+modos
+de juego"
+<!MissingKey:173:Choose Class>,Choose Class,Klasse wechseln,选择职业,クラス選択,직업 선택,選擇流派,Choisir la classe,Выбор класса,Escolher Classe,Elegir clase
+<!MissingKey:174:Choose Loadout>,Choose Loadout,Ausrüstung wechseln,选择装备,装備選択,장비 선택,選擇裝備,Choisir l'équipement,Выбор снаряжения,Escolha o Equipamento,Elegir equipo
+<!MissingKey:175:Damage>,Damage,Schaden,伤害,ダメージ,피해,傷害,Dégâts,Урон,Dano,Daño
+<!MissingKey:176:Best Win/Loss>,Best Win/Loss,,最佳胜利/失败比,"ベスト
+勝利/敗北数","최고
+승리/패배",最佳胜利/失败比,Meilleure vict./déf.,Лучший коэфф. побед/поражений,Melhor vitórias/derrotas,Mejor victoria/derrota
+<!MissingKey:177:Backspace>,Backspace,Zurück,退格键,Backspaceキー,백스페이스,退格键,Espace,Backspace,Backspace,Retroceso
+<!MissingKey:178:Push all items to storage>,Push all items to storage,Alles ins Lager werfen,"移动所有物品
+到储存箱","全アイテムを
+ボックスへ移動","모든 아이템
+창고에 넣기","移動所有物品
+到儲存箱",Pousser tous les objets en réserve,Сбросить все предметы в ящик,Pôr todos os itens no depósito,Mandar todos los objetos al almacenamiento
+<!MissingKey:179:Ingredients>,Ingredients,Komponenten,合成材料,材料,재료,合成材料,Ingrédients,Материалы,Ingredientes,Ingredientes
+<!MissingKey:180:Recipes>,Recipes,Rezepte,合成库,レシピ,조합법,配方,Recettes,Рецепты,Receitas,Recetas
+<!MissingKey:181:Items>,Items,Gegenstände,物品图鉴,アイテム,아이템,物品圖鑑,Objets,Предметы,Itens,Objetos
+<!MissingKey:182:Connecting...>,Connecting...,Verbinden...,连接中……,接続中…,연결 중...,連接中……,Connexion en cours…,Подключение...,Conectando...,Conectando...
+<!MissingKey:183:Filter>,Filter,Filter,筛选,フィルター,필터,篩選,Filtrer,Фильтр,Filtrar,Filtro
+<!MissingKey:184:Rotate with {button1} or {button2}>,Rotate with {button1} or {button2},Rotiere mit {button1} oder {button2},使用{button1}或{button2}旋转,{button1}または{button2}で回転,"{button1}(이)나
+{button2}(을)를 눌러 회전",使用{button1}或{button2}旋轉,Faire pivoter avec {button1} ou {button2},Поворачивайте кнопкой {button1} или {button2},Gire com {button1} ou {button2},Para rotar: {button1} o {button2}
+<!MissingKey:185:Damage Dealt>,Damage Dealt,Erteilter Schaden,造成伤害,与ダメージ,가한 피해,造成傷害,Dégâts infligés,Урона нанесено,Dano causado,Daño infligido
+<!MissingKey:186:Down>,Down,Unten,方向键下,方向キー下,아래쪽 방향키,方向键下,Bas,Вниз,Baixo,Abajo
+<!MissingKey:187:Right>,Right,Rechts,方向键右,方向キー右,오른쪽 방향키,方向键右,Droite,Вправо,Direita,Derecha
+<!MissingKey:188:Choose a skill!>,Choose a skill!,Wähle einen Skill!,选择技能,スキル選択,스킬을 선택하세요!,選擇技能,Choisissez une compétence !,Выберите способность!,Escolha uma habilidade!,¡Elige una habilidad!
+<!MissingKey:189:{amount} {buff} protected from removal ({origin}).>,{amount} {buff} protected from removal ({origin}).,{amount} {buff} vor Entfernung geschützt ({origin}).,对{amount} {buff}的移除被保护（{origin}）。,{amount} {buff} の除去が保護された（{origin}）。,{amount} {buff} 제거 보호됨 ({origin}).,對{amount} {buff}的移除被保護（{origin}）。,{amount} {buff} protégé(s) du retrait ({origin}).,Отмена снятия: {amount} {buff} ({origin}).,{amount} {buff} protegido contra remoção ({origin}).,Has impedido que eliminen {amount} {buff} ({origin}).
+<!MissingKey:190:1 day ago>,1 day ago,Vor 1 Tag,1天前,1日前,1일 전,1天前,1 jour plus tôt,1 день назад,1 dia atrás,Hace 1 día
+<!MissingKey:191:Inventory>,Inventory,Inventar,背包库存,バックパック,인벤토리,背包庫存,Inventaire,Инвентарь,Inventário,Inventario
+<!MissingKey:192:Prioritize Host>,Prioritize Host,Priorisiere Gastgeber,针对房主,ホスト優先,호스트 우선,針對房主,Priorité à l'hébergeur,Приоритет хоста,Priorizar Anfitrião,Prioriza al anfitrión
+<!MissingKey:193:Shift inventory up>,Shift inventory up,Inventar nach oben,向上移动背包,バッグを上へ移動,위쪽으로 인벤토리 이동,向上移動背包,Décaler l'inventaire vers le haut,Сместить инвентарь вверх,Mover inventário para cima,Mover inventario (arriba)
+<!MissingKey:194:Cleansed {amount} {debuff} ({origin}).>,Cleansed {amount} {debuff} ({origin}).,{amount} {debuff} entfernt ({origin}).,净化{amount}层 {debuff}（{origin}）。,{amount} {debuff} を解除した（{origin}）。,{amount} {debuff} 정화 ({origin}).,淨化{amount}層 {debuff}（{origin}）。,{amount} {debuff} purgés ({origin}).,Снимает {amount} {debuff} ({origin}).,Purificou {amount} {debuff} ({origin}).,Has eliminado {amount} {debuff} ({origin}).
+<!MissingKey:195:Medium>,Medium,Mittel,中等,ほどほど,보통,中,Moyenne,Средний,Médio,Media
+<!MissingKey:196:Play games to earn trophies!>,Play games to earn trophies!,,,,,,,,,
+<!MissingKey:197:Invalid code.>,Invalid code.,Lobbycode ungültig.,无效代码。,無効なコードです。,유효하지 않은 코드.,無效代碼。,Code non valide.,Неверный код.,Código inválido.,Código no válido.
+<!MissingKey:198:The following players are disconnected:>,"The following players are disconnected:
+{members}
+You can kick them using the scoreboard.","Verbindung zu diesen Spielern unterbrochen:
+{members}
+Du kannst sie von der Rangliste aus rauswerfen.","以下玩家已经断开连接：
+{members}
+你可以用计分板踢出玩家。","以下のメンバーが切断されました。
+{members}
+そのプレイヤーはスコアボードからキックできます。","다음 플레이어의 연결이 끊겼습니다:
+{members}
+스코어보드에서 해당 플레이어를 추방할 수 있습니다.","以下玩家已經斷開連接：
+{members}
+你可以用計分板踢出玩家。","Les joueurs suivants sont déconnectés :
+{members}
+Vous pouvez les expulser à l'aide du classement.","Следующие игроки отключены:
+{members}
+Вы можете исключить их с помощью таблицы участников.","Os seguintes jogadores estão desconectados:
+{members}
+Você pode expulsá-los usando a tabela de classificação.","Los siguientes jugadores están desconectados:
+{members}
+Puedes expulsarlos desde el marcador."
+<!MissingKey:199:Always offered in round {round}. >,Always offered in round {round}. ,Immer in Runde {round} angeboten.,在第{round}回合必然出现。,ラウンド{round}で必ず出現,{round}에 항상 제공됩니다.,在第{round}回合必然出現。,Toujours disponible en {round}.,Всегда появляется на {round}.,Sempre oferecido em {round}.,Se ofrece siempre en la ronda {round}.
+<!MissingKey:200:Subclass unlocked!>,Subclass unlocked!,Unterklasse freigeschaltet!,子职业解锁！,サブクラスがアンロック！,보조 직업 해금!,子流派解鎖！,Sous-classe déverrouillée !,Специализация разблокирована!,Subclasse desbloqueada!,¡Subclase desbloqueada!
+<!MissingKey:201:Debuffs>,Debuffs,Debuffs,减益,デバフ,디버프,減益效果,Malus,Негативные эффекты,Debuffs,Desventajas
+<!MissingKey:202:Enter>,Enter,Enter,回车,Enterキー,엔터,回車,Entrée,Enter,Entrar,Intro
+<!MissingKey:203:Maximum health gained>,Maximum health gained,Erhaltenes Maximalleben,获得的最大生命值,体力最大値増加,획득한 최대 체력,獲得的最大生命值,PV max gagnés,Максимальное здоровье повышено,Vida máxima ganha,PS máx. obtenidos
+<!MissingKey:204:Lock combining>,Lock combining,Kombinieren sperren,锁定融合,合成のロック,조합 잠금,鎖定融合,Verrouillage de combinaison,Запрет объединения,Bloquear combinação,Fijar combinación
+<!MissingKey:205:Window Mode>,Window Mode,Fenstermodus,显示模式,ウィンドウモード,창 모드,視窗模式,Mode fenêtré,Режим экрана,Modo janela,Modo ventana
+<!MissingKey:206:{num} items in storage.>,{num} items in storage.,{num} Gegenstände im Lager.,储存箱内有{num}个物品。,保管ボックスにアイテムが{num}個あります,"창고에 {num}개의 아이템이
+존재합니다.",儲存箱內有{num}個物品。,{num} objets en réserve.,В ящике остались предметы: {num}.,{num} itens no depósito.,{num} objetos en el almacenamiento.
+<!MissingKey:207:Round>,Round,Runde,回合,ラウンド,라운드,回合,Tour,Раунд,Rodada,Ronda
+<!MissingKey:208:Inflicted {amount} {debuff} for {duration}s ({origin}).>,Inflicted {amount} {debuff} for {duration}s ({origin}).,{amount} {debuff} für {duration}s verursacht ({origin}).,施加了{amount} {debuff}，持续{duration}秒 ({origin})。,{duration}秒間 {amount} {debuff} を付与した（{origin}）。,{duration}초 동안 {amount} {debuff} 부여 ({origin}).,施加了{amount}層{debuff}，持續{duration}秒（{origin}）。,{amount} {debuff} infligé(s) pendant {duration} s ({origin}).,Накладывает: {amount} {debuff} на {duration} сек. ({origin}).,Infligiu {amount} {debuff} por {duration} s ({origin}).,Has infligido {amount} {debuff} durante {duration} s ({origin}).
+<!MissingKey:209:Protected {amount}{buff}>,Protected {amount}{buff},{amount}{buff} geschützt.,{amount}{buff}净化被阻止,{amount} {buff} 保護,{amount}{buff} 방어함,{amount}層{buff}淨化被阻止,{amount} {buff} protégé(s),Отмена снятия: {amount}{buff},Protegeu {amount} {buff},Has protegido {amount} {buff}
+<!MissingKey:210:All items activate automatically!>,All items activate automatically!,Alle Gegenstände aktivieren automatisch.,所有物品都会自动激活使用！,全アイテムは自動で使われる！,"모든 아이템은
+자동으로 발동됩니다!",所有物品都會自動使用！,Tous les objets s'activent automatiquement !,Все предметы активируются автоматически!,Todos os itens se ativam sozinhos!,¡Todos los objetos se activan automáticamente!
+"<!MissingKey:211:The full version comes with more characters, items & more. Get it on Steam if you had fun! :)>","The full version comes with more characters, items & more. Get it on Steam if you had fun! :)","Die Vollversion enthält neue Charakterklassen, Gegenstände und mehr! Wenn du Spaß hattest, hol sie dir jetzt auf Steam! ",完整版将包含更多角色、物品等等。如果觉得游戏不错，记得在Steam上购买！,製品版ではさらなるキャラクターやアイテムのほか、様々な要素が追加されています。ゲームがおもしろかったら、ぜひSteamで購入してみてください！,정식 버전에서는 더 많은 캐릭터와 아이템이 찾아올 예정입니다. 재밌게 즐기셨다면 위시리스트에 추가해주세요! 정말 큰 도움이 됩니다 :),完整版將包含更多角色、物品等等。如果覺得遊戲不錯，記得在Steam購買！,"La version complète comprend davantage de personnages, d'objets et bien plus encore. Achetez-la sur Steam si cela vous a plu ! :)","Полная версия включает в себя больше персонажей, предметов и прочего. Полную версию можно приобрести в Steam!:)","A versão completa tem mais personagens, itens e muito mais. Se você se divertiu, adquira-a no Steam! :)","La versión completa incluye más personajes, objetos y otras cosas. ¡Hazte con ella en Steam si te ha gustado! :)"
+<!MissingKey:212:Thanks for playing!>,Thanks for playing!,Danke fürs Spielen!,感谢游玩！,Thanks for playing!,플레이해주셔서 감사합니다!,感謝遊玩！,Merci d'avoir joué !,Спасибо за игру!,Agradecemos por jogar!,¡Gracias por jugar!
+<!MissingKey:213:Host a Lobby>,Host a Lobby,Lobby erstellen,创建一个大厅,ロビーを作成,로비 호스팅하기,創建一個大廳,Héberger une salle,Управление комнатой,Hospedar um Salão,Organizar una sala
+<!MissingKey:214:Inventory value: {gold} {icon}>,Inventory value: {gold} {icon},Inventarwert: {gold} {icon},装备物品价值：{gold} {icon},バックパック価値：{gold} {icon},인벤토리 가치: {gold} {icon},裝備物品價值：{gold} {icon},Valeur de l'inventaire : {gold} {icon},Стоимость инвентаря: {gold} {icon},Valor do inventário: {gold} {icon},Valor de inventario: {gold} {icon}
+<!MissingKey:215:Weapon>,Weapon,,,,,,,,,
+<!MissingKey:216:Round lost>,Round lost,Verloren,回合失败！,ラウンド敗北…,라운드 패배,回合失敗！,Tour perdu,Поражение,Rodada perdida,Has perdido la ronda
+<!MissingKey:217:{treasure} limit>,{treasure} limit,{treasure} Limit,{treasure}数量限制,{treasure} 上限,{treasure} 한계,{treasure}數量限制,Limite de {treasure},Лимит {treasure},Limite de {treasure},Límite de {treasure}
+<!MissingKey:218:Shop Items>,Shop Items,Laden,商店物品,ショップアイテム,상점 아이템,商店物品,Objets de boutique,Предметы магазина,Itens da Loja,Objetos de tienda
+<!MissingKey:219:Speed up battle>,Speed up battle,,,,,,,,,
+<!MissingKey:220:Survive 1 round>,Survive 1 round,Überlebe 1 Runde,生存1回合,残り1ラウンド,남은 라운드: 1,生存1回合,Survivre 1 tour,Продержитесь 1 раунд,Sobreviva 1 rodada,Sobrevive 1 ronda
+<!MissingKey:221:You>,You,Du,你,あなた,나,你,Vous,Вы,Você,Tú
+<!MissingKey:222:Best Rank Survival>,Best Rank Survival,Bester Rang Survival,最高排位等级,"サバイバル
+最高ランク","서바이벌
+최고 랭크",最高排位等级,Meilleur class. de survie,Лучший рейтинг выживания,Melhor Ranque,Mejor clasificación de Supervivencia
+<!MissingKey:223:Patch Notes>,Patch Notes,,更新日志,パッチノート,패치 노트,更新日誌,Notes de correctif,Об обновлении,Notas de Atualização,Notas del parche
+<!MissingKey:224:Rank-Up Bonus!>,Rank-Up Bonus!,Aufstiegs- Bonus!,晋升奖励！,ランクアップボーナス！,랭크 업 보너스!,晉升獎勵！,Bonus de classement supérieur !,Бонус повышения ранга!,Bônus de Subida de Rank!,¡Bonificación por subir de categoría!
+<!MissingKey:225:Similar Stats>,Similar Stats,Ähnliche Ergebnisse,相似水平,同成績,비슷한 성적,相似水準,Statistiques similaires,Кол-во побед,Atributos Similares,Con resultados similares
+<!MissingKey:226:No>,No,Nein,否,いいえ,아니요,否,Non,Нет,Não,No
+<!MissingKey:227:{days} days ago>,{days} days ago,Vor {days} Tagen,{days}天前,{days}日前,{days}일 전,{days}天前,{days} jours plus tôt,{days} дн. назад,{days} dias atrás,Hace {days} días
+<!MissingKey:228:Trade chance>,Trade chance,Tausch-chance,交易几率,トレード発生確率,거래 기회,交易幾率,Chance d'échange,Шанс торгового предложения,Chance de Troca,Oportunidad de comercio
+<!MissingKey:229:LMB>,LMB,Linksklick,鼠标左键,左マウスボタン,좌클릭,鼠标左键,Clic gauche,ЛКМ,BEM,Clic izq (ratón)
+<!MissingKey:230:We could not find any opponents. >,"We could not find any opponents.
+ Things you can do now:
+ - Restart the game
+ - Check if you are playing on the most recent version
+  - If this doesn't help, let us know!
+ You can go on, but you will only face your Dark Reflection, with exactly your build.","Es konnten keine Gegner gefunden werden.
+ Was du jetzt tun kannst:
+ - Starte das Spiel neu
+ - Stelle sicher, dass du auf der aktuellen Version spielst
+ - Wenn das nicht hilft, informiere uns.
+ Du kannst fortfahren, aber du wirst nur deinen Schatten mit deinem eigenen Rucksack antreffen.","无法找到对手。
+您可以尝试以下方法：
+重启游戏
+ - 检查你的游戏版本是否更新到最新
+ - 如果以上方法无效，请联系我们！
+您可以继续游戏，但是您的对手就是您的黑暗倒影，武器装备也与您一致。","対戦相手が見つかりませんでした。
+以下のことを試してみてください：
+ - ゲームを再起動する
+ - ゲームが最新バージョンかどうかチェックする
+上記を試しても改善されない場合は、開発者に報告してください！
+ - このまま進むことはできますが、自分と同じビルドを使うドッペルゲンガーとしか対戦できません。","상대를 찾지 못했습니다.
+지금 하실 수 있는 조치:
+ - 게임을 다시 시작하기
+ - 최신 버전으로 플레이 중인지 확인하기
+ - 만약 해결되지 않았다면, 제보 바랍니다!
+계속 플레이할 수도 있지만, 여러분과 완전히 동일한 빌드를 지닌 어둠의 환영만을 상대하게 될 것입니다.","無法找到對手。
+你可以嘗試以下方法：
+重啟遊戲
+ - 確認你的遊戲版本是否更新到最新
+ - 如果以上方法無效，請聯絡我們！
+你可以繼續遊戲，但是你的對手會是自己的分身，武器裝備也與你一致。","Impossible de trouver un adversaire.
+ Que pouvez-vous faire à présent ?
+ - Redémarrez le jeu
+ - Vérifiez que vous utilisez la version la plus récente du jeu
+ - Si rien de tout cela ne vous a été utile, faites-le nous savoir !
+ Vous pouvez continuer, mais vous n'affronterez que votre Sombre réflexion, avec l'exacte même configuration que la vôtre.","Мы не смогли найти ни одного противника.
+ Что можно сделать:
+ - Перезапустить игру
+ - Проверить, актуальна ли версия игры
+ - Если ни один из вариантов не помог, сообщите нам!
+ Вы можете продолжить игру, но противником будет ваша темная тень с вашим набором предметов.","Não conseguimos encontrar oponentes.
+ Suas opções são:
+ - Reiniciar o jogo
+ - Verificar se está jogando a versão mais recente
+ Se nada disso resolver, nos avise!
+ Você pode continuar, mas só vai enfrentar sua Sósia Maligna, cuja composição é a mesma que a sua.","No hemos podido encontrar rivales.
+ Qué hacer ahora:
+ - Reinicia el juego
+ - Comprueba si estás jugando a la versión más reciente
+ - Si no se soluciona, ¡dínoslo!
+ Puedes seguir jugando, pero solo te podrás enfrentar a tu sombra, que tiene la misma combinación de objetos que tú."
+<!MissingKey:231:Cleansed:>,Cleansed:,Entfernt:,净化：,解除：,정화:,淨化：,Purgé(s) :,Снято:,Purificou:,Eliminado:
+<!MissingKey:232:Round Robin>,Round Robin,Kreisverfahren,战斗轮盘,総当たり,라운드 로빈,戰鬥輪盤,Un tour après l'autre,По кругу,Roleta de Batalha,Rondas de combate
+<!MissingKey:233:Sale: {saleChance}%. {Unique}-item on shop entered: {uniqueChance}%. >,"Sale: {saleChance}%. {Unique}-item on shop entered: {uniqueChance}%.
+(You have {curUniques}/{maxUniques}.)","Angebot: {saleChance}%.
+ {Unique}-Gegenst. beim Betreten: {uniqueChance}%.
+(Du hast {curUniques}/{maxUniques}.) ","打折几率：{saleChance}%。进入商店时{Unique}物品出现几率：{uniqueChance}%。
+（你已拥有{curUniques}/{maxUniques}。）","セール発生確率：{saleChance}%
+{Unique}出現率：{uniqueChance}%
+（所持ユニーク数 {curUniques}/{maxUniques}）","할인: {saleChance}%. 상점 진입 시 {Unique} 확률: {uniqueChance}%.
+(보유 현황 {curUniques}/{maxUniques}.)","折扣機率：{saleChance}%。進入商店時{Unique}物品出現機率：{uniqueChance}%。
+（你已擁有{curUniques}/{maxUniques}。）","Promotion : {saleChance} %. {Unique} en entrant dans la boutique : {uniqueChance} %.
+(Vous avez {curUniques}/{maxUniques}.)","Шанс скидки: {saleChance}%.
+Шанс {Unique} предмета при переходе в магазин: {uniqueChance}%.
+(У вас: {curUniques}/{maxUniques})","Promoção: {saleChance}%. {Unique} ao entrar na Loja: {uniqueChance}%.
+(Você tem {curUniques}/{maxUniques}.)","Oferta del {saleChance} %. Prob. de {Unique} al entrar en la tienda: {uniqueChance} %.
+(Tienes {curUniques}/{maxUniques}.)"
+<!MissingKey:234:Grandma>,Grandma,Großmutter,超级大爷,グランマ,그랜마,老祖宗師,Grand-mère,Легенда,Grão,Maestrísimo
+<!MissingKey:235:First survival>,First survival,Erster Survival- Sieg!,首次生存,初めてのサバイバル,첫 번째 생존,首次生存,Première survie,Первое выживание,Primeira sobrevivência,Primera supervivencia
+<!MissingKey:236:-items>,-items,-Gegenstand,物品,アイテム,아이템,物品,Objets,-предметы,-Itens,-objetos
+<!MissingKey:237:{num} items found.>,{num} items found.,{num} Gegenstände gefunden.,查找到{num}个物品。,{num}件のアイテムが見つかりました,아이템 {num}개 발견.,找到了{num}個物品。,{num} objets trouvés.,Найдено предметов: {num}.,{num} itens encontrados.,{num} objetos encontrados.
+<!MissingKey:238:Click to reveal>,Click to reveal,,,,,,,,,
+<!MissingKey:239:Grandmaster>,Grandmaster,Großmeister,特级大师,グランドマスター,그랜드마스터,宗師,Grand maître,Профи,Grão-mestre,Gran maestro
+<!MissingKey:240:MWheel>,MWheel,Mausrad,鼠标滚轮,マウスホイール,마우스 휠,鼠标滚轮,Molette,Колесо мыши,Roda do mouse,Rueda (ratón)
+<!MissingKey:241:Abandon Lobby>,Abandon Lobby,Lobby aufgeben,放弃大厅,ロビーを破棄,로비 포기하기,放棄大廳,Abandonner la salle,Распустить комнату,Abandonar o Salão,Abandonar la sala
+<!MissingKey:242:Stamina cost>,Stamina cost,Ausdauerkosten,耐力消耗,スタミナ消費値,스태미나 소모,耐力消耗,Coût d'endurance,Расход энергии,Custo de vigor,Coste de resistencia
+<!MissingKey:243:Click to unreserve>,Click to unreserve,Klicken um Reservierung zu lösen,点击取消保留,"クリックで
+取置き解除","클릭해서
+예약 해제",點擊取消保留,Cliquer pour annuler la réservation,Отменить резерв,Clique para cancelar a reserva,Clic para quitar la reserva
+<!MissingKey:244:The host closed the lobby.>,The host closed the lobby.,Der Ersteller hat die Lobby geschlossen.,主持者关闭了大厅。,ホストがロビーを閉じました。,호스트가 로비를 폐쇄했습니다.,主持者關閉了大廳。,L'hébergeur a fermé la salle.,Хост закрыл комнату.,O anfitrião fechou o salão.,El organizador ha cerrado la sala.
+<!MissingKey:245:Gold>,Gold,Gold,金币,ゴールド,골드,金幣,Or,Золото,Ouro,Oro
+<!MissingKey:246:Round lost.>,Round lost.,Runde verloren.,回合失败。,ラウンドに敗北…,라운드 패배.,回合失敗。,Tour perdu.,Поражение.,Rodada perdida.,Has perdido la ronda.
+<!MissingKey:247:Connecting...>,Connecting...,Verbinden...,连接中……,接続中…,연결 중...,連線中……,Connexion en cours…,Подключение...,Conectando...,Conectando...
+<!MissingKey:248:Can be found in rounds {r1} and {r2}>,Can be found in rounds {r1} and {r2},Kann in Runde {r1} und {r2} auftreten,将会在第{r1}和第{r2}回合出现,ラウンド{r1}と{r2}で発見可能,{r1} 라운드와 {r2} 라운드에서 발견 가능,將會在第{r1}和第{r2}回合出現,À trouver aux tours {r1} et {r2},Появляется на {r1}-м и {r2}-м раундах,Pode ser encontrado nas rodadas {r1} e {r2},Aparece en las rondas {r1} y {r2}
+<!MissingKey:249:Combat Log>,Combat Log,Logbuch,战斗日志,戦闘ログ,전투 기록,戰鬥日誌,Rapport de combat,Журнал боя,Diário de Combate,Registro de batalla
+<!MissingKey:250:We could not reach our server. >,"We could not reach our server.
+ Things you can do now:
+ - Wait a bit, maybe the packets have a slow day
+ - Restart the game
+ - Check your internet connection and router settings
+ - If none of this helps, let us know!","Verbindung zum Server konnte nicht hergestellt werden. Was du jetzt tun kannst:
+ - Warte einen Moment
+ - Starte das Spiel neu
+ - Überprüfe deine Internetverbindung
+ Wenn das nicht hilft, informiere uns.","无法链接到服务器。
+您可以尝试以下方法：
+ - 稍等一会，也许是网络堵塞
+ - 重启游戏
+ - 检查您的网络设置和路由器设置
+ - 如果以上方法无效，请联系我们！","サーバーへアクセスできませんでした。
+ 以下のことを試してみてください。
+ - 通信速度が遅い可能性がないか、少し待ってみる
+ - ゲームを再起動する
+ - インターネット接続とルーター設定をチェックする
+上記を試しても改善されない場合は、開発者に報告してください！","서버에 연결할 수 없습니다.
+지금 하실 수 있는 조치:
+ - 패킷이 느린 것일 수 있으니, 잠시 기다리기
+ - 게임을 다시 시작하기
+ - 내 인터넷 연결과 라우터 설정 확인하기
+ - 만약 그 어떤 것도 도움이 되지 않았다면, 제보 바랍니다!","無法連結到伺服器。
+你可以嘗試以下方法：
+ - 稍等一會，也許是網路擁擠
+ - 重啟遊戲
+ - 檢查你的網路設置和路由器設定
+ - 如果以上方法無效，請聯絡我們！","Impossible d'accéder à notre serveur.
+ Que pouvez-vous faire à présent ?
+ - Patientez un peu, il se peut que le débit ait pris un jour de repos aujourd'hui
+ - Redémarrez le jeu
+ - Vérifiez votre connexion Internet et les paramètres de votre routeur
+ - Si rien de tout cela ne vous a été utile, faites-le-nous savoir !","Нет соединения с сервером.
+ Что можно сделать:
+ - Немного подождите, возможно, трафик сегодня не в духе
+ - Перезапустите игру
+ - Проверьте настройки вашего интернет-соединения и роутера
+ - Если ничего из этого не помогло, смело обращайтесь к нам!","Não conseguimos conexão com o nosso servidor.
+ Suas opções são:
+ - Esperar um pouco, talvez os pacotes estejam lentos hoje
+ - Reiniciar o jogo
+ - Verificar sua conexão com a internet ou as configurações do roteador
+ Se nada disso resolver, nos avise!","No hemos podido conectar con el servidor.
+ Qué hacer ahora:
+ - Espera un poco, igual hoy va un poco lento
+ - Reinicia el juego
+ - Comprueba tu conexión a Internet y los ajustes de tu router
+ - Si no se soluciona, ¡dínoslo!"
+<!MissingKey:251:Protected {amount}{debuff}>,Protected {amount}{debuff},{amount}{debuff} geschützt.,{amount}{debuff}净化被阻止,{amount} {debuff} 解除阻害,{amount}{debuff} 방어함,{amount}層{debuff}淨化被阻止,{amount} {debuff} protégé(s),Отмена снятия: {amount}{debuff},Protegeu {amount} {debuff},Has protegido {amount} {debuff}
+<!MissingKey:252:Join failed (lobby already started).>,Join failed (lobby already started).,Beitreten gescheitert (Lobby hat schon begonnen).,加入失败（游戏已开始）。,参加に失敗しました（ロビーが開始済）。,참여하지 못했습니다 (이미 시작한 로비입니다).,加入失敗（遊戲已開始）。,Échec de la rejonction (la salle a déjà commencé).,Неудача (в комнате уже началась игра).,Falha ao se juntar (salão já iniciado).,Error de acceso (partida ya iniciada).
+<!MissingKey:253:{num} item in storage.>,{num} item in storage.,{num} Gegenstand im Lager.,储存箱内有{num}个物品。,保管ボックスにアイテムが{num}個あります,"창고에 {num}개의 아이템이
+존재합니다.",儲存箱內有{num}個物品。,{num} objet en réserve.,В ящике остались предметы: {num}.,{num} item no depósito.,{num} objeto en el almacenamiento.
+<!MissingKey:254:I know what I'm doing.>,I know what I'm doing.,"Ich weiß, was ich tue.",我自己心里有数,理解した上で進む,이미 알고 있습니다.,我知道自己在做什麼,Je sais ce que je fais.,"Я понимаю, что я делаю.",Eu sei o que estou fazendo.,Sé lo que estoy haciendo.
+<!MissingKey:255:Join a Lobby>,Join a Lobby,Lobby beitreten,加入一个大厅,ロビーに参加,로비에 참여하기,加入一個大廳,Rejoindre une salle,Войти в комнату,Juntar-se a um Salão,Acceder a una sala
+<!MissingKey:256:{treasure} chance>,{treasure} chance,{treasure}-Chance,{treasure}几率,{treasure} 確率,{treasure} 확률,{treasure}幾率,Chance de {treasure},Шанс {treasure},Chance de {treasure},Probabilidad de {treasure}
+<!MissingKey:257:Hide>,Hide,Verstecken,隐藏,非表示,숨기기,隱藏,Masquer,Скрыть,Ocultar,Ocultar
+<!MissingKey:258:Class>,Class,Klasse,职业,クラス,직업,流派,Classe,Класс,Classe,Clase
+<!MissingKey:259:Push items to storage>,Push items to storage,Gegenstände ins Lager werfen,拖动物品到储存箱,アイテムをボックスに移動,"아이템을
+창고로
+옮기기",拖動物品到儲存箱,Pousser les objets en réserve,Сбросить все предметы в ящик,Pôr itens no depósito,Arrastrar objetos al almacenamiento
+<!MissingKey:260:Round {cur}/{max}>,Round {cur}/{max},Runde {cur}/{max},回合{cur}/{max},ラウンド {cur}/{max},라운드 {cur}/{max},回合{cur}/{max},Tour {cur}/{max},Раунд {cur}/{max},Rodada {cur}/{max},Ronda {cur}/{max}
+<!MissingKey:261:Dealt {damage} damage ({origin}).>,Dealt {damage} damage ({origin}).,{damage} Schaden verursacht ({origin}).,造成{damage}点伤害（{origin}）。,{damage}ダメージを与えた（{origin}）。,피해를 {damage} 가함 ({origin}).,造成{damage}點傷害（{origin}）。,{damage} dégâts infligés ({origin}).,Наносит {damage} ед. урона ({origin}).,Causou {damage} de dano ({origin}).,Has infligido {damage} de daño ({origin}).
+<!MissingKey:262:Capslock>,Capslock,Feststellen,Capslock,Capslockキー,Capslock,Capslock,Verr. Maj.,Capslock,Caps Lock,Bloq mayús
+<!MissingKey:263:Reincarnated with {health} health ({origin}).>,Reincarnated with {health} health ({origin}).,Mit {health} Leben reinkarniert ({origin}).,以{health}生命值复活({origin})。,体力{health}で復活した（{origin}）。,{health} 체력으로 부활 ({origin}).,以{health}點生命值復活（{origin}）。,Ressuscité avec {health} PV ({origin}).,Воскрешение с {health} ед. здоровья ({origin}).,Reviveu com {health} de vida ({origin}).,Has resucitado con {health} PS ({origin}).
+<!MissingKey:264:Quit>,Quit,Beenden,退出,ゲーム終了,나가기,退出,Quitter,Выход,Sair,Abandonar
+<!MissingKey:265:{num} wins>,{num} wins,{num} Siege,{num}次胜利,{num}勝,{num}번 승리,{num}次勝利,{num} victoires,Победы: {num},{num} vitórias,{num} victorias
+<!MissingKey:266:Combining >,"Combining
+ Locked","Kombinieren
+gesperrt","融合
+锁定","合成を
+ロック","조합
+잠금","融合
+鎖定","Combinaison
+ Verrouillée","Не
+ объединять","Combinação
+ Bloqueada","Combinar
+ Bloqueado"
+<!MissingKey:267:Shoes>,Shoes,,,,,,,,,
+<!MissingKey:268:Join Lobby>,Join Lobby,Lobby beitreten,加入大厅,ロビーに参加,로비 참가하기,加入大廳,Rejoindre une salle,Войти в комнату,Juntar-se ao Salão,Accede la sala
+<!MissingKey:269:Ranking>,Ranking,Rang,排名,ランキング,랭킹,排名,Classement,Рейтинг,Ranque,Clasificación
+<!MissingKey:270:_>,_,_,_,_,_,_,_,_,_,_
+<!MissingKey:271:Join failed (game version mismatch - lobby version: {version}). >,Join failed (game version mismatch - lobby version: {version}). ,Beitreten gescheitert (Spielversion inkompatibel - Lobby version. {version}).,加入失败（游戏版本不一致——大厅版本：{version}）。,参加に失敗しました（ゲームバージョンが異なります。ロビーのバージョン：{version}）。,참여하지 못했습니다 (게임 버전이 일치하지 않습니다 - 로비 버전: {version}).,加入失敗（遊戲版本不一致——大廳版本：{version}）。,Échec de la rejonction (incompatibilité de la version du jeu - version de la salle : {version}).,Неудача (несоответствие версии игры: версия в комнате {version}).,Falha ao se juntar (incompatibilidade de versão do jogo - versão do salão: {version}).,Error de acceso (versión de juego incompatible - versión de la sala: {version}).
+<!MissingKey:272:Leave Lobby>,Leave Lobby,Lobby verlassen,离开大厅,ロビーから退出,로비 떠나기,離開大廳,Quitter la salle,Покинуть комнату,Sair do Salão,Salir de la sala
+<!MissingKey:273:Major patches may reset the history. >,Major patches may reset the history. ,Große Updates können das Archiv zurücksetzen.,重大更新将清除历史记录。,大型アップデートでヒストリーはリセットされることがあります。,메이저 패치 시 기록이 초기화될 수 있습니다.,重大更新將清除歷史記錄。,Les correctifs majeurs sont susceptibles de réinitialiser l'historique.,Крупные обновления могут сбросить историю.,Atualizações importantes podem redefinir o histórico.,Los parches importantes pueden reiniciar el historial.
+<!MissingKey:274:Bronze>,Bronze,Bronze,黄铜,ブロンズ,브론즈,青銅,Bronze,Бронза,Bronze,Bronce
+<!MissingKey:275:Language>,Language,Sprache,语言,言語,언어,語言,Langue,Язык,Idioma,Idiomas
+<!MissingKey:276:Stunned for {duration}s ({origin}).>,Stunned for {duration}s ({origin}).,Benommen für {duration}s ({origin}).,被眩晕{duration}秒（{origin}）。,{duration}秒間スタンした（{origin}）。,{duration}초 동안 기절 ({origin}).,被暈眩{duration}秒（{origin}）。,Étourdi pendant {duration} s ({origin}).,Получает оглушение на {duration} сек. ({origin}).,Atordoou por {duration} s ({origin}).,Te han aturdido durante {duration} s ({origin}).
+<!MissingKey:277:{total} Recipe>,{total} Recipe,{total} Rezept,{total}合成蓝图,{total} レシピ,{total} 조합법,{total}合成藍圖,{total} recette,Рецепт: {total},{total} Receita,{total} receta
+<!MissingKey:278:Round won!>,Round won!,Runde gewonnen!,回合胜利！,ラウンドに勝利！,라운드 승리!,回合勝利！,Tour gagné !,Победа!,Rodada vencida!,¡Has ganado la ronda!
+<!MissingKey:279:Minimize activations>,Minimize activations,Aktivierungen minimieren,简化物品激活,発動アイテム最小化,발동 최소화,簡化物品啟動,Réduire les activations,Подробности кратко,Minimizar ativações,Minimizar activaciones
+<!MissingKey:280:Stun Resisted>,Stun Resisted,Benommenheit vermieden,眩晕抗性,スタン防止,스턴 저항함,暈眩抗性,Étourdissement résisté,Проигнорировано: оглушение,Resistência a atordoamento,Has resistido al aturdimiento
+<!MissingKey:281:Click to reserve>,Click to reserve,Klicken zum Reservieren,点击保留,"クリックで
+取置き","클릭해서
+예약",點擊保留,Cliquer pour réserver,Резерв,Clique para reservar,Clic para reservar
+<!MissingKey:282:Creation failed.>,Creation failed.,Erstellung gescheitert.,创建失败。,作成に失敗しました。,생성에 실패했습니다.,創建失敗。,Échec de la création.,Не удалось создать.,Criação falhou.,Error de creación de sala.
+<!MissingKey:283:Drag to move. Pull the bottom to resize.>,Drag to move. Pull the bottom to resize.,"Klicken zum Verschieben, unten ziehen um die Größe zu ändern.",按住拖动。底部可改变大小。,ウィンドウをドラッグで移動、底をドラッグでサイズ変更,드래그하여 이동합니다. 아래쪽을 당겨 크기를 조정합니다.,按住拖曳。拉動底部可改變大小。,Faites glisser pour déplacer. Tirez sur le bas pour redimensionner.,"Зажмите курсор и перемещайте журнал. Потяните за нижнюю часть, чтобы изменить размер.",Arraste para mover. Puxe a parte inferior para redimensionar.,Arrastra para mover. Tira de la parte de abajo para cambiar el tamaño.
+<!MissingKey:284:Combining >,"Combining
+ Unlocked","Kombinieren
+entsperrt","融合
+解除锁定","合成を
+アンロック","조합
+해제","融合
+解除鎖定","Combinaison
+ Déverrouillée","Объединение
+ активировано","Combinação
+ Desbloqueada","Combinar
+ Desbloqueado"
+<!MissingKey:285:Bought on sale>,Bought on sale,Im Sale gekauft,以折扣购买次数,"セールで
+買った回数","할인 시
+구매한 횟수",以折扣购买次数,Acheté en promotion,Покупки со скидкой,Comprado em promo,Adquirido en rebaja
+<!MissingKey:286:{total} Recipes>,{total} Recipes,{total} Rezepte,{total}合成蓝图,{total} レシピ,{total} 조합법,{total}合成藍圖,{total} recettes,Рецепты: {total},{total} Receitas,{total} recetas
+<!MissingKey:287:Rotate with Right-click or press R>,Rotate with Right-click or press R,Rotiere mit Rechtsklick oder R,使用R键或者鼠标右键进行旋转,右クリックかRキーで回転,"우클릭이나
+R을 눌러 회전",使用R鍵或者滑鼠右鍵進行旋轉,Faire pivoter avec un clic droit ou un appui sur R,Поворачивайте предмет нажатием ПКМ или клавиши «R»,Gire com o botão direito do mouse ou a tecla R,Para rotar: clic derecho o R.
+<!MissingKey:288:Choose a subclass!>,Choose a subclass!,Wähle eine Unterklasse!,选择子职业,サブクラス選択,보조 직업을 선택하세요!,選擇子職業,Choisissez la sous-classe !,Выберите подкласс!,Escolha uma subclasse!,¡Elige una subclase!
+<!MissingKey:289:Lobby joined.>,Lobby joined.,Lobby betreten.,大厅已加入。,ロビーに参加しました。,로비에 참여했습니다.,大廳已加入。,Salle rejointe.,В комнате.,Inscrito no Salão.,En la sala.
+<!MissingKey:290:Shift inventory left>,Shift inventory left,Inventar nach links,向左移动背包,バッグを左へ移動,왼쪽으로 인벤토리 이동,向左移動背包,Décaler l'inventaire vers la gauche,Сместить инвентарь влево,Mover inventário para a esquerda,Mover inventario (izquierda)
+<!MissingKey:291:Removed {amount} {buff} ({origin}).>,Removed {amount} {buff} ({origin}).,{amount} {buff} entfernt ({origin}).,移除{amount}层 {buff}（{origin}）。,{amount} {buff} を除去した（{origin}）。,{amount} {buff} 제거 ({origin}).,移除{amount}層 {buff}（{origin}）。,{amount} {buff} retirés ({origin}).,Отнимает {amount} {buff} ({origin}).,Removeu {amount} {buff} ({origin}).,Te han quitado {amount} {buff} ({origin}).
+<!MissingKey:292:Platinum>,Platinum,Platin,白金,プラチナ,플래티넘,白金,Platine,Платина,Platina,Platino
+<!MissingKey:293:Ctrl>,Ctrl,Strg,Ctrl,Ctrlキー,Ctrl,Ctrl,Ctrl,Ctrl,Ctrl,Ctrl
+<!MissingKey:294:Click slot to unlock>,Click slot to unlock,Zum Freischalten klicken,点击槽位来解锁,スロットをクリックしてアンロック,슬롯을 클릭해 잠금 해제,點擊欄位來解鎖,À déverrouiller en cliquant sur l'emplacement,Для разблокировки нажмите на слот,Clique no espaço para desbloquear,Clic en el espacio para desbloquear
+<!MissingKey:295:MISS>,MISS,DANEBEN,攻击落空,ミス,빗나감,攻擊落空,MANQUÉ,ПРОМАХ,ERROU,FALLO
+<!MissingKey:296:Tries>,Tries,Versuche,重试数,トライ残数,생명,嘗試次數,Essais,Жизни,Tentativas,Intentos
+<!MissingKey:297:Trophies>,Trophies,Trophäen,奖杯,トロフィー,트로피,獎盃,Trophées,Трофеи,Troféus,Trofeos
+<!MissingKey:298:Lost {amount} health ({origin}).>,Lost {amount} health ({origin}).,{amount} Leben verloren ({origin}).,失去{amount}点生命值（{origin}）。,体力を{amount}失った（{origin}）。,{amount} 체력 소실 ({origin}).,失去{amount}點生命值（{origin}）。,{amount} PV perdus ({origin}).,Теряет {amount} ед. здоровья ({origin}).,Perdeu {amount} de vida ({origin}).,Has perdido {amount} PS ({origin}).
+<!MissingKey:299:Ranking change: {rank}>,Ranking change: {rank},Rangänderung: {rank},排名改变：{rank},ランキング変動：{rank},랭킹 변화: {rank},排名改變：{rank},Classement modifié : {rank},Рейтинг изменен: {rank},Mudança no ranque: {rank},Cambio de clasificación: {rank}
+<!MissingKey:300:Face players with as many wins as you.>,Face players with as many wins as you.,Gegner mit so vielen Siegen wie du.,对抗胜利次数和你差不多的玩家。,勝利回数が同じプレイヤーとマッチングします。,승리 횟수가 동일한 플레이어를 만납니다.,對抗勝利次數和你差不多的玩家。,Affrontez des joueurs qui ont autant de victoires que vous.,"Подбор игроков с таким же количеством побед, как у вас.",Enfrente jogadores com o mesmo número de vitórias que você.,Te enfrentas a jugadores con tantas victorias como tú.
+<!MissingKey:301:Lobby created. Lobby code:>,Lobby created. Lobby code:,Lobby erstellt. Lobby code:,大厅已创建，大厅代码：,ロビーが作成されました。ロビーコード：,로비 생성 완료. 로비 코드:,大廳已創建，大廳代碼：,Salle créée. Code de la salle :,Комната создана. Код:,Salão criado. Código do Salão:,Sala creada. Código de la sala:
+<!MissingKey:302:{amount} {debuff} reflected for {duration}s ({origin}).>,{amount} {debuff} reflected for {duration}s ({origin}).,{amount} {debuff} reflektiert für {duration}s ({origin}). ,{amount} {debuff}在{duration}s内被反弹（{origin}）。,{duration}秒間、{amount} {debuff} が反射された（{origin}）。,{duration}초 동안 {amount} {debuff} 반사됨 ({origin}).,{amount} {debuff}在{duration}s內被反彈（{origin}）。,{amount} {debuff} renvoyé(s) pendant {duration}s ({origin}).,Отражение: {amount} {debuff} ({origin}). Время: {duration} сек.,Refletiu {amount} {debuff} por {duration} s ({origin}).,Has devuelto {amount} {debuff} durante {duration} s ({origin}).
+<!MissingKey:303:Space>,Space,Leertaste,空格,Spaceキー,스페이스,空格,Espace,Пробел,Espaço,Espacio
+<!MissingKey:304:Other Modes>,Other Modes,Weitere Modi,其他模式,サブモード,기타 모드,其他模式,Autres modes,Другие режимы,Outros Modos,Otros modos
+<!MissingKey:305:Round speed>,Round speed,Geschwindigkeit,对局速度,ラウンド速度,라운드 속도,對局速度,Vitesse de tour,Скорость раунда,Velocidade da Rodada,Velocidad de la ronda
+<!MissingKey:306:Can be found in round {r1}>,Can be found in round {r1},Kann in Runde {r1} auftreten,将会在第{r1}回合出现,ラウンド{r1}で発見可能,{r1} 라운드에서 발견 가능,將會在第{r1}回合出現,À trouver au tour {r1},Появляется на {r1}-м раунде,Pode ser encontrado na rodada {r1},Aparece en la ronda {r1}
+<!MissingKey:307:Bought {num} times on sale>,Bought {num} times on sale,{num} mal im Sale gekauft,{num}次以折扣购买,セールで{num}回購入,할인 시 {num}번 구매,{num}次以折扣購買,Acheté(e) {num} fois en promo,Покупка со скидкой: {num},Comprado {num} vezes em promoção,Adquirido {num} veces en oferta
+<!MissingKey:308:Sale chance>,Sale chance,Angebotschance,打折几率,セール発生確率,할인 기회,打折幾率,Chance de promotion,Шанс появления предметов со скидкой,Chance de Promoção,Oportunidad de oferta
+<!MissingKey:309:Price>,Price,Preis,价格,値段,가격,價格,Prix,Цена,Preço,Precio
+<!MissingKey:310:Plus>,Plus,Plus,加号键,[+]キー,플러스,加号键,Plus,+,Mais,Más
+<!MissingKey:311:Lost {amount} maximum health ({origin}).>,Lost {amount} maximum health ({origin}).,{amount} Maximalleben verloren.,失去{amount}最大生命值({origin})。,体力最大値が{amount}減った（{origin}）。,최대 체력 {amount} 감소 ({origin}).,失去{amount}點最大生命值（{origin}）。,{amount} des PV max perdus ({origin}).,Максимальное здоровье снижено на {amount} ед. ({origin}).,Perdeu {amount} de vida máxima ({origin}).,Has perdido {amount} PS máx. ({origin})
+<!MissingKey:312:STUNNED {dur}>,STUNNED {dur},BENOMMEN {dur},被眩晕{dur},スタン：{dur},기절함 {dur},被暈眩{dur},{dur} ÉTOURDI,ОГЛУШЕНИЕ {dur},ATORDOAMENTO {dur},ATURDIMIENTO: {dur}
+<!MissingKey:313:Start>,"Start
+Backpack
+Battle","Mit dem
+ Rucksack in
+ den Kampf!","开始
+背包
+乱斗","バックパック
+バトル
+スタート","백팩
+배틀즈
+시작","開始
+背包
+亂鬥","Commencer
+Backpack
+Battles","Начать
+бой","Iniciar
+Backpack
+Battle","Comenzar
+la batalla
+de mochilas"
+"<!MissingKey:314:If possible, don't face players with more than 5 losses.>","If possible, don't face players with more than 5 losses.",Wenn möglich niemand mit mehr als 5 Niederlagen.,尽可能对抗失败回合数低于5的玩家。,実現可能な場合、5敗以上のプレイヤーとマッチングしなくなります。,"가능하다면, 5번 이상 패배한 플레이어를 만나지 않습니다.",盡可能對抗失敗回合數低於5的玩家。,"Si possible, n'affrontez pas de joueurs avec plus de 5 défaites.",При возможности игнорирует игроков с более чем 5 поражениями.,"Se possível, não enfrente jogadores com mais de 5 derrotas.","Si es posible, no te enfrentas a jugadores con más de 5 derrotas."
+<!MissingKey:315:Battle!>,Battle!,Kämpfen!,开打！,バトル！,전투!,開打！,Au combat !,В бой!,Batalha!,¡Batalla!
+<!MissingKey:316:Return to Title>,Return to Title,Zurück zum Titel,回到主界面,タイトルに戻る,타이틀로 돌아가기,回到主畫面,Retour à l'écran principal,На главную страницу,Voltar ao Menu,Volver al título
+<!MissingKey:317:Survival Bonus!>,Survival Bonus!,Survival-Bonus!,生存奖励！,サバイバルボーナス！,서바이벌 보너스!,生存獎勵！,Bonus de survie !,Бонус выживания!,Bônus de sobrevivência!,¡Bonus de supervivencia!
+<!MissingKey:318:Max. members>,Max. members,Max. Mitspieler,最大玩家数,最大人数,최대 인원수,最大玩家數,Membres max.,Макс. участников,Máx. de membros,Máximo de miembros
+<!MissingKey:319:Click to continue.>,Click to continue.,"Klicke, um fortzufahren.",点击以继续,クリックして続行,클릭하여 진행,點擊並繼續。,Cliquez pour continuer.,Нажмите для продолжения,Clique para continuar.,Haz clic para continuar.
+<!MissingKey:320:Pull to reroll for {price}>,Pull to reroll for {price},Ziehen um zu erneuern für {price},花费{price}下拉来刷新商店,"引いて
+{price}で
+品揃えを
+更新",당겨서 {price}를 지불하고 새로고침,往下拉花費{price}重骰商店,Tirer pour actualiser contre {price},Для обновления потяните за {price},Puxe para atualizar por {price},Tira para renovar los objetos por {price}
+<!MissingKey:321:Close Lobby>,Close Lobby,Lobby schließen,关闭大厅,ロビーを閉じる,로비 폐쇄하기,關閉大廳,Fermer une salle,Закрыть комнату,Fechar Salão,Cerrar la sala
+<!MissingKey:322:You may face anyone.>,You may face anyone.,Du kannst jeden treffen.,你可能匹配到任何人。,どのプレイヤーともマッチングする可能性があります。,누구와도 만날 수 있습니다.,你可能匹配到任何人。,Vous pouvez affronter n'importe qui.,Вашим противником может стать любой игрок.,Você pode enfrentar qualquer um.,Te enfrentas a cualquiera.
+<!MissingKey:323:{treasure}-items>,{treasure}-items,{treasure}-Gegenst.,{treasure}物品,{treasure} アイテム,{treasure} 아이템,{treasure}物品,Objet {treasure},{treasure} предмет,Item-{treasure},Objeto {treasure}
+<!MissingKey:324:Ctrl+LMB>,Ctrl+LMB,Strg+Klick,Ctrl+鼠标左键,Ctrlキー+左マウスボタン,Ctrl+좌클릭,Ctrl+鼠标左键,Ctrl+clic gauche,Ctrl+ЛКМ,Ctrl+BEM,Ctrl+Clic izq (ratón)
+<!MissingKey:325:Out of stamina>,Out of stamina,Zu wenig Ausdauer,耐力耗尽,スタミナ切れ,스태미나 고갈,耐力耗盡,Endurance épuisée,Недостаточно энергии,Sem vigor,Sin resistencia
+<!MissingKey:326:10 Win Bonus!>,10 Win Bonus!,10 Siege Bonus!,10次胜利奖励！,10勝ボーナス！,10승 보너스!,10勝獎勵！,Bonus de 10 victoires !,Бонус 10 побед!,Bônus de 10 vitórias!,¡Bonus por 10 victorias!
+<!MissingKey:327:Accuracy>,Accuracy,Genauigkeit,命中率,命中率,명중률,命中率,Précision,Точность,Precisão,Precisión
+<!MissingKey:328:High>,High,Hoch,高,多い,높음,高,Haute,Высокий,Alto,Alta
+<!MissingKey:329:Out of stamina ({origin}).>,Out of stamina ({origin}).,Zu wenig Ausdauer ({origin}).,耐力耗尽（{origin}）。,スタミナが足りない（{origin}）。,스태미나 고갈 ({origin}).,耐力耗盡（{origin}）。,Endurance épuisée ({origin}).,Недостаточно энергии ({origin}).,Sem vigor ({origin}).,Sin resistencia ({origin}).
+<!MissingKey:330:{minute} minutes ago>,{minute} minutes ago,Vor {minute} Minuten,{minute}分钟前,{minute}分前,{minute}분 전,{minute}分鐘前,{minute} minute plus tôt,{minute} мин. назад,{minute} minutos atrás,Hace {minute} minutos
+<!MissingKey:331:Very low>,Very low,Sehr niedrig,很低,"とても
+少ない",매우 낮음,很低,Très faible,Очень низкий,Muito baixo,Muy baja
+<!MissingKey:332:Match against>,Match against,Gegnerwahl,对抗,対戦相手,대결,對抗,Match contre,Сразиться,Partida contra,Partida contra
+<!MissingKey:333:Compact>,Compact,,紧凑排列,コンパクトに表示,압축,緊湊排列,Regrouper,Компактное расположение,Compacto,Compacto
+<!MissingKey:334:Speed down battle>,Speed down battle,,,,,,,,,
+<!MissingKey:335:Period>,Period,Punkt,句号键,[.]キー,마침표,句号键,Point,.,Ponto final,Punto
+<!MissingKey:336:Missed an attack ({origin}).>,Missed an attack ({origin}).,Angriff verfehlt ({origin}).,攻击落空（{origin}）。,攻撃をミスした（{origin}）。,공격이 빗나감 ({origin}).,攻擊落空（{origin}）。,Attaque manquée ({origin}).,Промах ({origin}).,Errou um ataque ({origin}).,Has fallado un ataque ({origin}).
+<!MissingKey:337:Hide Names>,Hide Names,Namen verstecken,隐藏ID,名前を非表示,이름 숨기기,隱藏名稱,Masquer les noms,Скрыть имена,Ocultar Nomes,Ocultar nombres
+<!MissingKey:338:Show activations>,Show activations,Aktivierungen anzeigen,显示物品激活,発動アイテム表示,발동 표시,顯示物品啟動,Afficher les activations,Показать подробности,Exibir ativações,Mostrar activaciones
+<!MissingKey:339:Gained:>,Gained:,Erhalten:,获得：,獲得：,획득:,獲得：,Gagné(s) :,Получено:,Ganhou:,Obtenido:
+<!MissingKey:340:Resolution>,Resolution,Auflösung,分辨率,解像度,해상도,解析度,Résolution,Разрешение,Resolução,Resolución
+<!MissingKey:341:{shown}/{total} Recipes>,{shown}/{total} Recipes,{shown}/{total} Rezepte,{shown}/{total}合成蓝图,{shown}/{total} レシピ,{shown}/{total} 조합법,{shown}/{total}合成藍圖,{shown}/{total} recettes,Рецепты: {shown}/{total},{shown}/{total} Receitas,{shown}/{total} recetas
+<!MissingKey:342:Wardrobe>,Wardrobe,Kleiderschrank,衣柜,クローゼット,옷장,衣櫃,Garde-robe,Гардероб,Armário,Armario
+<!MissingKey:343:Joined Members>,Joined Members,Mitspieler,已加入玩家,参加メンバー,참여한 멤버,已加入玩家,Membres ayant rejoint,Участники,Membros Inscritos,Miembros admitidos
+<!MissingKey:344:Gained {amount} {buff} ({origin}).>,Gained {amount} {buff} ({origin}).,{amount} {buff} erhalten ({origin}).,获得{amount}层 {buff}（{origin}）。 ,{amount} {buff} を獲得した（{origin}）。,{amount} {buff} 획득 ({origin}).,獲得{amount}層{buff}（{origin}）。,{amount} {buff} gagnés ({origin}).,Получает {amount} {buff} ({origin}).,Ganhou {amount} {buff} ({origin}).,Has obtenido {amount} {buff} ({origin}).
+<!MissingKey:345:{amount} {debuff} reflected ({origin}).>,{amount} {debuff} reflected ({origin}).,{amount} {debuff} reflektiert ({origin}).,{amount} {debuff}被反弹（{origin}）。,{amount} {debuff} が反射された（{origin}）。,{amount} {debuff} 반사됨 ({origin}).,{amount} {debuff}被反彈（{origin}）。,{amount} {debuff} renvoyé(s) ({origin}).,Отражение: {amount} {debuff} ({origin}).,Refletiu {amount} {debuff} ({origin}).,Has devuelto {amount} {debuff} ({origin}).
+<!MissingKey:346:Show>,Show,Zeigen,显示,表示,표시,顯示,Afficher,Показать,Exibir,Mostrar
+<!MissingKey:347:Most wins>,Most wins,Meiste Siege,最高获胜次数,最多勝利数,최대 승리,最高獲勝次數,Plus de vict.,Макс. побед,Mais vitórias,Más victorias
+<!MissingKey:348:We could not reach our server. >,"We could not reach our server.
+ Things you can do now:
+ - Wait a bit, maybe the packets have a slow day
+ - Restart the game
+ - Check your internet connection and router settings
+ - If none of this helps, let us know!
+ You can go on, but you will only face your Dark Reflection, with exactly your build.","Verbindung zum Server konnte nicht hergestellt werden. Was du jetzt tun kannst:
+ - Warte einen Moment
+ - Starte das Spiel neu
+ - Überprüfe deine Internetverbindung
+ Wenn das nicht hilft, informiere uns.
+ Du kannst fortfahren, aber du wirst nur deinen Schatten mit deinem eigenen Rucksack antreffen.","无法链接到服务器。
+您可以尝试以下方法：
+ - 稍等一会，也许是网络堵塞
+ - 重启游戏
+ - 检查您的网络设置和路由器设置
+ - 如果以上方法无效，请联系我们！
+您可以继续游戏，但是您的对手就是您的黑暗倒影，武器装备也与您一致。","サーバーへアクセスできませんでした。
+ 以下のことを試してみてください。
+ - 通信速度が遅い可能性がないか、少し待ってみる
+ - ゲームを再起動する
+ - インターネット接続とルーター設定をチェックする
+上記を試しても改善されない場合は、開発者に報告してください！
+このまま進むことはできますが、自分と同じビルドを使うドッペルゲンガーとしか対戦できません。","서버에 연결할 수 없습니다.
+지금 하실 수 있는 조치:
+ - 패킷이 느린 것일 수 있으니, 잠시 기다리기
+ - 게임을 다시 시작하기
+ - 내 인터넷 연결과 라우터 설정 확인하기
+ - 만약 그 어떤 것도 도움이 되지 않았다면, 제보 바랍니다!
+계속 플레이할 수도 있지만, 여러분과 완전히 동일한 빌드를 지닌 어둠의 환영만을 상대하게 될 것입니다.","無法連結到伺服器。
+你可以嘗試以下方法：
+ - 稍等一會，也許是網路擁擠
+ - 重啟遊戲
+ - 檢查你的網路設置和路由器設定
+ - 如果以上方法無效，請聯絡我們！
+你可以繼續遊戲，但是你的對手會是自己的分身，武器裝備也與你一致。","Impossible d'accéder à notre serveur.
+ Que pouvez-vous faire à présent ?
+ - Patientez un peu, il se peut que le débit ait pris un jour de repos aujourd'hui
+ - Redémarrez le jeu
+ - Vérifiez votre connexion Internet et les paramètres de votre routeur
+ - Si rien de tout cela ne vous a été utile, faites-le nous savoir !
+ Vous pouvez continuer, mais vous n'affronterez que votre Sombre réflexion, avec l'exacte même configuration que la vôtre.","Нет соединения с сервером.
+ Что можно сделать:
+ - Немного подождите, возможно, трафик сегодня не в духе
+ - Перезапустите игру
+ - Проверьте настройки вашего интернет-соединения и роутера
+ - Если ничего из этого не помогло, смело обращайтесь к нам!
+ Вы можете продолжить игру, но противником будет ваша темная тень с вашим набором предметов.","Não conseguimos conexão com o nosso servidor.
+ Suas opções são:
+ - Esperar um pouco, talvez os pacotes estejam lentos hoje;
+ - Reiniciar o jogo
+ - Verificar sua conexão com a internet ou as configurações do roteador
+ Se nada disso resolver, nos avise!
+ Você pode continuar, mas só vai enfrentar sua Sósia Maligna, cuja composição é a mesma que a sua.","No hemos podido conectar con el servidor.
+ Qué hacer ahora:
+ - Espera un poco, igual hoy va un poco lento
+ - Reinicia el juego
+ - Comprueba tu conexión a Internet y los ajustes de tu router
+ - Si no se soluciona, ¡dínoslo!
+ Puedes seguir jugando, pero solo te podrás enfrentar a tu sombra, que tiene la misma combinación de objetos que tú."
+<!MissingKey:349:Noodle Rope activated! >,"Noodle Rope activated!
+[b]Right click[/b] the rope to toggle.","Nudelmodus aktiviert!
+[b]Rechtsclick[/b] um Seil zu ändern.","绳子物理启动！
+ [b]鼠标右键[/b]以切换开关。","ぶらぶらロープが有効化されたよ！
+ロープを[b]右クリック[/b]すれば切り替えられるからね。","흔들흔들 밧줄 활성화!
+밧줄을 [b]우클릭[/b]해 전환할 수 있습니다.","繩子物理啟動！
+ [b]滑鼠右鍵[/b]以切換開關。","Cordée activée !
+Effectuez un [b]clic droit[/b] sur la corde pour l'activer.","Веревка активирована!
+[b]Нажмите правой кнопкой мыши[/b] на веревку.","Corda de Macarrão ativada!
+[b]Clique com o botão direito[/b] na corda para alternar.","¡Cuerda activada!
+[b]Haz clic derecho[/b] en la cuerda para activarla."
+<!MissingKey:350:Scoreboard>,Scoreboard,Rangliste,计分板,スコアボード,스코어보드,計分板,Tableau de classement,Таблица очков,Placar,Marcador
+<!MissingKey:351:Next Class: [color=#fa7d3c]Engineer>,Next Class: [color=#fa7d3c]Engineer,Nächste Klasse: [color=#fa7d3c]Ingenieur,下一个职业：工程师,次の職業：エンジニア,다음 직업: 엔지니어,下一個職業：工程師,Prochain métier : Ingénieur,Следующая профессия: Инженер,Próxima profissão: Engenheiro,Próxima profesión: Ingeniero
+<!MissingKey:352:Diamond>,Diamond,Diamant,钻石,ダイヤ,다이아몬드,鑽石,Diamant,Алмаз,Diamante,Diamante
+<!MissingKey:353:Choose wisely...>,Choose wisely...,Wähle weise...,谨慎选择……,慎重に選ぼう…,현명하게 선택하세요...,請謹慎選擇……,Choisissez judicieusement…,Выбирайте с умом...,Escolha com sabedoria...,Elige con cuidado...
+<!MissingKey:354:Out of stamina!>,Out of stamina!,Zu wenig Ausdauer!,耐力耗尽！,スタミナ切れ！,스태미나 고갈!,耐力耗盡！,Endurance épuisée !,Мало энергии!,Sem vigor!,¡Sin resistencia!
+<!MissingKey:355:Software Cursor>,Software Cursor,Softwarecursor,软件模拟鼠标移动,ソフトウェアカーソル,소프트웨어 커서,軟體游標,Curseur logiciel,Программный курсор,Cursor do Sistema,Cursor del programa
+<!MissingKey:356:Body>,Body,,,,,,,,,
+<!MissingKey:357:Stun resisted ({origin}).>,Stun resisted ({origin}).,Benommenheit vermieden ({origin}).,眩晕被抵挡（{origin}）。,スタンが防止された（{origin}）。,기절에 저항 ({origin}).,眩暈被抵擋（{origin}）。,Étourdissement survécu ({origin}).,Проигнорировано: оглушение ({origin}).,Resistiu a atordoamento ({origin}).,Has resistido al aturdimiento ({origin}).
+<!MissingKey:358:Fullscreen>,Fullscreen,Vollbild,全屏,フルスクリーン,전체화면,全螢幕,Plein écran,Полноэкранный,Tela cheia,Pantalla completa
+<!MissingKey:359:Create Lobby>,Create Lobby,Lobby erstellen,创建大厅,ロビーを作成,로비 생성하기,創建大廳,Créer une salle,Создать комнату,Criar Salão,Crear una sala
+<!MissingKey:360:Can be found in rounds {r1} to {r2}>,Can be found in rounds {r1} to {r2},Kann in Runde {r1} bis {r2} auftreten,将会在第{r1}到第{r2}回合出现,ラウンド{r1}から{r2}で発見可能,{r1} 라운드부터 {r2} 라운드 사이에 발견 가능,將會在第{r1}到第{r2}回合出現,À trouver des tours {r1} à {r2},Появляется с {r1}-го по {r2}-й раунд,Pode ser encontrado nas rodadas {r1} a {r2},Aparece entre las rondas {r1} y {r2}
+"<!MissingKey:361:You have not bought anything! If there is nothing in the shop that you like, you can pull the golden reroll-rope.>","You have not bought anything! If there is nothing in the shop that you like, you can pull the golden reroll-rope.","Du hast nichts gekauft! Wenn dir nichts gefällt, kannst du an der goldenen Kordel ziehen und den Laden erneuern.",你什么都没买！如果商店里没有你想买的，拉下金色绳子可以刷新商店物品。,"何も買っていません！ ほしいものがショップにない場合は、
+金のロープを引けば別の商品を見られます。","아무것도 사지 않으셨네요! 만약 상점에 사고 싶은 게 없으시다면, 황금색 새로고침 밧줄을 당겨보실 수 있답니다.",你什麼都沒買！如果商店裡沒有你想買的東西，拉下金色繩子可以重骰商店物品。,"Vous n'avez rien acheté ! S'il n'y a rien qui vous plaît dans la boutique, vous pouvez tirer sur la corde d'actualisation dorée.","Вы еще ничего не купили! Если вам ничего не приглянулось в магазине, вы можете потянуть за золотую веревочку и обновить предметы.","Você não comprou nada! Se não gostar de nada da loja, pode puxar a corda dourada de atualização.","¡No has comprado nada! Si no hay nada que te interese en la tienda, tira de la cuerda para renovar el surtido de objetos."
+<!MissingKey:362:Group by Rarity>,Group by Rarity,Nach Seltenheit gruppieren,按稀有度分组,レア度で分類,희귀도로 분류,按稀有度分組,Filtrer par rareté,Группировка по редкости,Agrupar por Raridade,Agrupar por rareza
+<!MissingKey:363:Pause/resume battle>,Pause/resume battle,,,,,,,,,
+<!MissingKey:364:Survivals>,Survivals,Survival- Siege,生存回合数,"サバイバル
+した回数",서바이벌,生存回合数,Survies,Выживание,Sobrevivências,Supervivencia
+<!MissingKey:365:1 hour ago>,1 hour ago,Vor 1 Stunde,1小时前,1時間前,1시간 전,1小時前,1 heure plus tôt,1 ч. назад,1 hora atrás,Hace 1 hora
+"<!MissingKey:366:Due to Backpack Battles being in the demo stage, text changes are frequent, making it difficult to keep up with real-time localization. Full localization will be provided upon full release.>","Due to Backpack Battles being in the demo stage, text changes are frequent, making it difficult to keep up with real-time localization. Full localization will be provided upon full release.",,,『バックパック・バトル』はまだ開発の初期段階のため、テキストが頻繁に変更されます。そのため、ローカライゼーションが変更をすぐに反映できない場合があります。完全版のローカライゼーションは、ゲーム正式リリース時に提供いたします。,Backpack Battles는 현재 데모 단계에 있어 텍스트가 빈번하게 변경되기 때문에 실시간 현지화를 제공할 수 없습니다. 전체 현지화는 정식 출시와 함께 제공될 예정입니다.,,"« Backpack Battles » n'étant actuellement qu'en phase de démo, les changements de texte peuvent être fréquents, ce qui pourrait entraver les efforts de traduction localisée en temps réel. Une traduction complète sera néanmoins assurée lorsque la version complète du jeu sera disponible.","Так как Backpack Battles находится на стадии демо-версии, текст игры часто меняется, что затрудняет своевременную локализацию. Полноценный перевод игры будет доступен после официального релиза.","Como Backpack Battles está na fase de demonstração, é comum que haja mudanças nos textos, o que dificulta o trabalho de localização. A localização completa estará disponível no lançamento.","Como Backpack Battles está en fase de prueba todavía, seguimos actualizando el texto, lo que dificulta la localización en tiempo real. La localización completa estará disponible en el momento del lanzamiento."
+<!MissingKey:367:Play against Dark Reflection>,Play against Dark Reflection,Gegen deinen Schatten antreten,对抗黑暗倒影,ドッペルゲンガーと対戦する,어둠의 환영과 플레이하기,對抗黑暗分身,Jouer contre votre Sombre réflexion,Игра против темной тени,Jogar contra Sósia Maligna,Jugar contra tu sombra
+<!MissingKey:368:Sell for {price}>,Sell for {price},Für {price} verkaufen,以{price}出售,{price}で売却,{price}에 판매,以{price}出售,Vendre contre {price},"Продать
+за {price}",Vender por {price},Vender por {price}
+<!MissingKey:369:Drop here >,"Drop here
+to sell for
+{price}",Hier ablegen und für {price} verkaufen,拖到这以{price}出售,"アイテムを
+ドロップして
+{price}で売却","여기에 놓으면
+{price}에 판매",放到這以{price}出售,À déposer ici contre {price},Продажа: {price},Solte aqui para vender por {price},Déjalos aquí para vender por {price}
+<!MissingKey:370:SFX>,SFX,SFX,音效,効果音,효과음,音效,Effets sonores,Эффекты,Efeitos sonoros,SFX
+<!MissingKey:371:You survived!>,You survived!,Du hast überlebt!,你活下来了！,生き延びた！,살아남았습니다!,你活下來了！,Vous avez survécu !,Вы выжили!,Você sobreviveu!,¡Has sobrevivido!
+<!MissingKey:372:Chibi>,Chibi,Chibi,Chibi,チビキャラ,SD 캐릭터,Q版,Chibi,Чиби,Chibi,Chibi
+<!MissingKey:373:In full version ->,"In full version -
+out now!","In Vollversion -
+jetzt auf Steam!","完整版中呈现！ -
+现已发售！","製品版も
+好評発売中！","정식 버전에서 -
+지금 위시리스트에
+추가하세요!","完整版中呈現！ -
+現已發售！","En version complète -
+disponible maintenant !","Уже доступно -
+в полной версии!","Na versão completa -
+já disponível!","¡Versión completa
+ ya disponible!"
+<!MissingKey:374:Drop here >,"Drop here
+to trade","Hier ablegen
+ zum Tausch","拖到此处
+交易","アイテムを
+ドロップして
+トレード","아이템을 여기에
+놓아서 교환하세요","拖到此處
+交易","À déposer ici
+pour échanger","Сбросьте
+для продажи","Solte aqui
+para negociar","Suelta aquí
+para comerciar"
+<!MissingKey:375:Switch Style>,Switch Style,Stil wechseln,切换美术风格,スタイル切替,스타일 변경,切換美術風格,Changer de style,Смена стиля,Mudar Estilo,Cambiar estilo
+<!MissingKey:376:Trade item!>,Trade item!,Gegenstand tauschen!,交易物品！,トレードしよう！,아이템을 교환하세요!,交易物品！,Échangez un objet !,Продайте предмет!,Troque itens!,¡Objeto de comercio!
+<!MissingKey:377:Entered Battle Rage for {duration}s ({origin}).>,Entered Battle Rage for {duration}s ({origin}).,Für {duration}s in Kampfrausch verfallen ({origin}).,进入狂战士之怒 {duration}s ({origin})。,{duration}秒間バーサク状態に突入した（{origin}）。,{duration}초 동안 전투 격노에 돌입 ({origin}).,進入戰鬥狂怒{duration}秒（{origin}）。,Rage de combat déclenchée pendant {duration}s ({origin}).,Ярость активирована на {duration} сек. ({origin}).,Entrou em Fúria de Combate por {duration} s ({origin}).,Has entrado en Rabia de batalla durante {duration} s ({origin}).
+<!MissingKey:378:Self-inflicted {amount} {debuff} ({origin}).>,Self-inflicted {amount} {debuff} ({origin}).,Sich selbst {amount} {debuff} verursacht ({origin}).,对自身施加{amount}层 {debuff}（{origin}）。,{amount} {debuff} を自分に付与した（{origin}）。,자신에게 {amount} {debuff} 부여 ({origin}).,對自身施加{amount}層 {debuff}（{origin}）。,{amount} {debuff} auto-infligés ({origin}).,Накладывает на себя {amount} {debuff} ({origin}).,Infligiu-se {amount} {debuff} ({origin}).,Te has autoinfligido {amount} {debuff} ({origin}).
+<!MissingKey:379:Concede Active Game>,Concede Active Game,Aktives Spiel aufgeben,放弃进行中的游戏,"現在のゲームを
+棄権","진행 중인 게임
+포기",放棄進行中的遊戲,Abandonner un jeu actif,Покинуть текущую игру,Encerrar Partida Ativa,Aceptar la derrota
+<!MissingKey:380:Character Stats>,Character Stats,Charakterwerte,角色属性,キャラのステータス,캐릭터 정보,角色屬性,Stats de personnage,Характеристики,Atributos do Personagem,Atributos del personaje
+<!MissingKey:381:Drop items here to sell them!>,Drop items here to sell them!,Gegenstände hier fallen lassen zum Verkaufen!,把物品放在这里来出售！,"アイテムを
+ドロップして
+売却",아이템을 여기에 놓으면 판매할 수 있습니다!,把物品放在這裡進行出售！,Déposez vos objets ici pour les vendre !,Сбрасывайте сюда предметы для продажи!,Solte itens aqui para vendê-los!,¡Deja objetos aquí para venderlos!
+<!MissingKey:382:Face players one after another.>,Face players one after another.,Einer nach dem anderen.,连续对抗玩家。,各プレイヤーと順番にマッチングします。,모든 플레이어와 순서대로 만납니다.,連續對抗玩家。,Affrontez les joueurs les uns après les autres.,Сражение с игроками по очереди.,Enfrente os jogadores um após outro.,"Te enfrentas a otros jugadores, uno tras otro."
+<!MissingKey:383:Need more trophies!>,Need more trophies!,Du brauchst mehr Trophäen!,需要更多奖杯！,もっとトロフィーが必要です！,더 많은 트로피가 필요합니다!,需要更多獎盃！,Il faut plus de trophées !,Нужно больше трофеев!,Requer mais troféus!,¡Necesitas más trofeos!
+<!MissingKey:384:Gained invulnerability for {duration}s ({origin}).>,Gained invulnerability for {duration}s ({origin}).,Für {duration}s unverwundbar geworden ({origin}).,获得了{duration}s内无敌（{origin}）。,{duration}秒間の無敵状態に入った（{origin}）。,{duration}초 동안 무적 상태 ({origin}).,獲得了{duration}秒內無敵（{origin}）。,Invulnérabilité gagnée pendant {duration} s ({origin}).,Получает неуязвимость на {duration} сек. ({origin}).,Ganhou invulnerabilidade por {duration} s ({origin}).,Has sido invulnerable durante {duration} s ({origin}).
+<!MissingKey:385:Start Game>,Start Game,Spiel starten,开始游戏,ゲーム開始,게임 시작,開始遊戲,Commencer la partie,Начать игру,Começar o jogo,Iniciar partida
+<!MissingKey:386:{amount} {buff} nullified ({origin}).>,{amount} {buff} nullified ({origin}).,{amount} {buff} neutralisiert ({origin}).,{amount} {buff}被无效化（{origin}）。,{amount} {buff} の獲得を阻害された（{origin}）。,{amount} {buff} 무효화됨 ({origin}).,{amount} {buff}被無效化（{origin}）。,{amount} {buff} annulé(s) ({origin}).,Снято: {amount} {buff} ({origin}).,Anulou {amount} {buff} ({origin}).,Has anulado {amount} {buff} ({origin}).
+<!MissingKey:387:Master>,Master,Meister,大师,マスター,마스터,大師,Maître,Мастер,Mestre,Maestro
+<!MissingKey:388:Swap bags only (by default)>,Swap bags only (by default),Standardmäßig nur Taschen tauschen,只切换背包（默认）,バッグだけ入替（デフォルト）,가방만 교체 (기본값),只切換背包（預設）,Changer de sac seulement (par défaut),Менять местами только сумки (по умолчанию),"Mudar a bolsa, mas não os itens (por padrão)",Cambiar solo bolsas (por defecto)
+<!MissingKey:389:Close>,Close,Schließen,关闭,閉じる,닫기,關閉,Fermer,Закрыть,Fechar,Cerrar
+<!MissingKey:390:Rotate item (left)>,Rotate item (left),Rotieren (links),"旋转物品
+（逆时针）","アイテム回転
+（左）","아이템 회전
+(왼쪽)","旋轉物品
+（逆時針）",Faire pivoter l'objet (gauche),Повернуть предмет (вправо),Girar item (esquerda),Rotar objeto (izquierda)
+<!MissingKey:391:Buffs>,Buffs,Buffs,增益,バフ,버프,增益效果,Bonus,Усиления,Buffs,Ventajas
+<!MissingKey:392:Missed attacks >,Missed attacks ,Verfehlte Angriffe,攻击丢失数,攻撃ミス回数,빗나간 공격,攻擊丟失數,Attaques manquées,Промахи,Ataques errados,Ataques fallidos
+<!MissingKey:393:Click version to reopen.>,Click version to reopen.,Zum Anzeigen klicke auf die Versionsnummer.,点击版本号重新打开,バージョン表記をクリックすると再表示します。,다시 여시려면 버전을 클릭하세요.,點擊版本號重新打開,Cliquez sur la version pour rouvrir.,Нажмите на версию для перезапуска.,Clique na versão para reabrir.,Pulsa en la versión para volver a abrirla.
+<!MissingKey:394:Overheal>,Overheal,Überheilung,过量治疗,過剰回復,초과 치유,過量治療,Sur-guérison,Избыточное здоровье,Cura excessiva,Curación de más
+<!MissingKey:395:History>,History,Archiv,历史记录,ヒストリー,기록,歷史記錄,Historique,История,Histórico,Historia
+<!MissingKey:396:Start battle>,Start battle,Kampf starten,开始战斗,バトル開始,전투 시작,開始戰鬥,Commencer le combat,Начать бой,Iniciar batalha,Comenzar batalla
+<!MissingKey:397:Item Info>,Item Info,Info,物品信息,アイテム情報,아이템 정보,物品資訊,Info objet,О предмете,Info do item,Info. de objeto
+<!MissingKey:398:Fullscreen>,Fullscreen,Vollbild,全屏,フルスクリーン,전체화면,全螢幕,Plein écran,Полноэкранный,Tela cheia,Pantalla completa
+<!MissingKey:399:Hashtag>,Hashtag,Raute,井号键,[#]キー,샵,井号键,Hashtag,#,Hashtag,Almohadilla
+<!MissingKey:400:Round lost.>,Round lost.,Runde verloren.,回合失败！,ラウンド敗北…,라운드 패배.,回合失敗！,Tour perdu.,Поражение.,Rodada perdida.,Has perdido la ronda.
+<!MissingKey:401:Left>,Left,Links,方向键左,方向キー左,왼쪽 방향키,方向键左,Gauche,Влево,Esquerda,Izquierda
+<!MissingKey:402:Cursor Size>,Cursor Size,Cursorgröße,鼠标大小,カーソルの大きさ,커서 크기,滑鼠大小,Taille du curseur,Размер курсора,Tamanho do cursor,Tamaño del cursor
+<!MissingKey:403:Round won!>,Round won!,Gewonnen!,回合胜利！,ラウンド勝利！,라운드 승리!,回合勝利！,Tour gagné !,Победа!,Rodada vencida!,¡Has ganado la ronda!
+<!MissingKey:404:Custom Rules>,Custom Rules,Sonderregeln,自定义规则,カスタムルール,커스텀 규칙,自定義規則,Personnaliser règles,Пользовательские правила,Regras de Personalização,Reglas personalizadas
+<!MissingKey:405:Press {button} to show on items>,Press {button} to show on items,"Drücke {button}, um auf Gegenständen anzuzeigen",按下{button}键显示在物品上,{button}でアイテム表示,{button}(을)를 눌러 아이템 보기,按下{button}鍵顯示在物品上,Appuyer sur {button} pour afficher les objets,"Нажмите {button}, чтобы показать на предметах",Aperte {button} para exibir nos itens,Pulsa {button} para mostrar en objetos
+<!MissingKey:406:{amount} {buff} timed out ({origin}).>,{amount} {buff} timed out ({origin}).,{amount} {buff} ausgelaufen ({origin}).,{amount} {buff}持续时间结束({origin})。,{amount} {buff} が時間切れになった（{origin}）。,{amount} {buff} 종료 ({origin}).,{amount}層{buff}持續時間結束（{origin}）。,{amount} {buff} expiré(s) ({origin}).,Истекает: {amount} {buff} ({origin}).,{amount} {buff} expirou ({origin}).,Se ha acabado el tiempo de {amount} {buff} ({origin}).
+<!MissingKey:407:Survived {num} times>,Survived {num} times,{num} mal überlebt,{num}次生存,{num}回サバイバル達成,{num}번 생존,{num}次生存,Survécu {num} fois,Выживание: {num},Sobreviveu {num} vezes,Sobrevivido {num} veces
+<!MissingKey:408:Shift inventory right>,Shift inventory right,Inventar nach rechts,向右移动背包,バッグを右へ移動,오른쪽으로 인벤토리 이동,向右移動背包,Décaler l'inventaire vers la droite,Сместить инвентарь вправо,Mover inventário para a direita,Mover inventario (derecha)
+<!MissingKey:409:Used {amount} {buff} ({origin}).>,Used {amount} {buff} ({origin}).,{amount} {buff} genutzt ({origin}).,消耗{amount} {buff} （{origin}）。,{amount} {buff} を消費した（{origin}）。,{amount} {buff} 사용 ({origin}).,消耗{amount} {buff} （{origin}）。,{amount} {buff} utilisé(s) ({origin}).,Использовано: {amount} {buff} ({origin}).,Usou {amount} {buff} ({origin}).,Has usado {amount} {buff} ({origin}).
+<!MissingKey:410:Dealt {damage} critical damage ({origin}).>,Dealt {damage} critical damage ({origin}).,{damage} kritischen Schaden verursacht ({origin}).,造成{damage}点暴击伤害（{origin}）。,{damage}クリティカルダメージを与えた（{origin}）。,치명타 피해를 {damage} 가함 ({origin}).,造成{damage}點暴擊傷害（{origin}）。,{damage} dégâts critiques infligés ({origin}).,Наносит {damage} ед. критического урона ({origin}).,Causou {damage} de dano crítico ({origin}).,Has infligido {damage} de daño crítico ({origin}).
+<!MissingKey:411:Sale>,Sale,Sale,打折,セール,할인,折扣,Promotion,Скидка,Promoção,Oferta
+<!MissingKey:412:Lobby>,Lobby,Lobby,大厅,ロビー,로비,大廳,Salle,Комната,Salão,Sala
+<!MissingKey:413:Unranked>,Unranked,Ungewertet,休闲游戏,カジュアル,일반전,休閒遊戲,Non-classé,Нет рейтинга,Sem ranque,Sin clasificar
+<!MissingKey:414:Yes>,Yes,Ja,是,はい,네,是,Oui,Да,Sim,Sí
+<!MissingKey:415: - Doro and Mario>, - Doro and Mario, - Doro und Mario,- Doro and Mario,- ドロ＆マリオより,- Doro와 Mario,- Doro與Mario上,- Doro et Mario,- Доро и Марио,- Doro e Mario,- Doro y Mario
+<!MissingKey:416:Take the win. >,Take the win. ,Den Sieg annehmen.,到此为止。,勝利を味わう,승리를 만끽한다.,奪得勝利。,Acceptez la victoire.,Уйти с победой,Encerrar por aqui.,Hazte con la victoria.
+<!MissingKey:417:UI_TeamSwitchMode>,Team Switch Mode,Team-Wechselmodus,队伍交换模式,チーム切替モード,팀 전환 모드,隊伍交換模式,Mode changement d'équipe,Режим смены команд,Modo Troca de Equipe,Modo cambio de equipo
+<!MissingKey:418:UI_TeamSwitchValidationTitle>,Team Switch Validation,Team-Wechsel-Validierung,队伍交换校验,チーム切替確認,팀 전환 검증,隊伍交換校驗,Vérification changement d'équipe,Проверка команд,Validação Troca de Equipe,Validación cambio de equipo
+<!MissingKey:419:BUTTON_ForceStart>,Force Start,Erzwingen Start,强制开始,強制開始,강제 시작,強制開始,Démarrage forcé,Начать принудительно,Forçar Início,Forzar inicio
+<!MissingKey:420:ERROR_TeamSwitchNotInTeam>,Not in a team (use Team-Player format),Nicht im Team (Format: Team-Spieler),未加入队伍（请使用 队伍名-选手名 格式）,チーム未所属（チーム-プレイヤー形式）,팀 미소속 (팀-플레이어 형식 사용),未加入隊伍（請使用 隊伍名-選手名 格式）,Pas dans une équipe (format Équipe-Joueur),Не в команде (используйте формат Команда-Игрок),Não está em um time (use formato Time-Jogador),No está en un equipo (usa formato Equipo-Jugador)
+<!MissingKey:421:ERROR_TeamSwitchWrongSize>,Team '{team}' has {count} members (need 2),Team '{team}' hat {count} Mitglieder (2 nötig),队伍'{team}'有{count}名成员（需要2人）,チーム'{team}'のメンバーが{count}人（2人必要）,팀 '{team}'의 멤버가 {count}명 (2명 필요),隊伍'{team}'有{count}名成員（需要2人）,L'équipe '{team}' a {count} membres (2 requis),В команде '{team}' {count} участников (нужно 2),Time '{team}' tem {count} membros (precisa de 2),El equipo '{team}' tiene {count} miembros (se necesitan 2)
+<!MissingKey:422:UI_TeamSwitchTeamInfo>,Team {team}: {members},Team {team}: {members},队伍 {team}: {members},チーム {team}: {members},팀 {team}: {members},隊伍 {team}: {members},Équipe {team}: {members},Команда {team}: {members},Time {team}: {members},Equipo {team}: {members}
+<!MissingKey:423:UI_TeamSwitchUnassigned>,Unassigned: {members},Nicht zugewiesen: {members},未分配: {members},未所属: {members},미배정: {members},未分配: {members},Non assigné: {members},Не распределены: {members},Não atribuído: {members},Sin asignar: {members}

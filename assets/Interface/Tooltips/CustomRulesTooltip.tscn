@@ -1,0 +1,391 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Interface/Tooltips/ImageFont.tres" type="BitmapFont" id=1]
+[ext_resource path="res://Interface/PopupBox.png" type="Texture" id=2]
+[ext_resource path="res://Interface/SliderProperty.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Interface/Tooltips/CustomRulesTooltip.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Leagues/League_Bronze.png" type="Texture" id=7]
+[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=8]
+[ext_resource path="res://Interface/Options/Unchecked.png" type="Texture" id=9]
+[ext_resource path="res://Interface/Options/Checked.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Assets/Divider1.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=344]
+size = 24
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+extra_spacing_top = -3
+extra_spacing_bottom = -3
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=343]
+size = 22
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+font_data = ExtResource( 5 )
+
+[node name="CustomRulesTooltip" type="Control" groups=["Tooltip"]]
+margin_right = 357.0
+margin_bottom = 355.0
+script = ExtResource( 4 )
+Y_BORDER = 10
+SCREEN_MARGIN = Vector2( 0, 50 )
+
+[node name="PopupBox" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -13.0
+margin_top = -80.0
+margin_right = 62.0
+margin_bottom = 63.0
+texture = ExtResource( 2 )
+patch_margin_left = 45
+patch_margin_top = 100
+patch_margin_right = 44
+patch_margin_bottom = 78
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="CustomRules" type="Label" parent="."]
+margin_left = 36.0
+margin_top = -31.0
+margin_right = 366.0
+margin_bottom = 2.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 142, 21.5085 )
+custom_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_colors/font_color_shadow = Color( 0.235294, 0.14902, 0.113725, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 344 )
+text = "Custom Rules"
+align = 1
+valign = 1
+autowrap = true
+script = ExtResource( 6 )
+translationKey = "UI_CustomRules"
+autoMaxSize = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 36.0
+margin_top = 12.0
+margin_right = 366.0
+margin_bottom = 348.0
+custom_constants/separation = 8
+
+[node name="Gold" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_right = 330.0
+translationKey = "UI_BonusGold"
+
+[node name="Property" parent="VBoxContainer/Gold" index="0"]
+margin_right = 224.0
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/Gold" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/Gold" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+
+[node name="Value" parent="VBoxContainer/Gold" index="3"]
+margin_left = 260.0
+margin_right = 330.0
+
+[node name="Sales" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 44.0
+margin_right = 330.0
+margin_bottom = 78.0
+translationKey = "UI_SalesChance"
+
+[node name="Property" parent="VBoxContainer/Sales" index="0"]
+margin_right = 224.0
+margin_bottom = 34.0
+bbcode_text = "[right]Sale chance"
+text = "Sale chance"
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/Sales" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/Sales" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+margin_bottom = 34.0
+
+[node name="Value" parent="VBoxContainer/Sales" index="3"]
+margin_left = 260.0
+margin_top = 0.0
+margin_right = 330.0
+margin_bottom = 34.0
+
+[node name="Trade" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 86.0
+margin_right = 330.0
+margin_bottom = 120.0
+translationKey = "UI_TradeChance"
+
+[node name="Property" parent="VBoxContainer/Trade" index="0"]
+margin_right = 224.0
+margin_bottom = 34.0
+bbcode_text = "[right]Trade chance"
+text = "Trade chance"
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/Trade" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/Trade" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+margin_bottom = 34.0
+
+[node name="Value" parent="VBoxContainer/Trade" index="3"]
+margin_left = 260.0
+margin_top = 0.0
+margin_right = 330.0
+margin_bottom = 34.0
+
+[node name="Uniques" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 128.0
+margin_right = 330.0
+margin_bottom = 164.0
+translationKey = "UI_BonusTreasure"
+
+[node name="Property" parent="VBoxContainer/Uniques" index="0"]
+margin_right = 224.0
+bbcode_text = "[right]Bonus [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] chance"
+text = "Bonus  chance"
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/Uniques" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/Uniques" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+
+[node name="Value" parent="VBoxContainer/Uniques" index="3"]
+margin_left = 260.0
+margin_right = 330.0
+
+[node name="TreasureLimit" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 172.0
+margin_right = 330.0
+margin_bottom = 208.0
+translationKey = "UI_TreasureLimit"
+
+[node name="Property" parent="VBoxContainer/TreasureLimit" index="0"]
+margin_right = 224.0
+bbcode_text = "[right] [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] limit"
+text = "  limit"
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/TreasureLimit" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/TreasureLimit" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+
+[node name="Value" parent="VBoxContainer/TreasureLimit" index="3"]
+margin_left = 260.0
+margin_right = 330.0
+
+[node name="Health" parent="VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 216.0
+margin_right = 330.0
+margin_bottom = 250.0
+translationKey = "UI_BonusHealth"
+
+[node name="Property" parent="VBoxContainer/Health" index="0"]
+margin_right = 224.0
+margin_bottom = 34.0
+bbcode_text = "[right]Health"
+text = "Health"
+prefix = ""
+
+[node name="Control" parent="VBoxContainer/Health" index="1"]
+visible = false
+
+[node name="Spacer" parent="VBoxContainer/Health" index="2"]
+visible = true
+margin_left = 232.0
+margin_right = 252.0
+margin_bottom = 34.0
+
+[node name="Value" parent="VBoxContainer/Health" index="3"]
+margin_left = 260.0
+margin_top = 0.0
+margin_right = 330.0
+margin_bottom = 34.0
+
+[node name="League" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 258.0
+margin_right = 330.0
+margin_bottom = 298.0
+
+[node name="Property" type="RichTextLabel" parent="VBoxContainer/League"]
+margin_right = 224.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 224, 0 )
+rect_clip_content = false
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = SubResource( 343 )
+bbcode_enabled = true
+bbcode_text = "[right]Match against"
+text = "Match against"
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 6 )
+translationKey = "UI_UnrankedMatch"
+maxSize = 224.0
+
+[node name="Spacer" type="Control" parent="VBoxContainer/League"]
+margin_left = 232.0
+margin_right = 262.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/League"]
+margin_left = 270.0
+margin_right = 310.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="CannotPickBags" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 306.0
+margin_right = 330.0
+margin_bottom = 336.0
+
+[node name="CannotPickBags" type="RichTextLabel" parent="VBoxContainer/CannotPickBags"]
+margin_right = 330.0
+margin_bottom = 30.0
+grow_horizontal = 0
+rect_min_size = Vector2( 270, 0 )
+rect_clip_content = false
+size_flags_horizontal = 3
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = SubResource( 343 )
+bbcode_enabled = true
+bbcode_text = "[center]Place bags permanently"
+text = "Place bags permanently"
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 6 )
+translationKey = "UI_CannotPickBags"
+prefix = "[center]"
+maxSize = 224.0
+
+[node name="Checkbox" type="TextureButton" parent="VBoxContainer/CannotPickBags"]
+visible = false
+margin_left = 278.0
+margin_right = 308.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 0 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 8 )
+
+[node name="SwitchMode" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 344.0
+margin_right = 330.0
+margin_bottom = 374.0
+
+[node name="SwitchMode" type="RichTextLabel" parent="VBoxContainer/SwitchMode"]
+margin_right = 330.0
+margin_bottom = 30.0
+grow_horizontal = 0
+rect_min_size = Vector2( 270, 0 )
+rect_clip_content = false
+size_flags_horizontal = 3
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = SubResource( 343 )
+bbcode_enabled = true
+bbcode_text = "[center]Switch Mode"
+text = "Switch Mode"
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 6 )
+translationKey = "BUTTON_SwitchMode"
+prefix = "[center]"
+maxSize = 224.0
+
+[node name="Checkbox" type="TextureButton" parent="VBoxContainer/SwitchMode"]
+visible = false
+margin_left = 278.0
+margin_right = 308.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 0 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 8 )
+
+[node name="TeamSwitchMode" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 382.0
+margin_right = 330.0
+margin_bottom = 412.0
+
+[node name="TeamSwitchMode" type="RichTextLabel" parent="VBoxContainer/TeamSwitchMode"]
+margin_right = 330.0
+margin_bottom = 30.0
+grow_horizontal = 0
+rect_min_size = Vector2( 270, 0 )
+rect_clip_content = false
+size_flags_horizontal = 3
+custom_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = SubResource( 343 )
+bbcode_enabled = true
+bbcode_text = "[center]队伍交换模式"
+text = "队伍交换模式"
+fit_content_height = true
+scroll_active = false
+script = ExtResource( 6 )
+translationKey = "UI_TeamSwitchMode"
+prefix = "[center]"
+maxSize = 224.0
+
+[node name="Checkbox" type="TextureButton" parent="VBoxContainer/TeamSwitchMode"]
+visible = false
+margin_left = 278.0
+margin_right = 308.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 0 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 8 )
+
+[node name="Divider1" type="Sprite" parent="."]
+position = Vector2( 197.5, 5.4375 )
+scale = Vector2( 1.28016, 0.712497 )
+texture = ExtResource( 12 )
+
+[editable path="VBoxContainer/Gold"]
+[editable path="VBoxContainer/Sales"]
+[editable path="VBoxContainer/Trade"]
+[editable path="VBoxContainer/Uniques"]
+[editable path="VBoxContainer/TreasureLimit"]
+[editable path="VBoxContainer/Health"]
