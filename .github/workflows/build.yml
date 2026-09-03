@@ -51,9 +51,40 @@ jobs:
           path: dist
           if-no-files-found: error
 
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo builds
+        uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+
+      - name: Build release binary
+        run: cargo build --locked --release --no-default-features --features cli
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p dist
+          ver="${{ github.ref_name }}"
+          cp "target/release/${BIN_NAME}" "dist/bpb-enhance-${ver}-linux-x86_64"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bpb_enhance-linux
+          path: dist
+          if-no-files-found: error
+
   release:
     name: Create GitHub Release
-    needs: [build-windows]
+    needs: [build-windows, build-linux]
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/')
 
@@ -105,6 +136,12 @@ jobs:
           name: bpb_enhance-windows
           path: dist/windows
 
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: bpb_enhance-linux
+          path: dist/linux
+
       - name: Rename Windows binary
         shell: bash
         env:
@@ -122,6 +159,12 @@ jobs:
           fi
 
           mv "${exe_files[0]}" "dist/release/${ASSET_NAME}"
+
+      - name: Rename Linux binary
+        run: mv dist/linux/* dist/
+
+      - name: Restore Linux executable permissions
+        run: chmod +x dist/*-linux-x86_64
 
       - name: Create GitHub Release and upload assets
         uses: softprops/action-gh-release@v2
