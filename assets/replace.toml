@@ -1,8 +1,10 @@
 [version]
-required-game-version = "1.1.8"
-plugin-version = "0.8.1"
+required-game-version = "1.1.9b"
+plugin-version = "0.8.3"
 
 [version-hash]
+"1.1.9b" = "77a508e6b1a1d8c63e11d7618dd1284c"
+"1.1.9" = "8d2e84ff7db53473370c877fca75bc10"
 "1.1.8" = "e87e9e229bf219b6c5c1fb4eeafacf2d"
 
 [replace]

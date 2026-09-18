@@ -218,143 +218,71 @@ position = Vector2( 0, 2500 )
 z_index = 20
 script = ExtResource( 6 )
 chinese = "[center][b]大家好！
-我们再次带来了一些新调整！！
-祝大家玩得开心！
+我们带来了一件来自《橡木塔 》的联动道具：时间吊坠！
+当然，对方游戏也加入了一批《背包乱斗》相关游戏物品。
 
-- Doro and Mario
+此外，我们还做了一些平衡性调整。
+玩得开心，我们很快再见！ :)
+
+- Doro 和 Mario
 [/b][/center]
+
+o 全新宝藏物品：时间吊坠
 
 [b]平衡性调整[/b]
 [center][b]通用[/b][/center]
-o 武士刀：冷却时间 1.7s -> 1.5s
-o 沸腾大锅：每个食物提供的恢复量 2 -> 3
-o 臭臭牙签：每个食物提供的触发速度 12% -> 15%
-o 火辣香蕉：获得狂热的几率 65% -> 75%
-o 铁匠入门指南：耐力消耗减少 35% -> 40%
-o 万里挑一：每个宝藏物品或卡牌提供的触发速度 10% -> 12%
-o 刀刀见血：每把匕首提供的触发速度 60% -> 75%
-o 时间融化：效果持续时间加成 60% -> 55%
-o 狼徽章：狂战士之怒持续时间 5s -> 5.5s
-
-[center][b]多职业[/b][/center]
-o 胡搞魔咒：最大耐力消耗 8 -> 6，自身眩晕 0.5s -> 0.8s
-o 能量转化：冷却时间 4.5s -> 4.7s
-o 魅惑：冷却时间 3s -> 2.5s
-
-[center][b]游侠[/b][/center]
-o 森林巨龙：每层恢复提供的伤害 0.8 -> 0.7
-o 世界树树叶：恢复量 18 -> 20
-o 幽光（武器）：获得尖刺所需伤害阈值 30 -> 32
-o 暴击法杖：持续时间 1.5s -> 1.6s
-o 天命短弓：获得幸运的几率 85% -> 90%
-
-[center][b]收割者[/b][/center]
-o 蛇蛇：最大生命值 40 -> 38
-o 遗物箱：冷却时间 2.3s -> 2.2s
+o 沸腾大锅：狂热 / 恢复 6 -> 8
+o 神圣长矛：伤害 -2
+o 腐败熊猫之锅：中毒暴击几率 4% -> 5%
 
 [center][b]火焰魔导士[/b][/center]
-o 烈火之杖：伤害 +2
+o 日耀盾牌：抵挡伤害 18 -> 20
 
 [center][b]狂战士[/b][/center]
-o 鹿木守护：法力值 3 -> 4
-o 旅行包：狂战士之怒持续时间 5s -> 5.5s
-o 锻造巨剑：狂战士之怒期间耐力消耗 3 -> 2.5
-o 龙鳞靴：护盾 20 -> 25
-o 锁链鞭：恢复量 15 -> 17
-o 龙鳞护甲：护盾 45 -> 55
-o 愤怒加倍：延迟 1s -> 0.5s
+o 狼印记：冷却时间 2.3s -> 2.5s
 
 [center][b]魔法师[/b][/center]
-o 魔法学院袋：法力值复制几率 30% -> 40%
-o 彩虹魔药：每个法杖提供的增益效果 6 -> 7
-o 幽灵猫：冷却时间 2.4s -> 2.1s
+o 纸杯蛋糕飞龙：食物加成 15% -> 20%
 
 [center][b]冒险家[/b][/center]
-o 软呢帽：冷却时间 2.8s -> 3.2s，几率触发效果加成 25% -> 20%
-o 水银元素：冷却时间 5s -> 4.5s
-o 黏黏龙骑士：恢复量 8 -> 7
-o 宝石存钱罐：最大生命值 4 -> 3
-o 回旋镖：耐力消耗 1.5 -> 1.7
-o 超长矛：最大伤害 12 -> 16
-o 剑剪刀：伤害 +2
-o 心形盾牌：抵挡伤害 17 -> 18
-o 升级：冷却时间 5s -> 5.3s
+o 心形盾牌：抵挡伤害 18 -> 20
 
 [center][b]工程师[/b][/center]
-o 吐司黏黏：恢复耐力 1.5 -> 1.7
-o 电能火炬：触发速度 40% -> 45%
-o 特斯拉线圈：触发延迟 5.5s -> 5s
-o 毒气手雷：冷却进度推进 1s -> 1.5s
-o 弹簧装填器：冷却时间 7.5s -> 7.2s"
-japanese = "[center][b]皆さんこんにちは！
-バランス調整のお時間です！
-楽しんで :)
+o 电能火炬：致盲持续时间 7s -> 8s
+o 影响平衡性的 bug 修复：塑料立方体现在会根据当前冷却时间的 75% 推进冷却进度，而非根据基础冷却时间计算。这意味着它对已大幅加速的物品效果会变弱。"
+japanese = "[center][b]皆さんこんにちは！ 
+『Oaken Tower』からコラボアイテム「時のペンダント」が登場します！
+それと同時に、コラボ先でもBPBのアイテムがいくつか追加されます。 
+
+また、いくつかバランス調整も行います。
+楽しんで！近いうちにまたお会いしましょう :)
 
 - ドロ＆マリオより
 [/b][/center]
 
+o 新掘出物アイテム：時のペンダント
+
 [b]バランス調整[/b]
 [center][b]共通[/b][/center]
-o カタナ：クールダウン 1.7秒 ▷ 1.5秒
-o 煮え立つ鍋：食べ物による回復量 2 ▷ 3
-o スタンクスの爪楊枝：食べ物ごとの使用速度 12% ▷ 15%
-o スパイシーバナナ：ヒート獲得確率 65% ▷ 75%
-o サルでもわかる鍛冶：スタミナ減少 35% ▷ 40%
-o ユニークなユニーク：掘出物・カードごとの使用速度ボーナス 12% ▷ 15%
-o ナイフ・トゥ・ミーチュー：ダガーごとの使用速度ボーナス 60% ▷ 75%
-o 時間融解：効果時間ボーナス 60% ▷ 55%
-o ウルフバッジ：バーサク時間 5秒 ▷ 5.5秒
-
-[center][b]マルチクラス[/b][/center]
-o アブラガダブラ：スタミナ最大消費量 8 ▷ 6。自己スタン： 0.5秒 ▷ 0.8秒
-o エネルギー変換：クールダウン 4.5秒 ▷ 4.7秒
-o 呪術：クールダウン 3秒 ▷ 2.5秒
-
-[center][b]レンジャー[/b][/center]
-o フォレストドラゴン：リジェネごとのダメージ 0.8 ▷ 0.7
-o ユグドラシルの葉：回復量 18 ▷ 20
-o ウィスプ（武器）トゲ条件 30 ▷ 32
-o クリティカルの杖：持続時間 1.5秒 ▷ 1.6秒
-o フォルトゥナの願い弓：幸運獲得確率 85% ▷ 90%
-
-[center][b]リーパー[/b][/center]
-o ヘビ：体力最大値増加 40 ▷ 38
-o レリックケース：クールダウン 2.3秒 ▷ 2.2秒
+o 煮え立つ鍋：ヒート/リジェネ 6 ▷ 8
+o ホーリースピア：ダメージ -2
+o パンダモニウム：毒クリティカル率 4% ▷ 5%
 
 [center][b]パイロマンサー[/b][/center]
-o 炎の杖：ダメージ +2
+o 太陽の盾：ダメージ軽減 18 ▷ 20
 
 [center][b]バーサーカー[/b][/center]
-o シカ神のトーテム：マナ 3 ▷ 4
-o ダッフルバッグ：バーサク時間 5秒 ▷ 5.5秒
-o 破滅のグレートソード：バーサク中スタミナ消費値 3 ▷ 2.5
-o ドラゴン革のブーツ：シールド 20 ▷ 25
-o チェーンウィップ：回復量 15 ▷ 17
-o 竜鱗の鎧：シールド 45 ▷ 55
-o さらなる怒り：発動遅延 1秒 ▷ 0.5秒
+o 狼の紋章：クールダウン 2.3秒 ▷ 2.5秒
 
 [center][b]メイジ[/b][/center]
-o 学者のカバン：マナ追加獲得確率 30% ▷ 40%
-o レインボーポーション：杖ごとのバフ 6 ▷ 7
-o ネコの精霊：クールダウン 2.4秒 ▷ 2.1秒
+o カップドレイク：食べ物ボーナス 15% ▷ 20%
 
 [center][b]アドベンチャラー[/b][/center]
-o フェドーラ帽：クールダウン 2.8秒 ▷ 3.2秒。確率に基づく効果の発動確率アップ 25% ▷ 20%
-o 水銀のエレメンタル：クールダウン 5秒 ▷ 4.5秒
-o ドラゴンナイト：回復量 8 ▷ 7
-o 富のブタちゃん：体力最大値増加 4 ▷ 3
-o ブーメラン：スタミナ消費値 1.5 ▷ 1.7
-o ベリーロングスピア：最大ダメージ 12 ▷ 16
-o シザーソード：ダメージ +2
-o ハートの盾：ダメージ軽減 17 ▷ 18
-o レベルアップ：クールダウン 5秒 ▷ 5.3秒
+o ハートの盾：ダメージ軽減 18 ▷ 20
 
 [center][b]エンジニア[/b][/center]
-o トースト・スラバート：スタミナ回復 1.5 ▷ 1.7
-o 電動たいまつ：使用速度アップ 40% ▷ 45%
-o テスラコイル：発動遅延 5.5秒 ▷ 5秒
-o ポイズングレネード：クールダウン短縮 1秒 ▷ 1.5秒
-o バネ式加速器：クールダウン 7.5秒 ▷ 7.2秒"
+o 電動たいまつ：目くらまし持続時間 7秒 ▷ 8秒
+o バランスに関わるバグ修正：プラスチックキューブが、元々のクールダウン時間ではなく、現在のクールダウン時間の75%分だけクールダウンを進めるように変更。これにより、加速アイテムの影響が大幅に減少します。"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -442,144 +370,108 @@ custom_fonts/bold_font = SubResource( 161 )
 custom_fonts/normal_font = SubResource( 297 )
 custom_styles/focus = ExtResource( 12 )
 bbcode_enabled = true
-bbcode_text = "[center][b]Hi everyone,
-We are back with some more adjustments!!
-Have fun :)
+bbcode_text = "[center][b]Hi everyone, 
+we are back with a crossover item from 
+Oaken Tower, the Time Pendant!
+
+At the same time, they added a whole selection 
+of BPB items into their game. 
+
+Also, we have some balance adjustments.
+Have fun and see y’all soon! :)
 
 - Doro and Mario
-[/b][/center]
+
+1.1.9b
+Bug fix / additional balance changes:[/b]
+Hi everyone, again!
+So it turns out only the labels for relative cooldown advances were 
+broken, while the mechanic was already working correctly.
+We now fixed the labels and rolled the cooldown changes back.
+Instead, here are 2 other nerfs to address Holy Spear/Cubes. 
+We will monitor how they pan out and readjust if necessary :)
+[/center]
+o Chromium Cube: Cooldown advance 2s -> 1.5s 
+o Bismuth Cube: Cooldown advance 0.3s -> 0.2s
+
+[center][b]1.1.9[/b][/center]
+o NEW TREASURE ITEM: Time Pendant
 
 [b]Balancing[/b]
 [center][b]Neutral[/b][/center]
-o Katana: Cooldown 1.7s -> 1.5s
-o Boiling Pot: Heal per food 2 -> 3
-o Stankus’ Toothpick: Speed per food 12% -> 15%
-o Spicy Banana: Heat chance 65% -> 75%
-o Smithing for Dummies: Stamina reduction 35% -> 40%
-o Uniquely Unique: Speed per treasure or card 10% -> 12%
-o Knife to Meet You: Triggers faster per dagger 60% -> 75%
-o Time Melting: Effect durations bonus 60% -> 55%
-o Wolf Badge: Battle Rage duration 5s -> 5.5s
-
-[center][b]Multiclass[/b][/center]
-o Hogus Bogus: Max stamina usage 8 -> 6. Self Stun 0.5s -> 0.8s
-o Energy Conversion: Cooldown 4.5s -> 4.7s
-o Bewitchment: Cooldown 3s -> 2.5s
-
-[center][b]Ranger[/b][/center]
-o Forest Dragon: Damage per regen 0.8 -> 0.7
-o Yggdrasil Leaf: Heal 18 -> 20
-o Wisp (Weapon) Spikes threshold 30 -> 32
-o Critwood Staff: Duration 1.5s -> 1.6s
-o Fortuna’s Hope: Luck chance 85% -> 90%
-
-[center][b]Reaper[/b][/center]
-o Snake: Maximum health 40 -> 38
-o Relic Case: Cooldown 2.3s -> 2.2s
+o Boiling Pot: Heat/ Regeneration 6 -> 8
+o Holy Spear: Damage -2
+o Pandamonium: Poison crit chance 4% -> 5%
 
 [center][b]Pyromancer[/b][/center]
-o Staff of Fire: Damage +2
+o Sun Shield: Damage blocked 18 -> 20
 
 [center][b]Berserker[/b][/center]
-o Deerwood Guardian: Mana 3 -> 4
-o Duffle Bag: Battle Rage duration 5s -> 5.5s
-o Busted Blade: Battle Rage stamina usage 3 -> 2.5
-o Dragonskin Boots: Block 20 -> 25
-o Chain Whip: Heal 15 -> 17
-o Dragonscale Armor: Block 45 -> 55
-o Extra Angy: Delay 1s -> 0.5s
+o Wolf Emblem: Cooldown 2.3s -> 2.5s
 
 [center][b]Mage[/b][/center]
-o Scholar Bag: Mana duplication chance 30% -> 40%
-o Rainbow Potion: Buffs per staff 6 -> 7
-o Cat Spirit Companion: Cooldown 2.4s -> 2.1s
+o Cupdrake: Food bonus 15% -> 20%
 
 [center][b]Adventurer[/b][/center]
-o Fedora: Cooldown 2.8s -> 3.2s. Chance based effects bonus 25% -> 20%.
-o Mercury Elemental: Cooldown 5s -> 4.5s
-o Dragon Knight: Heal 8 -> 7
-o Piggy of Riches: Maximum health 4 -> 3
-o Boomerang: Stamina cost 1.5 -> 1.7
-o Very Long Spear: Maximum damage 12 -> 16
-o Scissorswords: Damage +2
-o Heart Shield: Damage blocked 17 -> 18
-o Level Up: Cooldown 5s -> 5.3s
+o Heart Shield: Damage blocked 18 -> 20
 
 [center][b]Engineer[/b][/center]
-o Toast Goobert: Stamina gained 1.5 -> 1.7
-o Electric Torch: Trigger speed 40% -> 45%
-o Tesla Coil: Activation delay 5.5s -> 5s
-o Poison Grenade: Cooldown advance 1s -> 1.5s
-o Spring Loader: Cooldown 7.5s -> 7.2s"
-text = "Hi everyone,
-We are back with some more adjustments!!
-Have fun :)
+o Electric Torch: Blind duration 7s -> 8s
+o Balance-relevant bug fix: Plastic cube now advances the cooldown 
+   by 75% of the current value, rather than the base value. 
+   This means less effect on heavily sped up items.
+"
+text = "Hi everyone, 
+we are back with a crossover item from 
+Oaken Tower, the Time Pendant!
+
+At the same time, they added a whole selection 
+of BPB items into their game. 
+
+Also, we have some balance adjustments.
+Have fun and see y’all soon! :)
 
 - Doro and Mario
 
+1.1.9b
+Bug fix / additional balance changes:
+Hi everyone, again!
+So it turns out only the labels for relative cooldown advances were 
+broken, while the mechanic was already working correctly.
+We now fixed the labels and rolled the cooldown changes back.
+Instead, here are 2 other nerfs to address Holy Spear/Cubes. 
+We will monitor how they pan out and readjust if necessary :)
+
+o Chromium Cube: Cooldown advance 2s -> 1.5s 
+o Bismuth Cube: Cooldown advance 0.3s -> 0.2s
+
+1.1.9
+o NEW TREASURE ITEM: Time Pendant
 
 Balancing
 Neutral
-o Katana: Cooldown 1.7s -> 1.5s
-o Boiling Pot: Heal per food 2 -> 3
-o Stankus’ Toothpick: Speed per food 12% -> 15%
-o Spicy Banana: Heat chance 65% -> 75%
-o Smithing for Dummies: Stamina reduction 35% -> 40%
-o Uniquely Unique: Speed per treasure or card 10% -> 12%
-o Knife to Meet You: Triggers faster per dagger 60% -> 75%
-o Time Melting: Effect durations bonus 60% -> 55%
-o Wolf Badge: Battle Rage duration 5s -> 5.5s
-
-Multiclass
-o Hogus Bogus: Max stamina usage 8 -> 6. Self Stun 0.5s -> 0.8s
-o Energy Conversion: Cooldown 4.5s -> 4.7s
-o Bewitchment: Cooldown 3s -> 2.5s
-
-Ranger
-o Forest Dragon: Damage per regen 0.8 -> 0.7
-o Yggdrasil Leaf: Heal 18 -> 20
-o Wisp (Weapon) Spikes threshold 30 -> 32
-o Critwood Staff: Duration 1.5s -> 1.6s
-o Fortuna’s Hope: Luck chance 85% -> 90%
-
-Reaper
-o Snake: Maximum health 40 -> 38
-o Relic Case: Cooldown 2.3s -> 2.2s
+o Boiling Pot: Heat/ Regeneration 6 -> 8
+o Holy Spear: Damage -2
+o Pandamonium: Poison crit chance 4% -> 5%
 
 Pyromancer
-o Staff of Fire: Damage +2
+o Sun Shield: Damage blocked 18 -> 20
 
 Berserker
-o Deerwood Guardian: Mana 3 -> 4
-o Duffle Bag: Battle Rage duration 5s -> 5.5s
-o Busted Blade: Battle Rage stamina usage 3 -> 2.5
-o Dragonskin Boots: Block 20 -> 25
-o Chain Whip: Heal 15 -> 17
-o Dragonscale Armor: Block 45 -> 55
-o Extra Angy: Delay 1s -> 0.5s
+o Wolf Emblem: Cooldown 2.3s -> 2.5s
 
 Mage
-o Scholar Bag: Mana duplication chance 30% -> 40%
-o Rainbow Potion: Buffs per staff 6 -> 7
-o Cat Spirit Companion: Cooldown 2.4s -> 2.1s
+o Cupdrake: Food bonus 15% -> 20%
 
 Adventurer
-o Fedora: Cooldown 2.8s -> 3.2s. Chance based effects bonus 25% -> 20%.
-o Mercury Elemental: Cooldown 5s -> 4.5s
-o Dragon Knight: Heal 8 -> 7
-o Piggy of Riches: Maximum health 4 -> 3
-o Boomerang: Stamina cost 1.5 -> 1.7
-o Very Long Spear: Maximum damage 12 -> 16
-o Scissorswords: Damage +2
-o Heart Shield: Damage blocked 17 -> 18
-o Level Up: Cooldown 5s -> 5.3s
+o Heart Shield: Damage blocked 18 -> 20
 
 Engineer
-o Toast Goobert: Stamina gained 1.5 -> 1.7
-o Electric Torch: Trigger speed 40% -> 45%
-o Tesla Coil: Activation delay 5.5s -> 5s
-o Poison Grenade: Cooldown advance 1s -> 1.5s
-o Spring Loader: Cooldown 7.5s -> 7.2s"
+o Electric Torch: Blind duration 7s -> 8s
+o Balance-relevant bug fix: Plastic cube now advances the cooldown 
+   by 75% of the current value, rather than the base value. 
+   This means less effect on heavily sped up items.
+"
 script = ExtResource( 5 )
 
 [node name="CloseButton" type="Button" parent="."]
