@@ -764,7 +764,7 @@ dependencies = [
 
 [[package]]
 name = "bpb_enhance"
-version = "0.8.1"
+version = "0.8.2"
 dependencies = [
  "anyhow",
  "binrw",
