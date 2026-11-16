@@ -218,71 +218,141 @@ position = Vector2( 0, 2500 )
 z_index = 20
 script = ExtResource( 6 )
 chinese = "[center][b]大家好！
-我们带来了一件来自《橡木塔 》的联动道具：时间吊坠！
-当然，对方游戏也加入了一批《背包乱斗》相关游戏物品。
-
-此外，我们还做了一些平衡性调整。
+我们又带来了一些平衡性调整！
 玩得开心，我们很快再见！ :)
 
 - Doro 和 Mario
 [/b][/center]
-
-o 全新宝藏物品：时间吊坠
-
 [b]平衡性调整[/b]
 [center][b]通用[/b][/center]
-o 沸腾大锅：狂热 / 恢复 6 -> 8
 o 神圣长矛：伤害 -2
-o 腐败熊猫之锅：中毒暴击几率 4% -> 5%
+o 吸魔剑：生命偷取 100% -> 125%
+o 剧毒蛇杖：施加双倍中毒的几率 40% -> 45%
+o 月光护甲：冷却时间 2.6s -> 2.4s
+o 石制护甲：冷却时间 4s -> 3.6s
+o 彩虹剑：命中率 90% -> 100%
+o 铁匠入门指南：耐力消耗减少幅度 40% -> 45%
+o 刀刀见血：每把匕首提供的触发速度加成 75% -> 85%
+o 全身防护：伤害减免 8 -> 10
+o 月亮之力：最大生命值加成 70% -> 75%
+o 投石手：伤害转化为护盾的比例 65% -> 70%
+o 护盾加强：护甲触发速度加成 60% -> 65%
+o 背包盛宴：魔药腰带提供的增益效果层数 2 -> 3
+
+[center][b]多职业[/b][/center]
+o 制胜转盘：冷却时间 3.8s -> 4.0s
+
+[center][b]游侠[/b][/center]
+o 大师雪人：冷却时间 1.3s -> 1.4s
+o 颠茄剧毒弓：每层中毒提供的伤害 0.5 -> 0.6
+o 暴击法杖：持续时间 1.6s -> 1.8s。额外伤害 7 -> 8
+o 世界树树叶：生命值恢复量 20 -> 22
+
+[center][b]收割者[/b][/center]
+o 青蛙王子：冷却时间 2.6s -> 2.3s
+o 抱抱先生：冷却时间 3s -> 2.7s
 
 [center][b]火焰魔导士[/b][/center]
-o 日耀盾牌：抵挡伤害 18 -> 20
+o 永冻之火：护盾 25 -> 28
+o 日耀盾牌：抵挡伤害 20 -> 22
 
 [center][b]狂战士[/b][/center]
-o 狼印记：冷却时间 2.3s -> 2.5s
+o 锻造锤：冷却时间 3.5s -> 3.2s
+o 锁链鞭：生命值恢复量 17 -> 20
+o 鹿木守护：魔法 4 -> 5
+o 铜指虎：眩晕几率 50% -> 55%
 
 [center][b]魔法师[/b][/center]
-o 纸杯蛋糕飞龙：食物加成 15% -> 20%
+o 霜冻花：护盾 17 -> 20
+o 浆果提灯：冷却时间 2s -> 1.8s
+o 吞噬圆球：冷却时间 1.4s -> 1.3s
+o 彩虹魔药：每个法杖提供的增益效果层数 7 -> 8
+o 杯糕法杖：伤害 +2
 
 [center][b]冒险家[/b][/center]
-o 心形盾牌：抵挡伤害 18 -> 20
+o 心形盾牌：抵挡伤害 20 -> 25
+o 麻绳：加速效果持续时间 6s -> 7s
 
 [center][b]工程师[/b][/center]
-o 电能火炬：致盲持续时间 7s -> 8s
-o 影响平衡性的 bug 修复：塑料立方体现在会根据当前冷却时间的 75% 推进冷却进度，而非根据基础冷却时间计算。这意味着它对已大幅加速的物品效果会变弱。"
+o 铬立方体：冷却进度推进 1.5s -> 1.0s
+o 铋立方体：冷却进度推进 0.2s -> 0.15s
+o 塑料立方体：冷却进度推进 75% -> 65%
+o 黄金立方体：冷却进度推进 2s -> 1.5s
+o 自动进食机：其他食物的触发速度加成 75% -> 85%
+o 弹簧装填器：触发速度加成 35% -> 30%
+o 陷阱装置：生命值阈值 70% -> 75%
+o 毒气手雷：中毒层数 20 -> 22，幸运阈值 5 -> 3
+o 电锯：冷却时间 1.2s -> 1.1s
+o 发电机：冷却时间 4.5s -> 4.2s。耐力消耗 0.8 -> 0.7
+o 闪电法杖：冷却时间 1.6s -> 1.7s"
 japanese = "[center][b]皆さんこんにちは！
-『Oaken Tower』からコラボアイテム「時のペンダント」が登場します！
-それと同時に、コラボ先でもBPBのアイテムがいくつか追加されます。
-
-また、いくつかバランス調整も行います。
+バランス調整のお時間です！
 楽しんで！近いうちにまたお会いしましょう :)
 
 - ドロ＆マリオより
 [/b][/center]
-
-o 新掘出物アイテム：時のペンダント
-
 [b]バランス調整[/b]
 [center][b]共通[/b][/center]
-o 煮え立つ鍋：ヒート/リジェネ 6 ▷ 8
 o ホーリースピア：ダメージ -2
-o パンダモニウム：毒クリティカル率 4% ▷ 5%
+o マナ喰らいの剣：体力吸収率 100% ▷ 125%
+o 毒蛇の杖：毒追加付与確率 40% ▷ 45%
+o 月の鎧：クールダウン 2.6秒 ▷ 2.4秒
+o 石の鎧：クールダウン 4秒 ▷ 3.6秒
+o プリズムソード：命中率 90% ▷ 100%
+o サルでもわかる鍛冶：スタミナ減少 40% ▷ 45%
+o ナイフ・トゥ・ミーチュー：ダガーごとの使用速度 75% ▷ 85%
+o 全身防備：ダメージ軽減 8 ▷ 10
+o 月の力：体力最大値増加 70% ▷ 75%
+o 石塁：シールド獲得割合 65% ▷ 70%
+o 庇護：鎧使用速度アップ 60% ▷ 65%
+o バッグり仰天：ポーションベルトのバフ 2 ▷ 3
+
+[center][b]マルチクラス[/b][/center]
+o ルーレット：クールダウン 3.8秒 ▷ 4.0秒
+
+[center][b]レンジャー[/b][/center]
+o スノーマスター：クールダウン 1.3秒 ▷ 1.4秒
+o ささやきベラドンナの毒弓：毒ごとのダメージ 0.5 ▷ 0.6
+o クリティカルの杖：効果時間 1.6秒 ▷ 1.8秒ボーナスダメージ 7 ▷ 8
+o ユグドラシルの葉：回復量 20 ▷ 22
+
+[center][b]リーパー[/b][/center]
+o カエル王子：クールダウン 2.6秒 ▷ 2.3秒
+o ミスター・ストラグルズ：クールダウン 3秒 ▷ 2.7秒
 
 [center][b]パイロマンサー[/b][/center]
-o 太陽の盾：ダメージ軽減 18 ▷ 20
+o フローズンフレイム：シールド 25 ▷ 28
+o 太陽の盾：ダメージ軽減 20 ▷ 22
 
 [center][b]バーサーカー[/b][/center]
-o 狼の紋章：クールダウン 2.3秒 ▷ 2.5秒
+o 鍛冶屋のハンマー：クールダウン 3.5秒 ▷ 3.2秒
+o チェーンウィップ：回復量 17 ▷ 20
+o シカ神のトーテム：マナ 4 ▷ 5
+o ブラスナックル：スタン確率 50% ▷ 55%
 
 [center][b]メイジ[/b][/center]
-o カップドレイク：食べ物ボーナス 15% ▷ 20%
+o アイスフラワー：シールド 17 ▷ 20
+o ランタンベリー：クールダウン 2秒 ▷ 1.8秒
+o 貪食のスフィア：クールダウン 1.4秒 ▷ 1.3秒
+o レインボーポーション：杖ごとのバフ 7 ▷ 8
+o カップケーキの杖：ダメージ +2
 
 [center][b]アドベンチャラー[/b][/center]
-o ハートの盾：ダメージ軽減 18 ▷ 20
+o ハートの盾：ダメージ軽減 20 ▷ 25
+o ロープ：効果時間 6秒 ▷ 7秒
 
 [center][b]エンジニア[/b][/center]
-o 電動たいまつ：目くらまし持続時間 7秒 ▷ 8秒
-o バランスに関わるバグ修正：プラスチックキューブが、元々のクールダウン時間ではなく、現在のクールダウン時間の75%分だけクールダウンを進めるように変更。これにより、加速アイテムの影響が大幅に減少します。"
+o クロムキューブ：クールダウン短縮 1.5秒 ▷ 1.0秒
+o ビスマスキューブ：クールダウン短縮 0.2秒 ▷ 0.15秒
+o プラスチックキューブ：クールダウン短縮 75% ▷ 65%
+o ゴールドキューブ：クールダウン短縮 2秒 ▷ 1.5秒
+o イート・オ・マティック：ほかの食べ物の使用速度ボーナス 75% ▷ 85%
+o バネ式加速器：使用速度ボーナス 35% ▷ 30%
+o コン・トラップ・トロン：体力条件 70% ▷ 75%
+o ポイズングレネード：毒 20 ▷ 22、幸運条件 5 ▷ 3
+o チェーンソー：クールダウン 1.2秒 ▷ 1.1秒
+o 発電機：クールダウン 4.5秒 ▷ 4.2秒、スタミナ消費値 0.8 ▷ 0.7
+o 雷の杖：クールダウン 1.6秒 ▷ 1.7秒"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -371,107 +441,141 @@ custom_fonts/normal_font = SubResource( 297 )
 custom_styles/focus = ExtResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center][b]Hi everyone,
-we are back with a crossover item from
-Oaken Tower, the Time Pendant!
-
-At the same time, they added a whole selection
-of BPB items into their game.
-
-Also, we have some balance adjustments.
+we are back with some more balance changes!
 Have fun and see y’all soon! :)
 
 - Doro and Mario
-
-1.1.9b
-Bug fix / additional balance changes:[/b]
-Hi everyone, again!
-So it turns out only the labels for relative cooldown advances were
-broken, while the mechanic was already working correctly.
-We now fixed the labels and rolled the cooldown changes back.
-Instead, here are 2 other nerfs to address Holy Spear/Cubes.
-We will monitor how they pan out and readjust if necessary :)
-[/center]
-o Chromium Cube: Cooldown advance 2s -> 1.5s
-o Bismuth Cube: Cooldown advance 0.3s -> 0.2s
-
-[center][b]1.1.9[/b][/center]
-o NEW TREASURE ITEM: Time Pendant
-
+[/b][/center]
 [b]Balancing[/b]
 [center][b]Neutral[/b][/center]
-o Boiling Pot: Heat/ Regeneration 6 -> 8
 o Holy Spear: Damage -2
-o Pandamonium: Poison crit chance 4% -> 5%
+o Manathirst: Lifesteal 100% -> 125%
+o Serpent Staff: Poison duplication 40% -> 45%
+o Moon Armor: Cooldown 2.6s -> 2.4s
+o Stone Armor: Cooldown 4s -> 3.6s
+o Prismatic Sword: Accuracy 90% -> 100%
+o Smithing For Dummies: Stamina reduction 40% -> 45%
+o Knife to Meet You: Speed per dagger 75% -> 85%
+o Full Body Protection: Damage reduction 8 -> 10
+o Power of the Moon: Maximum health 70% -> 75%
+o Stoned: Damage as block 65% -> 70%
+o Shielded: Armor speed 60% -> 65%
+o Bagtacular: Potion Belt buffs 2 -> 3
+
+[center][b]Multiclass[/b][/center]
+o Spin to Win: Cooldown 3.8s -> 4.0s
+
+[center][b]Ranger[/b][/center]
+o Snowmaster: Cooldown 1.3s -> 1.4s
+o Belladonna’s Whisper: Damage per poison 0.5 -> 0.6
+o Critwood Staff: Duration 1.6s -> 1.8s. Bonus damage 7 -> 8
+o Yggdrasil Leaf: Heal 20 -> 22
+
+[center][b]Reaper[/b][/center]
+o Frog Prince: Cooldown 2.6s -> 2.3s
+o Mr. Struggles: Cooldown 3s -> 2.7s
 
 [center][b]Pyromancer[/b][/center]
-o Sun Shield: Damage blocked 18 -> 20
+o Frozen Flame: Block 25 -> 28
+o Sun Shield: Damage blocked 20 -> 22
 
 [center][b]Berserker[/b][/center]
-o Wolf Emblem: Cooldown 2.3s -> 2.5s
+o Forging Hammer: Cooldown 3.5s -> 3.2s
+o Chain Whip: Heal 17 -> 20
+o Deerwood Guardian: Mana 4 -> 5
+o Brass Knuckles: Stun chance 50% -> 55%
 
 [center][b]Mage[/b][/center]
-o Cupdrake: Food bonus 15% -> 20%
+o Ice Flower: Block 17 -> 20
+o Lantern Berry: Cooldown 2s -> 1.8s
+o Devouring Sphere: Cooldown 1.4s -> 1.3s
+o Rainbow Potion: Buffs per staff 7 -> 8
+o Cupcake Staff: Damage +2
 
 [center][b]Adventurer[/b][/center]
-o Heart Shield: Damage blocked 18 -> 20
+o Heart Shield: Damage blocked 20 -> 25
+o Rope: Speed duration 6s -> 7s
 
 [center][b]Engineer[/b][/center]
-o Electric Torch: Blind duration 7s -> 8s
-o Balance-relevant bug fix: Plastic cube now advances the cooldown
-   by 75% of the current value, rather than the base value.
-   This means less effect on heavily sped up items.
-"
+o Chromium Cube: Cooldown advance 1.5s -> 1.0s
+o Bismuth Cube: Cooldown advance 0.2s -> 0.15s
+o Plastic Cube: Cooldown advance 75%-> 65%
+o Gold Cube: Cooldown advance 2s -> 1.5s
+o Eat-o-matic: Other food speed boost 75% -> 85%
+o Spring Loader: Speed bonus 35% -> 30%
+o Con-Trap-Tron: Health threshold 70% -> 75%
+o Poison Grenade: Poison 20 -> 22. Luck threshold 5 -> 3
+o Chainsaw: Cooldown 1.2s -> 1.1s
+o Generator: Cooldown 4.5s -> 4.2s. Stamina cost 0.8 -> 0.7
+o Lightning Staff: Cooldown 1.6s -> 1.7s"
 text = "Hi everyone,
-we are back with a crossover item from
-Oaken Tower, the Time Pendant!
-
-At the same time, they added a whole selection
-of BPB items into their game.
-
-Also, we have some balance adjustments.
+we are back with some more balance changes!
 Have fun and see y’all soon! :)
 
 - Doro and Mario
-
-1.1.9b
-Bug fix / additional balance changes:
-Hi everyone, again!
-So it turns out only the labels for relative cooldown advances were
-broken, while the mechanic was already working correctly.
-We now fixed the labels and rolled the cooldown changes back.
-Instead, here are 2 other nerfs to address Holy Spear/Cubes.
-We will monitor how they pan out and readjust if necessary :)
-
-o Chromium Cube: Cooldown advance 2s -> 1.5s
-o Bismuth Cube: Cooldown advance 0.3s -> 0.2s
-
-1.1.9
-o NEW TREASURE ITEM: Time Pendant
 
 Balancing
 Neutral
-o Boiling Pot: Heat/ Regeneration 6 -> 8
 o Holy Spear: Damage -2
-o Pandamonium: Poison crit chance 4% -> 5%
+o Manathirst: Lifesteal 100% -> 125%
+o Serpent Staff: Poison duplication 40% -> 45%
+o Moon Armor: Cooldown 2.6s -> 2.4s
+o Stone Armor: Cooldown 4s -> 3.6s
+o Prismatic Sword: Accuracy 90% -> 100%
+o Smithing For Dummies: Stamina reduction 40% -> 45%
+o Knife to Meet You: Speed per dagger 75% -> 85%
+o Full Body Protection: Damage reduction 8 -> 10
+o Power of the Moon: Maximum health 70% -> 75%
+o Stoned: Damage as block 65% -> 70%
+o Shielded: Armor speed 60% -> 65%
+o Bagtacular: Potion Belt buffs 2 -> 3
+
+Multiclass
+o Spin to Win: Cooldown 3.8s -> 4.0s
+
+Ranger
+o Snowmaster: Cooldown 1.3s -> 1.4s
+o Belladonna’s Whisper: Damage per poison 0.5 -> 0.6
+o Critwood Staff: Duration 1.6s -> 1.8s. Bonus damage 7 -> 8
+o Yggdrasil Leaf: Heal 20 -> 22
+
+Reaper
+o Frog Prince: Cooldown 2.6s -> 2.3s
+o Mr. Struggles: Cooldown 3s -> 2.7s
 
 Pyromancer
-o Sun Shield: Damage blocked 18 -> 20
+o Frozen Flame: Block 25 -> 28
+o Sun Shield: Damage blocked 20 -> 22
 
 Berserker
-o Wolf Emblem: Cooldown 2.3s -> 2.5s
+o Forging Hammer: Cooldown 3.5s -> 3.2s
+o Chain Whip: Heal 17 -> 20
+o Deerwood Guardian: Mana 4 -> 5
+o Brass Knuckles: Stun chance 50% -> 55%
 
 Mage
-o Cupdrake: Food bonus 15% -> 20%
+o Ice Flower: Block 17 -> 20
+o Lantern Berry: Cooldown 2s -> 1.8s
+o Devouring Sphere: Cooldown 1.4s -> 1.3s
+o Rainbow Potion: Buffs per staff 7 -> 8
+o Cupcake Staff: Damage +2
 
 Adventurer
-o Heart Shield: Damage blocked 18 -> 20
+o Heart Shield: Damage blocked 20 -> 25
+o Rope: Speed duration 6s -> 7s
 
 Engineer
-o Electric Torch: Blind duration 7s -> 8s
-o Balance-relevant bug fix: Plastic cube now advances the cooldown
-   by 75% of the current value, rather than the base value.
-   This means less effect on heavily sped up items.
-"
+o Chromium Cube: Cooldown advance 1.5s -> 1.0s
+o Bismuth Cube: Cooldown advance 0.2s -> 0.15s
+o Plastic Cube: Cooldown advance 75%-> 65%
+o Gold Cube: Cooldown advance 2s -> 1.5s
+o Eat-o-matic: Other food speed boost 75% -> 85%
+o Spring Loader: Speed bonus 35% -> 30%
+o Con-Trap-Tron: Health threshold 70% -> 75%
+o Poison Grenade: Poison 20 -> 22. Luck threshold 5 -> 3
+o Chainsaw: Cooldown 1.2s -> 1.1s
+o Generator: Cooldown 4.5s -> 4.2s. Stamina cost 0.8 -> 0.7
+o Lightning Staff: Cooldown 1.6s -> 1.7s"
 script = ExtResource( 5 )
 
 [node name="CloseButton" type="Button" parent="."]

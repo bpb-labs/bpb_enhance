@@ -1,9 +1,9 @@
 [version]
-required-game-version = "1.1.9b"
-plugin-version = "0.8.2"
+required-game-version = "1.1.10"
+plugin-version = "0.8.3"
 
 [version-hash]
-"1.1.9b" = "77a508e6b1a1d8c63e11d7618dd1284c"
+"1.1.10" = "43f5eaa215372e24e205d426ce12fa1f"
 
 [replace]
 "res://.import/Combat.png-88ad49c2809e77384a81bc33d532ba51.md5" = ".import/Combat.png-88ad49c2809e77384a81bc33d532ba51.md5"
@@ -101,5 +101,4 @@ plugin-version = "0.8.2"
 "res://Utility/LocalizedControl.gde" = "Utility/LocalizedControl.gde"
 
 [delete]
-paths = [
-]
+paths = []
